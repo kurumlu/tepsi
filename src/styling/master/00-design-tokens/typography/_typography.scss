@@ -1,0 +1,34 @@
+/* ==========================================================================
+   #TYPOGRAPHY-VARIABLES
+   ========================================================================== */
+
+// Font-size
+$t1-font-size__base: 16px !default;
+
+// Font-maps
+$t1-font-map__main: (
+  family: sans-serif,
+  fallback: null,
+  weight: 400,
+  style: normal,
+  letter-spacing: normal,
+  text-transform: none
+) !default;
+
+$t1-font-map__second: (
+  family: sans-serif,
+  fallback: null,
+  weight: 700,
+  style: normal,
+  letter-spacing: normal,
+  text-transform: none
+) !default;
+
+$t1-font-map__third: (
+  family: serif,
+  fallback: null,
+  weight: 400,
+  style: normal,
+  letter-spacing: normal,
+  text-transform: none
+) !default;

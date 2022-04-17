@@ -1,0 +1,26 @@
+/* ==========================================================================
+   #BREAKPOINTS-VARIABLES
+   ========================================================================== */
+
+$t2-grid__gutter-size: 16px  !default;
+
+$t2-grid__breakpoint-mobile: 0px !default;
+$t2-grid__breakpoint-mobile-large: 401px !default;
+$t2-grid__breakpoint-tablet-small: 526px !default;
+$t2-grid__breakpoint-tablet: 768px !default;
+$t2-grid__breakpoint-desktop: 1025px !default;
+$t2-grid__breakpoint-desktop-large: 1400px !default;
+
+$t2-grid__breakpoints: (
+  mobile: $t2-grid__breakpoint-mobile,
+  mobile-large: $t2-grid__breakpoint-mobile-large,
+  tablet-small: $t2-grid__breakpoint-tablet-small,
+  tablet: $t2-grid__breakpoint-tablet,
+  desktop: $t2-grid__breakpoint-desktop,
+  desktop-large: $t2-grid__breakpoint-desktop-large
+);
+
+$t2-grid__base-ranges:
+  "mobile" $t2-grid__breakpoint-mobile $t2-grid__breakpoint-tablet,
+  "tablet" $t2-grid__breakpoint-tablet $t2-grid__breakpoint-desktop,
+  "desktop" $t2-grid__breakpoint-desktop null;

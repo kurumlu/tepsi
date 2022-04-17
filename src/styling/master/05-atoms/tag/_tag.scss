@@ -1,0 +1,115 @@
+// Variables for Tag ATOM
+$a-tag--height: get-spacing(3) !default;
+$a-tag--padding: get-spacing(.25) get-spacing(1) !default;
+
+$a-tag--font-map: $t2-font-map__body !default;
+$a-tag--font-size: $t2-font-size__body-s !default;
+$a-tag--line-height: $t2-line-height__s !default;
+
+$a-tag--background: get-brand-color() !default;
+$a-tag--color: $t2-color__white !default;
+
+// --primary
+$a-tag--primary--background: get-brand-color(primary) !default;
+$a-tag--primary--color: $t2-color__white !default;
+
+// --secondary
+$a-tag--secondary--background: get-brand-color(secondary) !default;
+$a-tag--secondary--color: $t2-color__white !default;
+
+// --tertiary
+$a-tag--tertiary--background: get-brand-color(tertiary) !default;
+$a-tag--tertiary--color: $t2-color__white !default;
+
+// --quaternary
+$a-tag--quaternary--background: get-brand-color(quaternary) !default;
+$a-tag--quaternary--color: $t2-color__white !default;
+
+// --quinary
+$a-tag--quinary--background: get-brand-color(quinary) !default;
+$a-tag--quinary--color: $t2-color__white !default;
+
+// --senary
+$a-tag--senary--background: get-brand-color(senary) !default;
+$a-tag--senary--color: $t2-color__white !default;
+
+// --septenary
+$a-tag--septenary--background: get-brand-color(septenary) !default;
+$a-tag--septenary--color: $t2-color__white !default;
+
+// --general (general: gender, -x%, ...)
+$a-tag--general--background: $t2-color__white !default;
+$a-tag--general--color: $t2-color__black !default;
+
+// --discount (discount)
+$a-tag--discount--background: $t2-color__discount !default;
+$a-tag--discount--color: $t2-color__white !default;
+
+// --sustainable
+$a-tag--sustainable--background: $t2-color__sustainable !default;
+$a-tag--sustainable--color: $t2-color__white !default;
+
+
+// Code for Tag ATOM
+.as-a-tag {
+  @include font-map($a-tag--font-map);
+  box-sizing: border-box;
+  display: inline-block;
+  height: $a-tag--height;
+  padding: $a-tag--padding;
+  color: $a-tag--color;
+  font-size: $a-tag--font-size;
+  line-height: $a-tag--line-height;
+  background: $a-tag--background;
+}
+
+// --tag-color
+.as-a-tag--primary {
+  color: $a-tag--primary--color;
+  background: $a-tag--primary--background;
+}
+
+.as-a-tag--secondary {
+  color: $a-tag--secondary--color;
+  background: $a-tag--secondary--background;
+}
+
+.as-a-tag--tertiary {
+  color: $a-tag--tertiary--color;
+  background: $a-tag--tertiary--background;
+}
+
+.as-a-tag--quaternary {
+  color: $a-tag--quaternary--color;
+  background: $a-tag--quaternary--background;
+}
+
+.as-a-tag--quinary {
+  color: $a-tag--quinary--color;
+  background: $a-tag--quinary--background;
+}
+
+.as-a-tag--senary {
+  color: $a-tag--senary--color;
+  background: $a-tag--senary--background;
+}
+
+.as-a-tag--septenary {
+  color: $a-tag--septenary--color;
+  background: $a-tag--septenary--background;
+}
+
+.as-a-tag--general {
+  color: $a-tag--general--color;
+  background: $a-tag--general--background;
+}
+
+.as-a-tag--discount {
+  color: $a-tag--discount--color;
+  background: $a-tag--discount--background;
+}
+
+.as-a-tag--sustainable {
+  color: $a-tag--sustainable--color;
+  background: $a-tag--sustainable--background;
+}

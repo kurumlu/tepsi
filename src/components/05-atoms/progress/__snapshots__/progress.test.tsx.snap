@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Progress /> should render with default props: default 1`] = `
+<div
+  className="as-a-progress"
+>
+  <div
+    className="as-a-progress__bar"
+    style={
+      Object {
+        "width": "25%",
+      }
+    }
+  />
+</div>
+`;

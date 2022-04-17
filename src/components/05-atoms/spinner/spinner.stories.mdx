@@ -1,0 +1,61 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { Spinner, SpinnerSize } from './Spinner';
+
+<Meta
+  title="Design system/Patterns/Atoms/Spinner"
+  component={Spinner}
+/>
+
+# Spinner
+
+> Spinners are used to notify visitors that there is something being processed.
+
+<Canvas>
+  <Story name="Default">
+    <Spinner />
+  </Story>
+</Canvas>
+
+---
+
+## Available props
+
+| Name     | Type          | Required | Default value       |
+|----------|---------------|----------|---------------------|
+| `size`   | *SpinnerSize* |          | *SpinnerSize.LARGE* |
+
+
+---
+
+### Size
+
+Use the `size` prop to set the size of the spinner. Uses the `SpinnerSize` enum. Defaults to Large (48px).
+
+| SpinnerSize  |
+|--------------|
+| `LARGE`      |
+| `SMALL`      |
+
+### Default
+
+```javascript
+<Spinner />
+```
+
+<Canvas>
+  <Story name="Spinner - default">
+    <Spinner />
+  </Story>
+</Canvas>
+
+#### Small
+
+```javascript
+<Spinner size={SpinnerSize.SMALL} />
+```
+
+<Canvas>
+  <Story name="Color - primary">
+    <Spinner size={SpinnerSize.SMALL} />
+  </Story>
+</Canvas>

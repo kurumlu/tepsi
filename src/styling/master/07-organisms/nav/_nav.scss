@@ -1,0 +1,93 @@
+$o-menu--background-color: $t2-color__background !default;
+$o-menu--color: $t2-color__foreground !default;
+$o-menu--tablet--width: 525px !default;
+$o-menu--mobile--width: 100vw !default;
+$o-menu--z-index: get-z-index('nav') !default;
+$o-menu--state-toggle__backdrop--mobile--width: 56px !default;
+$o-menu--state-toggle__backdrop--mobile--height: get-spacing(8) !default;
+$o-menu--state-toggle--mobile--background: $t2-color__gray-30 !default;
+$o-menu--state-toggle--mobile--opacity: 0.1 !default;
+$o-menu--transition: left $t2-animation__transition-duration-normal !default;
+$o-menu--state-toggle__backdrop--z-index: get-z-index('navBackdrop') !default;
+$o-menu--state-toggle__backdrop--background: $t2-color__gray-10 !default;
+
+.as-o-menu {
+  position: fixed;
+  z-index: $o-menu--z-index;
+  width: $o-menu--mobile--width;
+  background-color: $o-menu--background-color;
+  color: $o-menu--color;
+
+  @include mq($until: desktop) {
+    top: 0;
+    left: -100%;
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    box-shadow: 0 get-spacing(1) get-spacing(2) 0 $t2-color__fade-dark-10;
+
+    transition: $o-menu--transition;
+  }
+
+  @include mq(tablet-small, desktop) {
+    width: $o-menu--tablet--width;
+  }
+
+  @include mq($from: desktop) {
+    position: relative;
+    max-width: 100%;
+  }
+}
+
+.as-o-menu-scrollable {
+  @include mq($until: desktop) {
+    overflow-y: auto;
+  }
+}
+
+.as-o-menu--state-toggle {
+  position: absolute;
+  display: none;
+}
+
+.as-o-menu--state-toggle__backdrop {
+  display: none;
+  margin: 0;
+  cursor: pointer;
+
+  @include mq($until: desktop) {
+    position: absolute;
+    z-index: $o-menu--state-toggle__backdrop--z-index;
+    background: $o-menu--state-toggle__backdrop--background;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: $o-menu--state-toggle__backdrop--mobile--width;
+    height: $o-menu--state-toggle__backdrop--mobile--height;
+  }
+}
+
+.as-o-menu--state-toggle--active~.as-o-menu,
+.as-o-menu--state-toggle:checked~.as-o-menu {
+  @include mq($until: desktop) {
+    left: 0;
+  }
+}
+
+.as-o-menu--state-toggle--active~.as-o-menu--state-toggle__backdrop,
+.as-o-menu--state-toggle:checked~.as-o-menu--state-toggle__backdrop {
+  @include mq($until: desktop) {
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    opacity: $o-menu--state-toggle--mobile--opacity;
+    background: $o-menu--state-toggle--mobile--background;
+  }
+}

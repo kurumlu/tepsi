@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Text /> adds classname 'as-a-text--negative' if "color" props passed: color 1`] = `
+<span
+  className="as-a-text as-a-text--negative"
+>
+  We believe there’s no substitute for experience. That’s why we pride ourselves on the fact that we love spending time outdoors, so when you ask us for advice, you know it comes from our real-world experiences.
+</span>
+`;
+
+exports[`<Text /> adds del tag if "strike" prop was passed: strike 1`] = `
+<span
+  className="as-a-text"
+>
+  <del>
+    We believe there’s no substitute for experience. That’s why we pride ourselves on the fact that we love spending time outdoors, so when you ask us for advice, you know it comes from our real-world experiences.
+  </del>
+</span>
+`;
+
+exports[`<Text /> adds strong tag if "emphasized" prop was passed: emphasized 1`] = `
+<span
+  className="as-a-text"
+>
+  <strong>
+    We believe there’s no substitute for experience. That’s why we pride ourselves on the fact that we love spending time outdoors, so when you ask us for advice, you know it comes from our real-world experiences.
+  </strong>
+</span>
+`;
+
+exports[`<Text /> renders <Text /> component with children: children 1`] = `
+<Text>
+  <div
+    className="as-a-text"
+  >
+    <MockChildren>
+      <ul>
+        <li>
+          Test text 1
+        </li>
+        <li>
+          Test text 2
+        </li>
+        <li>
+          Test text 3
+        </li>
+      </ul>
+    </MockChildren>
+  </div>
+</Text>
+`;
+
+exports[`<Text /> renders <Text /> component: default 1`] = `
+<span
+  className="as-a-text"
+/>
+`;
+
+exports[`<Text /> renders <Text /> with HTML if "html" prop passed component: text with html 1`] = `
+<div
+  className="as-a-text as-a-text--html"
+  dangerouslySetInnerHTML={
+    Object {
+      "__html": "<b>bold</b>",
+    }
+  }
+/>
+`;
+
+exports[`<Text /> replace span tag to p if "paragraph" prop was passed: paragraph 1`] = `
+<p
+  className="as-a-text"
+>
+  We believe there’s no substitute for experience. That’s why we pride ourselves on the fact that we love spending time outdoors, so when you ask us for advice, you know it comes from our real-world experiences.
+</p>
+`;

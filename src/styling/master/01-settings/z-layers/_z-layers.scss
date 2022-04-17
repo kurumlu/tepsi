@@ -1,0 +1,29 @@
+/* ==========================================================================
+   #Z-LAYERS-VARIABLES
+   ========================================================================== */
+
+$t2-z-indexes: (
+  'below': -1,
+  'zero': 0,
+  'default': 1,
+  'above': 2,
+  'backToTop': 500,
+  'popoverTooltip': 501,
+  'stickyBarCompare': 502,
+  'navigationHorizontal': 503,
+  'topBar': 504,
+  'topBarElement': 505,
+  'toast': 506,
+  'navBackdrop': 507,
+  'nav': 508,
+  'comparePopupOverlay': 509,
+  'comparePopup': 510,
+  'stickyBar': 511,
+  'chatButton': 512, // fixed in AEM
+  'chat': 513, // fixed in AEM
+  'searchBox': 514,
+  'popoverOverlay': 515,
+  'popover': 516,
+  'popoverPopoverTooltip': 517,
+  'topBarSearch': 518
+) !default;

@@ -1,0 +1,66 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { withStyleGrid } from '../../../../storybook_addons/storyWrapperDecorator';
+
+import { Container, ContainerType } from './Container';
+import { Column } from '../column/Column';
+
+<Meta
+  title="Design system/Patterns/Settings/Grid/Container"
+  component={Container}
+  decorators={[withStyleGrid]}
+/>
+
+# Container
+
+## Available props:
+
+| Name        | Type            | Required | Default value |
+|-------------|-----------------|----------|---------------|
+| `gutter`    | *boolean*       |          | *true*        |
+| `type`      | *ContainerType* |          |               |
+| `className` | *string*        |          |               |
+
+```javascript
+enum ContainerType {
+  FULL_WIDTH = 'grid-full-width-no-gutters',
+  FLUID = 'fluid-container',
+}
+```
+
+## Examples
+
+### Container with default props:
+<Canvas>
+  <Story name="basic">
+    <Container>
+      <Column grid={12}>Basic Container</Column>
+    </Container>
+  </Story>
+</Canvas>
+
+### Container with no gutters
+<Canvas>
+  <Story name="no-gutters">
+    <Container gutter={false}>
+      <Column grid={12}>No gutters Container</Column>
+    </Container>
+  </Story>
+</Canvas>
+
+### Fluid Container
+<Canvas>
+  <Story name="fluid">
+    <Container type={ContainerType.FLUID}>
+      <Column grid={12}>Fluid Container</Column>
+    </Container>
+  </Story>
+</Canvas>
+
+### Fullwidth Container
+<Canvas>
+  <Story name="fullwidth">
+    <Container type={ContainerType.FULL_WIDTH}>
+      <Column grid={12}>Fullwidth container</Column>
+    </Container>
+  </Story>
+</Canvas>

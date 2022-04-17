@@ -1,0 +1,106 @@
+// Variables for the Icon ATOM
+$a-icon--primary--color:   get-brand-color()          !default;
+$a-icon--secondary--color: get-brand-color(secondary) !default;
+$a-icon--tertiary--color:  get-brand-color(tertiary)  !default;
+
+$a-icon--action--color:         get-brand-color($t2-color-map-key__action)       !default;
+$a-icon--action--active--color: get-brand-color($t2-color-map-key__action, dark) !default;
+
+$a-icon--action-nav--color:         get-brand-color($t2-color-map-key__action-nav)       !default;
+$a-icon--action-nav--active--color: get-brand-color($t2-color-map-key__action-nav, dark) !default;
+
+$a-icon--negative--color: $t2-color__negative !default;
+$a-icon--positive--color: $t2-color__positive !default;
+$a-icon--subtle--color:   $t2-color__gray-80 !default;
+$a-icon--notice--color:   get-ui-color(o, light) !default;
+
+$a-icon--extra-minor--font-size: $t2-font-size__icon-xxs !default;
+$a-icon--minor--font-size:       $t2-font-size__icon-s   !default;
+$a-icon--medium--font-size:      $t2-font-size__icon-m   !default;
+$a-icon--major--font-size:       $t2-font-size__icon-l   !default;
+$a-icon--extra-major--font-size: $t2-font-size__icon-xl  !default;
+
+
+// Styling for the Icon ATOM
+i.as-a-icon {
+  display: inline;
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  pointer-events: initial;
+  width: auto;
+  height: auto;
+}
+
+// --color
+i.as-a-icon--primary {
+  color: $a-icon--primary--color;
+}
+
+i.as-a-icon--secondary {
+  color: $a-icon--secondary--color;
+}
+
+i.as-a-icon--tertiary {
+  color: $a-icon--tertiary--color;
+}
+
+i.as-a-icon--action {
+  color: $a-icon--action--color;
+
+  @include active-icon-color($a-icon--action--active--color);
+}
+
+i.as-a-icon--action-nav {
+  color: $a-icon--action-nav--color;
+
+  @include active-icon-color($a-icon--action-nav--active--color);
+}
+
+i.as-a-icon--negative {
+  color: $a-icon--negative--color;
+}
+
+i.as-a-icon--positive {
+  color: $a-icon--positive--color;
+}
+
+i.as-a-icon--subtle {
+  color: $a-icon--subtle--color;
+}
+
+i.as-a-icon--notice {
+  color: $a-icon--notice--color;
+}
+
+
+// --size
+i.as-a-icon--extra-minor {
+  @include icon($position: both, $styles: false) {
+    font-size: $a-icon--extra-minor--font-size;
+  }
+}
+
+i.as-a-icon--minor {
+  @include icon($position: both, $styles: false) {
+    font-size: $a-icon--minor--font-size;
+  }
+}
+
+i.as-a-icon--medium {
+  @include icon($position: both, $styles: false) {
+    font-size: $a-icon--medium--font-size;
+  }
+}
+
+i.as-a-icon--major {
+  @include icon($position: both, $styles: false) {
+    font-size: $a-icon--major--font-size;
+  }
+}
+
+i.as-a-icon--extra-major {
+  @include icon($position: both, $styles: false) {
+    font-size: $a-icon--extra-major--font-size;
+  }
+}

@@ -1,0 +1,47 @@
+// Margin/Padding helpers
+@each $breakpoint, $from in $t2-grid__base-ranges {
+  @include mq($from) {
+    @each $space in $spacing-scale-map {
+      .margin-#{$breakpoint}-#{parse-dotless($space)} {
+        margin: #{get-spacing($space)};
+      }
+    
+      .margin-top-#{$breakpoint}-#{parse-dotless($space)} {
+        margin-top: #{get-spacing($space)};
+      }
+    
+      .margin-bottom-#{$breakpoint}-#{parse-dotless($space)} {
+        margin-bottom: #{get-spacing($space)};
+      }
+    
+      .margin-left-#{$breakpoint}-#{parse-dotless($space)} {
+        margin-left: #{get-spacing($space)};
+      }
+    
+      .margin-right-#{$breakpoint}-#{parse-dotless($space)} {
+        margin-right: #{get-spacing($space)};
+      }
+    
+      .padding-#{$breakpoint}-#{parse-dotless($space)} {
+        padding: #{get-spacing($space)};
+      }
+    
+      .padding-top-#{$breakpoint}-#{parse-dotless($space)} {
+        padding-top: #{get-spacing($space)};
+      }
+    
+      .padding-bottom-#{$breakpoint}-#{parse-dotless($space)} {
+        padding-bottom: #{get-spacing($space)};
+      }
+    
+      .padding-left-#{$breakpoint}-#{parse-dotless($space)} {
+        padding-left: #{get-spacing($space)};
+      }
+    
+      .padding-right-#{$breakpoint}-#{parse-dotless($space)} {
+        padding-right: #{get-spacing($space)};
+      }
+    }  
+  }
+}
+

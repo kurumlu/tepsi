@@ -1,0 +1,67 @@
+/* Link related styling mixins */
+
+// Simple Linked Sass @mixin
+// for styling :link, :visited and active pseudos
+@mixin linked {
+  &,
+  &:link,
+  &:visited,
+  &:active {
+    @content;
+  }
+}
+
+
+// Link hover/focus styling
+@mixin link-hover-styling(
+  $color: $t2-color__link-hover-bg,
+  $offset-x: $t2-config__link-hover-offset-x
+) {
+  &:focus,
+  &:hover {
+    background: $color;
+    box-shadow:
+      -#{$offset-x} 0 0 $color,
+      $offset-x 0 0 $color;
+    outline: none;
+  }
+}
+
+// Use this mixin to disable the default link-hover-styling in modifier classes
+@mixin link-disable-hover-styling {
+  &:focus,
+  &:hover {
+    background: transparent;
+    box-shadow: none;
+  }
+}
+
+// Use to wrap link selectors
+// selectors that are textual elements that links should blend with
+@mixin link-text-blend-selector {
+  .as-a-text,
+  .as-a-heading {
+    @content;
+  }
+}
+
+
+// Use to blend links with text
+// font related properties will be inherited and an underline will differentiate the link form the surrounding text
+@mixin link-text-blend {
+  // Mix with text
+  display: inline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  // Inherit all text properties
+  font: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  line-height: inherit;
+  color: inherit;
+
+  // Make link distinguishable with underline
+  text-decoration: underline;
+}

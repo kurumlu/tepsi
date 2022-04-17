@@ -1,0 +1,41 @@
+/* General functions
+ * Add new functions in the appropriate category file.
+ * In case of doubt, put your function here!
+ */
+
+@function add-to-map-if-not-null($map, $key, $value) {
+  @if variable_exists(value) and $value != null {
+    $map: map-merge($map, ($key: $value));
+  }
+
+  @return $map;
+}
+
+@function calculate-rem($size) {
+  $remSize: $size / $t2-font-size__base;
+  // FIXME: reset when rems can be used again
+  //@return #{$remSize}rem;
+
+  @return $size;
+}
+
+@function parse-dotless($value, $sign: '.') {
+  $this: quote('' + $value);
+  $dotIndex: str-index($this, $sign);
+
+  @if($dotIndex) {
+    @return str-slice($this,  0, $dotIndex - 1) + '_' + str-slice($this, $dotIndex + 1, str-length($this));
+  } @else {
+    @return $this;
+  }
+}
+
+
+
+@function get-z-index($layer, $context: $t2-z-indexes) {
+  @return map-get($context, $layer);
+}
+
+@function calculate-grid-area-width($columns: 1) {
+  @return 1 / 12 * $columns * 100%;
+}

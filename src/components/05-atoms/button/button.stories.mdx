@@ -1,0 +1,178 @@
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs/blocks';
+import {
+  Button,
+  ButtonVariant,
+  ButtonSize,
+} from './Button';
+
+<Meta title="Design system/Patterns/Atoms/Button" component={Button} />
+
+# Button
+
+> Button show the user how a button looks like.
+> They are typically placed ....
+
+<Canvas>
+  <Story name="Default">
+    <Button
+      label="Button"
+      variant={ButtonVariant.PRIMARY}
+      size={ButtonSize.DEFAULT}
+    />
+  </Story>
+</Canvas>
+
+---
+
+## Available props
+
+<ArgsTable for={Button} />
+
+---
+
+### Variant
+
+Use the `variant` prop to set the variant of the button.
+
+| Variant     |
+| ----------- |
+| `PRIMARY`   |
+| `SECONDARY` |
+| `TERTIARY`  |
+
+```javascript
+<Button variant={...} >...</Button>
+```
+
+#### Primary
+
+```javascript
+<Button variant={ButtonVariant.PRIMARY}>...</Button>
+```
+
+<Canvas>
+  <Story name="Variant - primary">
+    <Button
+      label="Button"
+      variant={ButtonVariant.PRIMARY}
+      size={ButtonSize.DEFAULT}
+    />
+  </Story>
+</Canvas>
+
+#### Secondary
+
+```javascript
+<Button variant={ButtonVariant.SECONDARY}>...</Button>
+```
+
+<Canvas>
+  <Story name="Variant- secondary">
+    <Button
+      label="Button"
+      variant={ButtonVariant.SECONDARY}
+      size={ButtonSize.DEFAULT}
+    />
+  </Story>
+</Canvas>
+
+#### Tertiary
+
+```javascript
+<Button variant={ButtonVariant.TERTIARY}>...</Button>
+```
+
+<Canvas>
+  <Story name="Variant - teriary">
+    <Button
+      label="Button"
+      variant={ButtonVariant.TERTIARY}
+      size={ButtonSize.DEFAULT}
+    />
+  </Story>
+</Canvas>
+
+---
+
+### Size
+
+Use the `size` prop to set the size of the button`.
+
+| Size      |
+| --------- |
+| `DEFAULT` |
+| `BIG`     |
+
+```javascript
+<Button size={...}>...</Button>
+```
+
+#### Default
+
+```javascript
+<Button size={ButtonSize.DEFAULT}>...</Button>
+```
+
+<Canvas>
+  <Story name="Size - default">
+    <Button
+      label="Button"
+      variant={ButtonVariant.PRIMARY}
+      size={ButtonSize.DEFAULT}
+    />
+  </Story>
+</Canvas>
+
+#### Big
+
+```javascript
+<Button size={ButtonSize.BIG}>...</Button>
+```
+
+<Canvas>
+  <Story name="Size - big">
+    <Button
+      label="Button"
+      variant={ButtonVariant.PRIMARY}
+      size={ButtonSize.BIG}
+    />
+  </Story>
+</Canvas>
+
+### Disabled
+
+Use the `disabled` prop to set state of the button`.
+
+```javascript
+<Button disabled>...</Button>
+```
+
+<Canvas>
+  <Story name="Disabled">
+    <Button
+      disabled
+      label="Button"
+      variant={ButtonVariant.PRIMARY}
+      size={ButtonSize.DEFAULT}
+    />
+  </Story>
+</Canvas>
+
+### Dark
+
+Use the `dark` prop to set color of the button.
+
+```javascript
+<Button dark>...</Button>
+```
+
+<Canvas>
+  <Story name="Dark">
+    <Button
+      dark
+      label="Button"
+      variant={ButtonVariant.PRIMARY}
+      size={ButtonSize.DEFAULT}
+    />
+  </Story>
+</Canvas>

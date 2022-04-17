@@ -1,0 +1,28 @@
+
+$storybook-style-product-tile-wrapper--mobile--max-width: 136px;
+$storybook-style-product-tile-wrapper--tablet--max-width: 224px;
+$storybook-style-product-tile-wrapper--desktop--max-width: 316px;
+
+$storybook-style-carousel-product-tiles-wrapper--mobile--max-width: 2 * $storybook-style-product-tile-wrapper--mobile--max-width;
+$storybook-style-carousel-product-tiles-wrapper--tablet--max-width: 2 * $storybook-style-product-tile-wrapper--tablet--max-width;
+$storybook-style-carousel-product-tiles-wrapper--desktop--max-width: 2 * $storybook-style-product-tile-wrapper--desktop--max-width;
+
+.storybook-style-product-tile-wrapper {
+  max-width: $storybook-style-product-tile-wrapper--tablet--max-width;
+
+  @include mq(desktop) {
+    max-width: $storybook-style-product-tile-wrapper--desktop--max-width;
+  }
+}
+
+.storybook-style-carousel-product-tiles-wrapper {
+  max-width: $storybook-style-carousel-product-tiles-wrapper--mobile--max-width;
+
+  @include mq(tablet) {
+    max-width: $storybook-style-carousel-product-tiles-wrapper--tablet--max-width;
+  }
+
+  @include mq(desktop) {
+    max-width: $storybook-style-carousel-product-tiles-wrapper--desktop--max-width;
+  }
+}

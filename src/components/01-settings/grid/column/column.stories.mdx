@@ -1,0 +1,141 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { withStyleGrid } from '../../../../storybook_addons/storyWrapperDecorator';
+
+import { Column } from '../column/Column';
+import { Row } from '../row/Row';
+
+<Meta
+  title="Design system/Patterns/Settings/Grid/Column"
+  component={Column}
+  decorators={[withStyleGrid]}
+/>
+
+# Column
+
+## Available props:
+
+| Name              | Type                        | Required | Default value |
+|-------------------|-----------------------------|----------|---------------|
+| `parent`          | *boolean*                   |          |               |
+| `gutter`          | *boolean*                   |          | *true*        |
+| `gutterLeft`      | *boolean*                   |          |               |
+| `gutterRight`     | *boolean*                   |          |               |
+| `gutterBottom`    | *boolean*                   |          |               |
+| `gutterTop`       | *boolean*                   |          |               |
+| `noGutterLeft`    | *boolean*                   |          |               |
+| `noGutterRight`   | *boolean*                   |          |               |
+| `grid`            | *number or ColumnGridProps* |          | *12*          |
+| `mobile`          | *number or ColumnGridProps* |          |               |
+| `mobileLarge`     | *number or ColumnGridProps* |          |               |
+| `tabletSmall`     | *number or ColumnGridProps* |          |               |
+| `tablet`          | *number or ColumnGridProps* |          |               |
+| `desktop`         | *number or ColumnGridProps* |          |               |
+| `desktopSpecific` | *number or ColumnGridProps* |          |               |
+| `desktopLarge`    | *number or ColumnGridProps* |          |               |
+| `className`       | *string*                    |          |               |
+| `dataQA`          | *string*                    |          |               |
+
+```javascript
+interface ColumnGridProps {
+  span: number;
+  pull?: number;
+  push?: number;
+};
+```
+
+## Examples
+
+### 12 Columns:
+<Canvas>
+  <Story name="columns-12">
+    <Row parent>
+      <Column grid={1}>1</Column>
+      <Column grid={1}>2</Column>
+      <Column grid={1}>3</Column>
+      <Column grid={1}>4</Column>
+      <Column grid={1}>5</Column>
+      <Column grid={1}>6</Column>
+      <Column grid={1}>7</Column>
+      <Column grid={1}>8</Column>
+      <Column grid={1}>9</Column>
+      <Column grid={1}>10</Column>
+      <Column grid={1}>11</Column>
+      <Column grid={1}>12</Column>
+    </Row>
+  </Story>
+</Canvas>
+
+### 4 Columns:
+<Canvas>
+  <Story name="columns-4">
+    <Row parent>
+      <Column grid={3}>1</Column>
+      <Column grid={3}>2</Column>
+      <Column grid={3}>3</Column>
+      <Column grid={3}>4</Column>
+    </Row>
+  </Story>
+</Canvas>
+
+### 2 Columns:
+<Canvas>
+  <Story name="columns-2">
+    <Row parent>
+      <Column grid={6}>1</Column>
+      <Column grid={6}>2</Column>
+    </Row>
+  </Story>
+</Canvas>
+
+### Reverse Columns:
+<Canvas>
+  <Story name="columns-reverse">
+    <Row parent>
+      <Column grid={{ span: 6, push: 6 }}>1</Column>
+      <Column grid={{ span: 6, pull: 6 }}>2</Column>
+    </Row>
+  </Story>
+</Canvas>
+
+### Responsive Columns:
+<Canvas>
+  <Story name="columns-responsive">
+    <Row parent>
+      <Column mobile={12} tablet={6} desktop={3}>
+        1
+      </Column>
+      <Column mobile={12} tablet={6} desktop={3}>
+        2
+      </Column>
+      <Column mobile={12} tablet={6} desktop={3}>
+        3
+      </Column>
+      <Column mobile={12} tablet={6} desktop={3}>
+        4
+      </Column>
+    </Row>
+  </Story>
+</Canvas>
+
+### Multiple Rows:
+<Canvas>
+  <Story name="rows-multiple">
+    <React.Fragment>
+      <Row parent>
+        <Column grid={6}>1</Column>
+        <Column grid={6}>2</Column>
+      </Row>
+      <Row parent>
+        <Column grid={3}>1</Column>
+        <Column grid={3}>2</Column>
+        <Column grid={3}>3</Column>
+        <Column grid={3}>4</Column>
+      </Row>
+      <Row parent>
+        <Column grid={4}>1</Column>
+        <Column grid={4}>2</Column>
+        <Column grid={4}>3</Column>
+      </Row>
+    </React.Fragment>
+  </Story>
+</Canvas>

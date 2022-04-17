@@ -1,0 +1,75 @@
+$t-box--background-color: transparent !default;
+$t-box--mobile-bleed--marginX: -(get-spacing(2)) !default;
+$t-box--tablet-bleed--marginX: -(get-spacing(3)) !default;
+
+$t-box--with-shadow--box-shadow: 0 get-spacing(0.5) get-spacing(2) $t2-color__fade-dark-15 !default;
+
+$box-themes: (
+  'primary': $t2-color__gray-10,
+  'secondary': rgba(get-ui-color(g), 0.1),
+  'secondary-light': rgba(get-ui-color(g, light), .15),
+  'tertiary': rgba(get-ui-color(b), 0.1),
+  'tertiary-light': rgba(get-ui-color(b, regular), .05),
+  'quaternary': rgba(get-ui-color(r, light), .15),
+  'external': $t-box--background-color,
+  'white': $t2-color__white,
+  'notice': rgba($t2-color__notice, 0.1),
+  'none': $t-box--background-color,
+) !default;
+
+$box-opacity: 0, 0.25, 0.5, 0.75;
+
+$t-box--theme--color: $t2-color__foreground !default;
+$t-box--theme--line-height: $t2-line-height__s !default;
+$t-box--theme--heading--font-map: $t2-font-map__heading !default;
+$t-box--theme--heading--font-size: $t2-font-size__body-m !default;
+$t-box--theme--heading--line-height: $t2-line-height__xxs !default;
+$t-box--theme--heading--margin-bottom: get-spacing(2) !default;
+
+.as-t-box {
+  background-color: $t-box--background-color;
+}
+
+@each $key, $box-theme in $box-themes {
+  @each $device in (mobile, tablet, desktop) {
+    .as-t-box-#{$device}--#{$key} {
+      @include mq($from: #{$device}) {
+        background-color: $box-theme;
+        color: $t-box--theme--color;
+        line-height: $t-box--theme--line-height;
+      }
+    }
+  }
+}
+
+.as-t-box--mobile-bleed {
+  @include mq($until: tablet) {
+    margin-left: $t-box--mobile-bleed--marginX;
+    margin-right: $t-box--mobile-bleed--marginX;
+  }
+}
+
+.as-t-box--tablet-bleed {
+  @include mq($from: tablet, $until: desktop) {
+    margin-left: $t-box--tablet-bleed--marginX;
+    margin-right: $t-box--tablet-bleed--marginX;
+  }
+}
+
+.as-t-box--with-shadow {
+  box-shadow: $t-box--with-shadow--box-shadow;
+}
+
+@each $key in $box-opacity {
+  .as-t-box--opacity-#{parse-dotless($key)} {
+    opacity: $key;
+  }
+}
+
+.as-t-box--hidden {
+  display: none;
+}
+
+.as-t-box--interactive {
+  cursor: pointer;
+}

@@ -1,0 +1,109 @@
+@font-face {
+  font-family: 'tepsi-fontello';
+  src: url('#{$asset_base_path}/assets/fonts/fontello/fontello.eot');
+  src: url('#{$asset_base_path}/assets/fonts/fontello/fontello.eot') format('embedded-opentype'),
+  url('#{$asset_base_path}/assets/fonts/fontello/fontello.woff2') format('woff2'),
+  url('#{$asset_base_path}/assets/fonts/fontello/fontello.woff') format('woff'),
+  url('#{$asset_base_path}/assets/fonts/fontello/fontello.ttf') format('truetype'),
+  url('#{$asset_base_path}/assets/fonts/fontello/fontello.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?66489514#fontello') format('svg');
+  }
+}
+*/
+
+[class^="as-icon-"],
+[class*=" as-icon-"] {
+  @include icon;
+}
+
+.as-icon-close:before { content: '\e800'; }
+.as-icon-heart:before { content: '\e801'; }
+.as-icon-globe:before { content: '\e802'; }
+.as-icon-cart:before { content: '\e803'; }
+.as-icon-truck:before { content: '\e804'; }
+.as-icon-magnify:before { content: '\e805'; }
+.as-icon-linkedin-box:before { content: '\e806'; }
+.as-icon-pinterest-box:before { content: '\e807'; }
+.as-icon-twitter-box:before { content: '\e808'; }
+.as-icon-instagram:before { content: '\e809'; }
+.as-icon-google-plus-box:before { content: '\e80a'; }
+.as-icon-facebook-box:before { content: '\e80b'; }
+.as-icon-map-marker:before { content: '\e83b'; }
+.as-icon-eye-off:before { content: '\e80d'; }
+.as-icon-filter:before { content: '\e80e'; }
+.as-icon-pencil:before { content: '\e80f'; }
+.as-icon-play-circle:before { content: '\e810'; }
+.as-icon-play-circled2:before { content: '\e82e'; }
+.as-icon-check:before { content: '\e811'; }
+.as-icon-view-list:before { content: '\e812'; }
+.as-icon-magnify-plus-outline:before { content: '\e813'; }
+.as-icon-magnify-minus-outline:before { content: '\e814'; }
+.as-icon-menu:before { content: '\e815'; }
+.as-icon-subdirectory-arrow-right:before { content: '\e816'; }
+.as-icon-chevron-down:before { content: '\e817'; }
+.as-icon-chevron-up:before { content: '\e818'; }
+.as-icon-chevron-right:before { content: '\e819'; }
+.as-icon-chevron-left:before { content: '\e81a'; }
+.as-icon-arrow-top-right:before { content: '\e81b'; }
+.as-icon-arrow-top-left:before { content: '\e81c'; }
+.as-icon-arrow-left:before { content: '\e81d'; }
+.as-icon-star:before { content: '\e81e'; }
+.as-icon-store:before { content: '\e81f'; }
+.as-icon-calendar-text-outline:before { content: '\e820'; }
+.as-icon-email:before { content: '\e821'; }
+.as-icon-information-outline:before { content: '\e822'; }
+.as-icon-phone:before { content: '\e823'; }
+.as-icon-account-multiple:before { content: '\e824'; }
+.as-icon-message:before { content: '\e825'; }
+.as-icon-heart-empty:before { content: '\e826'; }
+.as-icon-plus:before { content: '\e827'; }
+.as-icon-minus:before { content: '\e82f'; }
+.as-icon-eye-outline:before { content: '\e828'; }
+.as-icon-amazon:before { content: '\e829'; }
+.as-icon-exclamation-circle-solid:before { content: '\e82a'; }
+.as-icon-exclamation-triangle-solid:before { content: '\e82b'; }
+.as-icon-user-solid:before { content: '\e82c'; }
+.as-icon-user-check-solid:before { content: '\e82d'; }
+.as-icon-left:before { content: '\f177'; }
+.as-icon-right:before { content: '\f178'; }
+.as-icon-female:before { content: '\e854'; }
+.as-icon-male:before { content: '\e855'; }
+.as-icon-bell-solid:before { content: '\e859'; }
+.as-icon-cookie-bite-solid:before { content: '\e8a6'; }
+.as-icon-unisex:before { content: '\e80c'; }
+.as-icon-girl:before { content: '\e89b'; }
+.as-icon-boy:before { content: '\ed98'; }
+.as-icon-junior:before { content: '\e83d'; }
+.as-icon-arrow-right:before { content: '\e833'; }
+.as-icon-book:before { content: '\e89e'; }
+.as-icon-t-shirt-solid:before { content: '\e835'; }
+.as-icon-fit-finder:before { content: '\e874'; }
+.as-icon-trash:before { content: '\e872'; }
+.as-icon-redo-solid:before { content: '\e873'; }
+.as-icon-credit-card:before { content: '\e830'; }
+.as-icon-truck-reverse:before { content: '\e8b2'; }
+.as-icon-gift-solid:before { content: '\e83a'; }
+.as-icon-light-bulb:before { content: '\e877'; }
+.as-icon-angellist:before { content: '\f209'; }
+.as-icon-mouse-pointer:before { content: '\f245'; }
+.as-icon-tag:before { content: '\e831'; }
+.as-icon-ticket:before { content: '\e834'; }
+.as-icon-gift:before { content: '\e836'; }
+.as-icon-info-circled-alt:before { content: '\f086'; }
+.as-icon-check-box:before { content: '\e832'; }
+.as-icon-home:before { content: '\e837'; }
+.as-icon-location:before { content: '\f031'; }
+.as-icon-circle:before { content: '\f111'; }
+.as-icon-commerical-building:before { content: '\e838'; }
+.as-icon-credit-card-cvc:before { content: '\e87a'; }
+.as-icon-download:before { content: '\e839'; }
+.as-icon-leaf:before { content: '\e8b9'; }

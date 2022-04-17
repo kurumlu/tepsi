@@ -1,0 +1,8 @@
+// Absolute Horizontal And Vertical Centering
+
+@mixin align-to-center($position: absolute) {
+  position: $position;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}

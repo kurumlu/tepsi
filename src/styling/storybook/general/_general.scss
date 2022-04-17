@@ -1,0 +1,60 @@
+.sb-show-main {
+  margin: 0;
+}
+
+.storybook-wrapper {
+  display: flex;
+  box-sizing: border-box;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 0;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  outline: none;
+  padding: get-spacing(2);
+  margin: 0;
+
+  font-family: sans-serif;
+  color: black;
+
+  @include mq($from: tablet) {
+    padding: get-spacing(3);
+  }
+
+  @include mq($from: desktop) {
+    padding: get-spacing(6);
+  }
+}
+
+.storybook-wrapper--color-gray {
+  justify-content: center;
+  align-items: center;
+  background-color: $t2-color__gray-10;
+}
+
+.storybook-full-width {
+  width: 100%;
+}
+
+.storybook-icon-showcase {
+  font-size: 3rem;
+}
+
+// Colors for types in a *.mdx file
+#docs-root td {
+  code {
+    color: #25F;
+    font-weight: 600;
+  }
+
+  em {
+    color: #F50;
+  }
+}
+
+.sbdocs-hr {
+  height: 1px;
+  margin: 2em auto;
+  background: rgba(0,0,0,.1);
+}

@@ -1,0 +1,46 @@
+/* ==========================================================================
+   #TYPOGRAPHY-VARIABLES
+   ========================================================================== */
+
+// Font-maps
+$t2-font-map__body:       $t1-font-map__main    !default;
+$t2-font-map__body-emp:   $t1-font-map__second  !default;
+$t2-font-map__heading:    $t1-font-map__third   !default;
+$t2-font-map__action:     $t1-font-map__main    !default;
+$t2-font-map__action-emp: $t1-font-map__second  !default;
+
+// Font-sizes
+$t2-font-size__base: $t1-font-size__base; // No default rule, this sets 1rem
+
+$t2-font-size__heading-xl: 2     * $t1-font-size__base  !default;
+$t2-font-size__heading-l:  1.75  * $t1-font-size__base  !default;
+$t2-font-size__heading-m:  1.5   * $t1-font-size__base  !default;
+$t2-font-size__heading-s:  1.25  * $t1-font-size__base  !default;
+$t2-font-size__heading-xs: 1.125 * $t1-font-size__base  !default;
+$t2-font-size__heading-xxs: 1    * $t1-font-size__base  !default;
+
+$t2-font-size__body-xl:    1.5   * $t1-font-size__base  !default;
+$t2-font-size__body-l:     1.125 * $t1-font-size__base  !default;
+$t2-font-size__body-m:     1     * $t1-font-size__base  !default;
+$t2-font-size__body-s:     0.875 * $t1-font-size__base  !default;
+$t2-font-size__body-xs:    0.75  * $t2-font-size__base  !default;
+$t2-font-size__body-xxs:   0.625 * $t2-font-size__base  !default;
+$t2-font-size__body-xxxs:  0.5   * $t2-font-size__base  !default;
+
+$t2-font-size__action:     1     * $t1-font-size__base  !default;
+$t2-font-size__action-s:   0.875 * $t1-font-size__base  !default;
+
+$t2-font-size__icon-xl:    1.875 * $t1-font-size__base  !default;
+$t2-font-size__icon-l:     1.5   * $t1-font-size__base  !default;
+$t2-font-size__icon-m:     1.25  * $t1-font-size__base  !default;
+$t2-font-size__icon-s:     1     * $t1-font-size__base  !default;
+$t2-font-size__icon-xs:    0.875 * $t1-font-size__base  !default;
+$t2-font-size__icon-xxs:   0.75  * $t1-font-size__base  !default;
+
+// Line-height
+$t2-line-height__l:    1.56  !default;
+$t2-line-height__m:    1.5   !default;
+$t2-line-height__s:    1.43  !default;
+$t2-line-height__xs:   1.4   !default;
+$t2-line-height__xxs:  1.33  !default;
+$t2-line-height__xxxs: 1.25  !default;

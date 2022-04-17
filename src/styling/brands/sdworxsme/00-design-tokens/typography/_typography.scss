@@ -1,0 +1,31 @@
+/* ==========================================================================
+   #TYPOGRAPHY-VARIABLES
+   ========================================================================== */
+
+// Font-maps
+$t1-font-map__main: (
+  family: 'Arial',
+  fallback: sans-serif,
+  weight: 400,
+  style: normal,
+  letter-spacing: normal,
+  text-transform: none
+);
+
+$t1-font-map__second: (
+  family: 'Arial',
+  fallback: sans-serif,
+  weight: 700,
+  style: normal,
+  letter-spacing: normal,
+  text-transform: none
+);
+
+$t1-font-map__third: (
+  family: 'CamingoDosProBold',
+  fallback: sans-serif,
+  weight: bold,
+  style: normal,
+  letter-spacing: normal,
+  text-transform: none
+);

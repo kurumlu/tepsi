@@ -1,0 +1,31 @@
+/* ==========================================================================
+   #CONFIG-VARIABLES
+   ========================================================================== */
+
+// These variables must act as constants, hence the uppercase
+$ENV: 'development'!default;
+
+// General page config
+$t2-config__page-max-width: 1400px  !default;
+$t2-config__page-padding: 12px  !default;
+$t2-config__page-padding-desktop: 32px  !default;
+
+// Lister page config
+$t2-config__filter-bar-width: 288px  !default;
+
+// Product-tile config
+$t2-product-tile-image--width: 316;
+$t2-product-tile-image--height: 474;
+$t2-product-tile-image--ratio: $t2-product-tile-image--height / $t2-product-tile-image--width;
+
+// Link config
+$t2-config__link-hover-offset-x: 2px !default;
+
+// Nav-bar config
+$t2-config__nav-bar-height: 104px !default;
+
+// Navigation content config
+$t2-config__nav-content-size-max: 209px !default;
+$t2-config__nav-content-margin: $t1-spacing__base-unit !default;
+$t2-config__nav-content-gap: $t2-config__nav-content-margin * 2;
+$t2-config__nav-content-full-size-max: $t2-config__nav-content-size-max * 2 + $t2-config__nav-content-gap;

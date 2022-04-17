@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Heading /> Alignment Center 1`] = `
+<h2
+  className="as-a-heading as-a-heading--xl as-a-heading--center"
+>
+  Alignment Center
+</h2>
+`;
+
+exports[`<Heading /> Alignment Left 1`] = `
+<h2
+  className="as-a-heading as-a-heading--xl as-a-heading--left"
+>
+  Alignment Left
+</h2>
+`;
+
+exports[`<Heading /> Alignment Right 1`] = `
+<h2
+  className="as-a-heading as-a-heading--xl as-a-heading--right"
+>
+  Alignment Right
+</h2>
+`;
+
+exports[`<Heading /> Component accepts extra class 1`] = `
+<h2
+  className="as-a-heading as-a-heading--xl testClassName"
+>
+  Component accepts extra class
+</h2>
+`;
+
+exports[`<Heading /> Default 1`] = `
+<h2
+  className="as-a-heading as-a-heading--xl"
+>
+  Default heading
+</h2>
+`;
+
+exports[`<Heading /> Priority h1 1`] = `
+<h1
+  className="as-a-heading as-a-heading--xl"
+>
+  Priority H1
+</h1>
+`;
+
+exports[`<Heading /> Priority h2 1`] = `
+<h2
+  className="as-a-heading as-a-heading--xl"
+>
+  Priority H2
+</h2>
+`;
+
+exports[`<Heading /> Priority h3 1`] = `
+<h3
+  className="as-a-heading as-a-heading--xl"
+>
+  Priority H3
+</h3>
+`;
+
+exports[`<Heading /> Priority h4 1`] = `
+<h4
+  className="as-a-heading as-a-heading--xl"
+>
+  Priority H4
+</h4>
+`;
+
+exports[`<Heading /> Priority h5 1`] = `
+<h5
+  className="as-a-heading as-a-heading--xl"
+>
+  Priority H5
+</h5>
+`;
+
+exports[`<Heading /> Size L 1`] = `
+<h2
+  className="as-a-heading as-a-heading--l"
+>
+  Size L
+</h2>
+`;
+
+exports[`<Heading /> Size M 1`] = `
+<h2
+  className="as-a-heading as-a-heading--m"
+>
+  Size M
+</h2>
+`;
+
+exports[`<Heading /> Size S 1`] = `
+<h2
+  className="as-a-heading as-a-heading--s"
+>
+  Size S
+</h2>
+`;
+
+exports[`<Heading /> Size XL 1`] = `
+<h2
+  className="as-a-heading as-a-heading--xl"
+>
+  Size XL
+</h2>
+`;
+
+exports[`<Heading /> Size XS 1`] = `
+<h2
+  className="as-a-heading as-a-heading--xs"
+>
+  Size XS
+</h2>
+`;

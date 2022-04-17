@@ -1,0 +1,50 @@
+@charset 'utf-8';
+
+// Welcome to Tepsi - SDWorx styling
+//
+// Structure is based on a original post by Harry Roberts:
+// https://www.creativebloq.com/web-design/manage-large-css-projects-itcss-101517528
+
+// 00. Design Tokens
+@import '00-design-tokens/design-tokens';
+@import '../../master/00-design-tokens/design-tokens';
+
+// 01. Settings
+@import '01-settings/settings';
+@import '../../master/01-settings/settings';
+
+// 02. Tools
+@import '../../master/02-tools/tools';
+
+// 03. Vendor
+@import '03-vendors/vars';
+@import '../../master/03-vendors/vendors';
+
+// 04. Generic
+//@import '04-generic/vars';
+@import '../../master/04-generic/generic';
+@import '04-generic/generic';
+
+// 05. Atoms
+@import '05-atoms/vars';
+@import '../../master/05-atoms/atoms';
+@import '05-atoms/atoms';
+
+// 06. Molecules
+@import '06-molecules/vars';
+@import '../../master/06-molecules/molecules';
+@import '06-molecules/molecules';
+
+// 07. Organisms
+@import '07-organisms/vars';
+@import '../../master/07-organisms/organisms';
+@import '07-organisms/organisms';
+
+// 08. Templates
+@import '08-templates/vars';
+@import '../../master/08-templates/templates';
+@import '08-templates/templates';
+
+// 99. Utilities
+@import '../../master/99-utilities/utilities';
+

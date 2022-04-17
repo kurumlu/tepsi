@@ -1,0 +1,35 @@
+.sd-button {
+  background-color: get-brand-color(primary);
+  color: $t2-color__white;
+  padding: get-spacing(1) get-spacing(2);
+  border: none;
+  border-radius: get-spacing(.5);
+  box-shadow:  0 0.5rem 1.5rem 0rem $t2-color__gray-20;
+  font-size: $t2-font-size__body-m;
+}
+
+// size
+.sd-button--big {
+  font-size: $t2-font-size__body-l;
+  padding: get-spacing(2) get-spacing(3);
+}
+
+// variant
+.sd-button--secondary {
+  background-color: get-brand-color(secondary);
+}
+
+.sd-button--tertiary {
+  background-color: get-brand-color(tertiary);
+}
+
+//disabled
+.sd-button--disabled {
+  background-color: get-brand-color(primary, light);
+}
+
+//dark
+.sd-button--dark {
+  background-color: get-brand-color(primary, dark);
+}
+

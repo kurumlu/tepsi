@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MobileNavScrollObserver /> renders with default props: default 1`] = `
+<span
+  style={
+    Object {
+      "display": "none",
+    }
+  }
+/>
+`;

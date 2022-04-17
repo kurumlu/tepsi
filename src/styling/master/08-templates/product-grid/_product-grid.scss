@@ -1,0 +1,93 @@
+$t-product-grid--gutter--small: get-spacing(2) !default;
+$t-product-grid--gutter--medium: get-spacing(3) !default;
+$t-product-grid--gutter--large: get-spacing(4) !default;
+
+$t-product-grid--vertical-gutter--small: get-spacing(4) !default;
+$t-product-grid--vertical-gutter--medium: get-spacing(5) !default;
+$t-product-grid--vertical-gutter--large: get-spacing(5) !default;
+
+.as-t-product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin: -#{$t-product-grid--vertical-gutter--small / 2} -#{$t-product-grid--gutter--small / 2};
+
+  @include mq($from: tablet, $until: desktop) {
+    margin: -#{$t-product-grid--vertical-gutter--medium / 2} -#{$t-product-grid--gutter--medium / 2};
+  }
+  @include mq($from: desktop) {
+    margin: -#{$t-product-grid--vertical-gutter--large / 2} -#{$t-product-grid--gutter--large / 2};
+  }
+}
+
+.as-t-product-grid__item {
+  width: calc(100% / 2 - #{$t-product-grid--gutter--small});
+  margin: #{$t-product-grid--vertical-gutter--small / 2} #{$t-product-grid--gutter--small / 2};
+
+  @include mq($until: tablet) {
+    @include grid-order-calculator(2)
+  }
+
+  @include mq($from: tablet, $until: desktop-large) {
+    @include grid-order-calculator(3);
+  }
+
+  @include mq($from: tablet, $until: desktop) {
+    width: calc(100% / 3 - #{$t-product-grid--gutter--medium});
+    margin: #{$t-product-grid--vertical-gutter--small / 2} #{$t-product-grid--gutter--medium / 2};
+  }
+
+  @include mq($from: desktop) {
+    width: calc(100% / 3 - #{$t-product-grid--gutter--large});
+    margin: #{$t-product-grid--vertical-gutter--large / 2} #{$t-product-grid--gutter--large / 2};
+  }
+
+  @include mq($from: desktop-large) {
+    width: calc(100% / 4 - #{$t-product-grid--gutter--large});
+    @include grid-order-calculator(4);
+  }
+}
+
+.as-t-product-grid__item--desktop-narrow {
+  @include mq($from: desktop) {
+    width: calc(100% / 5 - #{$t-product-grid--gutter--large});
+    margin: #{$t-product-grid--vertical-gutter--large / 2} #{$t-product-grid--gutter--large / 2};
+  }
+  
+  @include mq($from: desktop-large) {
+    width: calc(100% / 5 - #{$t-product-grid--gutter--large});
+    margin: #{$t-product-grid--vertical-gutter--large / 2} #{$t-product-grid--gutter--large / 2};
+  }
+}
+
+.as-t-product-grid__item--extended {
+  @include mq($from: tablet, $until: desktop) {
+    width: calc(#{percentage(2/3)} - #{$t-product-grid--gutter--medium});
+  }
+
+  @include mq($from: desktop) {
+    width: calc(#{percentage(2/3)} - #{$t-product-grid--gutter--large});
+  }
+
+  @include mq($from: desktop-large) {
+    width: calc(#{percentage(3/4)} - #{$t-product-grid--gutter--large});
+  }
+}
+
+.as-t-product-grid__item--mobile-fullwidth {
+  @include mq($until: tablet) {
+    width: 100%;
+    margin: #{$t-product-grid--vertical-gutter--small / 2} 0;
+  }
+}
+
+.as-t-product-grid__banner {
+  width: 100%;
+  display: block;
+}
+
+@for $i from 0 through 4 {
+  .as-t-product-grid__banner--row-#{$i} {
+    order: $i;
+  }
+}

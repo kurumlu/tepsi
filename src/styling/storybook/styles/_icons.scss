@@ -1,0 +1,41 @@
+.storybook-style-icons-wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.storybook-style-icons-wrapper__title {
+  width: 12.5rem;
+}
+
+.storybook-style-icons {
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
+  color: $t1-color__secondary;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  padding-left: 0;
+  width: 100%;
+}
+
+.storybook-style-icons__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 6.25rem;
+  margin-bottom: 1.5rem;
+  padding: 0 .25rem;
+}
+
+.storybook-style-icons__text {
+  font-size: 0.75rem;
+  font-style: normal;
+  margin-top: 0.25rem;
+  opacity: .6;
+}
+
+.storybook-flex-icon-container {
+  width: 5rem;
+  height: 5rem;
+  background: $t1-color__gray-10;
+}

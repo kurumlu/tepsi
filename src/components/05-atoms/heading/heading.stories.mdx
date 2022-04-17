@@ -1,0 +1,364 @@
+import { ArgsTable, Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import {
+  HeadingPriority,
+  HeadingSize,
+  HeadingType,
+  Heading,
+  HeadingAlignment,
+  HeadingColor,
+} from './Heading';
+
+<Meta
+  title="Design system/Patterns/Atoms/Heading"
+  component={Heading}
+/>
+
+# Heading
+
+<Canvas>
+  <Story name="Default">
+    <Heading>We believe there's no substitute for experience.</Heading>
+  </Story>
+</Canvas>
+
+---
+
+## Available props
+<ArgsTable of={Heading} />
+
+---
+
+### Priority
+
+The `priority` prop relates to the level of the h-tag that will be used. And does not relate to visual changes.
+Uses the `HeadingPriority` enum.
+By default this is set to render an `<h2>` tag.
+
+| HeadingPriority |
+|-----------------|
+| `H1`            |
+| `H2`            |
+| `H3`            |
+| `H4`            |
+| `H5`            |
+
+```javascript
+<Heading priority={...}>...</Heading>
+```
+
+#### H1
+
+```javascript
+<Heading priority={HeadingPriority.H1}>...</Heading>
+```
+
+<Canvas>
+  <Story name="Priority - 1">
+    <Heading priority={HeadingPriority.H1}>Priority H1</Heading>
+  </Story>
+</Canvas>
+
+#### H2
+
+```javascript
+<Heading priority={HeadingPriority.H2}>...</Heading>
+```
+
+<Canvas>
+  <Story name="Priority - 2">
+    <Heading priority={HeadingPriority.H2}>Priority H2</Heading>
+  </Story>
+</Canvas>
+
+#### H3
+
+```javascript
+<Heading priority={HeadingPriority.H3}>...</Heading>
+```
+
+<Canvas>
+  <Story name="Priority - 3">
+    <Heading priority={HeadingPriority.H3}>Priority H3</Heading>
+  </Story>
+</Canvas>
+
+#### H4
+
+```javascript
+<Heading priority={HeadingPriority.H4}>...</Heading>
+```
+
+<Canvas>
+  <Story name="Priority - 4">
+    <Heading priority={HeadingPriority.H4}>Priority H4</Heading>
+  </Story>
+</Canvas>
+
+#### H5
+
+```javascript
+<Heading priority={HeadingPriority.H5}>...</Heading>
+```
+
+<Canvas>
+  <Story name="Priority - 5">
+    <Heading priority={HeadingPriority.H5}>Priority H5</Heading>
+  </Story>
+</Canvas>
+
+---
+
+### Size
+
+Use the `size` prop to set a size. Uses the `HeadingSize` enum.
+
+| HeadingSize |
+|-------------|
+| `XL`        |
+| `L`         |
+| `M`         |
+| `S`         |
+| `XS`        |
+
+```javascript
+<Heading size={...}>...</Heading>
+```
+
+#### XLarge
+
+```javascript
+<Heading size={HeadingSize.XL}>...</Heading>
+```
+
+<Canvas>
+  <Story name="Size - XL">
+    <Heading size={HeadingSize.XL}>Size XL</Heading>
+  </Story>
+</Canvas>
+
+#### Large
+
+```javascript
+<Heading size={HeadingSize.L}>...</Heading>
+```
+
+<Canvas>
+  <Story name="Size - L">
+    <Heading size={HeadingSize.L}>Size L</Heading>
+  </Story>
+</Canvas>
+
+#### Medium
+
+```javascript
+<Heading size={HeadingSize.M}>...</Heading>
+```
+
+<Canvas>
+  <Story name="Size - M">
+    <Heading size={HeadingSize.M}>Size M</Heading>
+  </Story>
+</Canvas>
+
+#### Small
+
+```javascript
+<Heading size={HeadingSize.S}>...</Heading>
+```
+
+<Canvas>
+  <Story name="Size - S">
+    <Heading size={HeadingSize.S}>Size S</Heading>
+  </Story>
+</Canvas>
+
+#### XSmall
+
+```javascript
+<Heading size={HeadingSize.XS}>...</Heading>
+```
+
+<Canvas>
+  <Story name="Size - XS">
+    <Heading size={HeadingSize.XS}>Size XS</Heading>
+  </Story>
+</Canvas>
+
+---
+
+### Type
+
+Use the `type` prop to set a type. Uses the `HeadingType` enum.
+
+| HeadingType         |
+|---------------------|
+| `EXTRA_TITLE`       |
+| `TITLE`             |
+| `SUBTITLE`          |
+| `SMALL_TITLE`       |
+| `EXTRA_SMALL_TITLE` |
+
+```javascript
+<Heading type={...}>...</Heading>
+```
+
+#### Extra title
+
+```javascript
+<Heading type={HeadingType.EXTRA_TITLE}>...</Heading>
+```
+
+<Canvas>
+  <Story name="Type - extra title">
+    <Heading type={HeadingType.EXTRA_TITLE}>Type EXTRA_TITLE</Heading>
+  </Story>
+</Canvas>
+
+
+#### Title
+
+```javascript
+<Heading type={HeadingType.TITLE}>...</Heading>
+```
+
+<Canvas>
+  <Story name="Type - title">
+    <Heading type={HeadingType.TITLE}>Type TITLE</Heading>
+  </Story>
+</Canvas>
+
+#### SubTitle
+
+```javascript
+<Heading type={HeadingType.SUBTITLE}>...</Heading>
+```
+
+<Canvas>
+  <Story name="Type - subtitle">
+    <Heading type={HeadingType.SUBTITLE}>Type SUBTITLE</Heading>
+  </Story>
+</Canvas>
+
+#### Small title
+
+```javascript
+<Heading type={HeadingType.SMALL_TITLE}>...</Heading>
+```
+
+<Canvas>
+  <Story name="Type - small title">
+    <Heading type={HeadingType.SMALL_TITLE}>Type SMALL_TITLE</Heading>
+  </Story>
+</Canvas>
+
+#### Extra small title
+
+```javascript
+<Heading type={HeadingType.EXTRA_SMALL_TITLE}>...</Heading>
+```
+
+<Canvas>
+  <Story name="Type - extra small title">
+    <Heading type={HeadingType.EXTRA_SMALL_TITLE}>Type EXTRA_SMALL_TITLE</Heading>
+  </Story>
+</Canvas>
+
+---
+
+### Alignment
+
+Use the `alignment` prop to align the text within the element. Uses the `HeadingAlignment` enum.
+
+| HeadingAlignment |
+|------------------|
+| `LEFT`           |
+| `CENTER`         |
+| `RIGHT`          |
+
+```javascript
+<Heading alignment={...}>...</Heading>
+```
+
+#### Left
+
+```javascript
+<Heading alignment={HeadingAlignment.LEFT}>...</Heading>
+```
+
+<Canvas>
+  <Story name="Alignment - Left">
+    <Heading alignment={HeadingAlignment.LEFT}>Alignment Left</Heading>
+  </Story>
+</Canvas>
+
+#### Center
+
+```javascript
+<Heading alignment={HeadingAlignment.CENTER}>...</Heading>
+```
+
+<Canvas>
+  <Story name="Alignment - Center">
+    <Heading alignment={HeadingAlignment.CENTER}>Alignment Center</Heading>
+  </Story>
+</Canvas>
+
+#### Right
+
+```javascript
+<Heading alignment={HeadingAlignment.RIGHT}>...</Heading>
+```
+
+<Canvas>
+  <Story name="Alignment - Right">
+    <Heading alignment={HeadingAlignment.RIGHT}>Alignment Right</Heading>
+  </Story>
+</Canvas>
+
+---
+
+### Color
+
+Use the `color` prop to set a color. Uses the `HeadingColor` enum.
+
+#### Inherit
+
+```javascript
+<Heading color={HeadingColor.INHERIT}>...</Heading>
+```
+
+<Canvas>
+  <Story name="Color - inherit">
+    <span style={{color: 'purple'}}>
+      <Heading color={HeadingColor.INHERIT}>Color - Inherit</Heading>
+    </span>
+  </Story>
+</Canvas>
+
+---
+
+### Other
+
+Other props that can be added:
+- `className`
+- `dataQA`
+
+---
+
+## Examples
+
+Some examples of headings.
+
+---
+
+### Links
+
+An anchor inside of a heading atom (without tepsi classes: `as-...`) will blend with the heading and get an underline.
+
+<Canvas>
+  <Story name="Contains link">
+    <Heading>
+      We believe there’s no substitute for <a href="#">experience</a>.
+    </Heading>
+  </Story>
+</Canvas>

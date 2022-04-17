@@ -1,0 +1,17 @@
+/* ==========================================================================
+   #ANIMATIONS-TRANSITIONS-VARIABLES
+   ========================================================================== */
+
+// Time
+$t2-animation__transition-duration-vfast: .1s !default;
+$t2-animation__transition-duration-fast: .2s !default;
+$t2-animation__transition-duration-normal: .3s !default;
+$t2-animation__transition-duration-slow: .5s !default;
+
+$t2-animation__animation-duration-fast: .5s !default;
+$t2-animation__animation-duration-normal: 1.5s !default;
+$t2-animation__animation-duration-long: 2s !default;
+
+// Easing
+$t2-animation__easing-default: cubic-bezier(0.23, 1, 0.32, 1) !default;
+

@@ -1,0 +1,44 @@
+.storybook{
+
+  &-font {
+    & .emp {
+      @include font-map($t2-font-map__body-emp);
+    }
+
+    & .subtle {
+      color: $t2-color__subtle;
+    }
+
+    & .strike {
+      text-decoration: line-through;
+    }
+
+    & .positive {
+      color: $t2-color__positive;
+    }
+
+    & .negative {
+      color: $t2-color__negative;
+    }
+
+    & .left {
+      text-align: left;
+    }
+
+    & .center  {
+      text-align: center;
+    }
+
+    & .right {
+      text-align: right;
+    }
+
+    & .small {
+      font-size: $t2-font-size__body-s;
+    }
+
+    & .large {
+      font-size: $t2-font-size__body-l;
+    }
+  }
+}

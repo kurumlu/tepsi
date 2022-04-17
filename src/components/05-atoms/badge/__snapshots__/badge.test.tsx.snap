@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Badge /> has default max value is 99 1`] = `
+<div
+  className="as-a-badge"
+>
+  99+
+</div>
+`;
+
+exports[`<Badge /> renders <Badge /> component 1`] = `
+<div
+  className="as-a-badge as-a-badge--secondary as-a-badge--l"
+>
+  5
+</div>
+`;
+
+exports[`<Badge /> shows max 88+ in case count is higher then max value 1`] = `
+<div
+  className="as-a-badge as-a-badge--secondary as-a-badge--l"
+>
+  88+
+</div>
+`;

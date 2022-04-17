@@ -1,0 +1,28 @@
+/* ========================================================================
+//   #PLACEHOLDER
+//   ======================================================================== */
+
+$placeholders: '-webkit-input-placeholder', '-moz-placeholder', '-ms-input-placeholder';
+
+@mixin placeholder {
+  @each $placeholder in $placeholders {
+    @if $placeholder == '-webkit-input-placeholder' {
+      &::#{$placeholder} {
+        @content;
+      }
+    }
+    @else if $placeholder == '-moz-placeholder' {
+      &::#{$placeholder} {
+        @content;
+
+        opacity: 1;
+      }
+    }
+
+    @else {
+      &:#{$placeholder} {
+        @content;
+      }
+    }
+  }
+}

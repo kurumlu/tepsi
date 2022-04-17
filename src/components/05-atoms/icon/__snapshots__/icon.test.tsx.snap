@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Icon /> renders with default props 1`] = `
+<span
+  className="as-a-icon as-a-icon--heart as-a-icon--medium"
+  role="img"
+>
+  <svg
+    aria-hidden="true"
+    className="as-a-icon__svg"
+    focusable="false"
+  />
+</span>
+`;
+
+exports[`<Icon /> renders with props 1`] = `
+<span
+  className="as-a-icon as-a-icon--menu as-a-icon--positive as-a-icon--major as-a-icon-test"
+  role="img"
+>
+  <svg
+    aria-hidden="true"
+    className="as-a-icon__svg"
+    focusable="false"
+  />
+</span>
+`;

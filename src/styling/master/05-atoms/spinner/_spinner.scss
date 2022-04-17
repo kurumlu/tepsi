@@ -1,0 +1,31 @@
+$a-spinner--base: $t2-color__white !default;
+$a-spinner--color: get-brand-color() !default;
+
+$a-spinner--large: get-spacing(6) !default;
+$a-spinner--small: get-spacing(3) !default;
+
+$a-spinner--duration: $t2-animation__animation-duration-normal !default;
+$a-spinner--offset: 140 !default;
+
+.as-a-spinner {
+  display: inline-block;
+  animation: spinner-rotator $a-spinner--duration linear infinite;
+}
+
+.as-a-spinner--large {
+  width: $a-spinner--large;
+  height: $a-spinner--large;
+}
+
+.as-a-spinner--small {
+  width: $a-spinner--small;
+  height: $a-spinner--small;
+}
+
+.as-a-spinner__ring {
+  stroke: $a-spinner--color;
+  stroke-dasharray: $a-spinner--offset;
+  stroke-dashoffset: 0;
+  transform-origin: center;
+  animation: spinner-dash $a-spinner--duration ease-in-out infinite;
+}

@@ -1,0 +1,19 @@
+$button-pulse--initial--border-color: $t2-color__gray-30 !default;
+$button-pulse--active--border-color: $t2-color__gray-100 !default;
+
+@keyframes button-pulse {
+  from {
+    border-color: $button-pulse--initial--border-color;
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    border-color: $button-pulse--active--border-color;
+    transform: scale3d(1.4, 1.4, 1.4);
+  }
+
+  to {
+    border-color: $button-pulse--initial--border-color;
+    transform: scale3d(1, 1, 1);
+  }
+}

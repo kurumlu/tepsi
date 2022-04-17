@@ -1,0 +1,99 @@
+// Variables
+$t-grid-block--margin: $t2-config__nav-content-margin !default;
+$t-grid-block--gap: $t2-config__nav-content-gap !default;
+
+// Styling
+.as-t-grid-block {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.as-t-grid-block::before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+.as-t-grid-block--row::before {
+  padding-top: calc(50% - #{$t-grid-block--margin});
+}
+
+.as-t-grid-block--col::before,
+.as-t-grid-block--blocks::before {
+  padding-top: calc(200% + #{$t-grid-block--gap});
+}
+
+.as-t-grid-block__inner {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: grid;
+  gap: $t-grid-block--gap;
+
+  grid-template-areas:
+    "top-left top-right"
+    "bottom-left bottom-right";
+  grid-template-rows: repeat(2, calc(50% - #{$t-grid-block--margin}));
+  grid-template-columns: repeat(2, calc(50% - #{$t-grid-block--margin}));
+}
+
+.as-t-grid-block__item {
+  grid-area: top-left / top-left / bottom-right / bottom-right;
+  overflow: hidden;
+}
+
+.as-t-grid-block--rows .as-t-grid-block__item,
+.as-t-grid-block--blocks .as-t-grid-block__item,
+.as-t-grid-block--row-cols .as-t-grid-block__item {
+  grid-area: top-left / top-left / top-right / top-right;
+}
+
+.as-t-grid-block--cols .as-t-grid-block__item,
+.as-t-grid-block--col-rows .as-t-grid-block__item {
+  grid-area: top-left / top-left / bottom-left / bottom-left;
+}
+
+.as-t-grid-block--rows-col .as-t-grid-block__item,
+.as-t-grid-block--cols-row .as-t-grid-block__item {
+  grid-area: top-left;
+}
+
+.as-t-grid-block--rows .as-t-grid-block__item:nth-child(2),
+.as-t-grid-block--blocks .as-t-grid-block__item:nth-child(2),
+.as-t-grid-block--cols-row .as-t-grid-block__item:nth-child(3) {
+  grid-area: bottom-left / bottom-left / bottom-right / bottom-right;
+}
+
+.as-t-grid-block--cols .as-t-grid-block__item:nth-child(2),
+.as-t-grid-block--rows-col .as-t-grid-block__item:nth-child(3) {
+  grid-area: top-right / top-right / bottom-right / bottom-right;
+}
+
+.as-t-grid-block--row-cols .as-t-grid-block__item:nth-child(2),
+.as-t-grid-block--rows-col .as-t-grid-block__item:nth-child(2) {
+  grid-area: bottom-left;
+}
+.as-t-grid-block--row-cols .as-t-grid-block__item:nth-child(3),
+.as-t-grid-block--col-rows .as-t-grid-block__item:nth-child(3) {
+  grid-area: bottom-right;
+}
+
+.as-t-grid-block--col-rows .as-t-grid-block__item:nth-child(2),
+.as-t-grid-block--cols-row .as-t-grid-block__item:nth-child(2) {
+  grid-area: top-right;
+}
+
+.as-t-grid-block__item > div {
+  height: 100%;
+}
+
+.as-t-grid-block__item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

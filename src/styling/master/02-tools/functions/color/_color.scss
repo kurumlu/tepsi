@@ -1,0 +1,21 @@
+/* Color functions */
+
+/* ------ get a Brand color ------
+ * $key:   primary, secondary, tertiary, quaternary, quinary or senary
+ * $shade: regular, light or dark
+ */
+@function get-brand-color($key: primary, $shade: regular) {
+  $map: map_get($t2-color-map__brand, $key);
+  @return map-get($map, $shade);
+}
+
+
+/* ------ get a Red, Green, Blue or Orange UI color ------
+ * $key:   r, g, b or o
+ * $shade: regular, light or dark
+ */
+@function get-ui-color($key: r, $shade: regular) {
+  $map: map_get($t2-color-map__ui, $key);
+  @return map-get($map, $shade);
+}
+

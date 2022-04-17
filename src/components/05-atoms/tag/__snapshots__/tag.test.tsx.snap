@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders <Tag /> has data-qa attr: data-qa 1`] = `
+<div
+  className="as-a-tag"
+  data-qa="123"
+>
+  -30%
+</div>
+`;
+
+exports[`renders <Tag /> has specific class depends on color: color 1`] = `
+<div
+  className="as-a-tag as-a-tag--secondary"
+>
+  -30%
+</div>
+`;
+
+exports[`renders <Tag /> renders <Tag /> component with children: children 1`] = `
+<Tag>
+  <div
+    className="as-a-tag"
+  >
+    <MockChildren>
+      <Icon
+        name="female"
+        size="medium"
+      >
+        <span
+          className="as-a-icon as-a-icon--female as-a-icon--medium"
+          role="img"
+        >
+          <svg
+            aria-hidden="true"
+            className="as-a-icon__svg"
+            focusable="false"
+          />
+        </span>
+      </Icon>
+    </MockChildren>
+  </div>
+</Tag>
+`;
+
+exports[`renders <Tag /> renders <Tag /> component: default 1`] = `
+<div
+  className="as-a-tag"
+>
+  -30%
+</div>
+`;

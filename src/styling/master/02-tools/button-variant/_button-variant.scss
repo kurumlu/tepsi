@@ -1,0 +1,119 @@
+// Button variant mixin
+
+/* Documentation:
+ * The button-variant mixin uses a Variant SCSS map as parameter.
+ *
+ * Variant SCSS map structure:
+ * - outlined?: boolean
+ * - normal: VariantState
+ * - hover?: VariantState
+ * - active?: VariantState
+ * - disabled?: VariantState
+ * - loader?: color
+ *
+ * VariantState SCSS map structure
+ * - bg: color (background)
+ * - fg: color (foreground)
+ *
+ * Example:
+ * $variant: (
+ *   outlined: false,
+ *   normal: (bg: #000, fg: #fff),
+ *   hover: (bg: #222, fg: #fff),
+ *   active: (bg: #444, fg: #fff),
+ *   disabled: (bg: #666, fg: #fff),
+ *   loader: #333,
+ * );
+ *
+ **/
+
+@mixin button-variant($variant) {
+  $normal: map-get($variant, normal);
+
+  $border-color: transparent;
+  @if (map-get($variant, outlined)) {
+    $border-color: currentColor;
+  }
+
+  // Set colors for normal state
+  & {
+    background: map-get($normal, bg);
+    color: map-get($normal, fg);
+    border-color: $border-color;
+  }
+
+  // Set color for link/visited state
+  &:link,
+  &:visited {
+    background: map-get($normal, bg);
+    color: map-get($normal, fg);
+  }
+
+  // Set color for hover state
+  // TODO: Focus styling?
+  @if (map_has_key($variant, hover)) {
+    $hover: map-get($variant, hover);
+    // Set hover for non touch devices only
+    // see for details https://bit.ly/3cVK64m
+    @media(hover: hover) and (pointer: fine) {
+      &:hover {
+        background: map-get($hover, bg);
+        color: map-get($hover, fg);
+      }
+    }
+
+    // Because -ms-high-contrast is Microsoft-specific,
+    // it will be parsed in Internet Explorer 10 and greater.
+    @media(-ms-high-contrast: none), (-ms-high-contrast: active) {
+      &:hover {
+        background: map-get($hover, bg);
+        color: map-get($hover, fg);
+      }
+    }
+  }
+
+  // Set color for active state
+  @if (map_has_key($variant, active)) {
+    $active: map-get($variant, active);
+    &:active {
+      background: map-get($active, bg);
+      color: map-get($active, fg);
+
+      @if (map-get($variant, outlined)) {
+          // Fake increased border-width for hovering outlined buttons with box-shadow
+          // not on disabled, so that loading buttons do not get this styling
+          &:not(:disabled) {
+            box-shadow: inset 0 0 0 1px currentColor;
+        }
+      }
+    }
+  }
+
+  // Set color for disabled state
+  // when state is loading, the button has the disabled attribute so that it can't be clicked
+  // this styling makes sure no hover/active styling is shown either
+  @if (map_has_key($variant, hover) or map_has_key($variant, active)) {
+    &:disabled {
+      background: map-get($normal, bg);
+      color: map-get($normal, fg);
+    }
+  }
+
+  // Set color for disabled modifier
+  @if (map_has_key($variant, disabled)) {
+    $disabled: map-get($variant, disabled);
+    &.as-a-btn--disabled,
+    &.as-a-btn--disabled:hover {
+      background: map-get($disabled, bg);
+      color: map-get($disabled, fg);
+    }
+  }
+
+  // Set color for loader pseudo-element
+  @if (map_has_key($variant, loader)) {
+    $loader: map_get($variant, loader);
+    .as-a-btn__loader {
+      color: $loader;
+    }
+  }
+}

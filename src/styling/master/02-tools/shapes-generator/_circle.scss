@@ -1,0 +1,9 @@
+@mixin circle($width, $color: null) {
+  width: $width;
+  height: $width;
+  border-radius: 100%;
+
+  @if ($color) {
+    background: $color;
+  }
+}

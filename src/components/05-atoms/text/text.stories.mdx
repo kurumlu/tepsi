@@ -1,0 +1,629 @@
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs';
+import { mockText, mockHtml } from './text.mock';
+import { Text, TextSize, TextType, TextColor, TextAlign, TextFeature } from './Text';
+
+<Meta
+  title="Design system/Patterns/Atoms/Text"
+  component={Text}
+/>
+
+# Text
+
+<Canvas>
+  <Story name="Default">
+    <Text>{mockText}</Text>
+  </Story>
+</Canvas>
+
+---
+
+## Available props
+
+<ArgsTable for={Text} />
+
+---
+
+### Text
+
+Pass Children to set the text that gets displayed.
+
+```javascript
+<Text>...</Text>
+```
+
+<Canvas>
+  <Story name="Text">
+    <Text>{mockText}</Text>
+  </Story>
+</Canvas>
+
+---
+
+### Size
+
+Use the `size` prop to set a size. Uses the `TextSize` enum.
+
+| TextSize  |
+|-----------|
+| `XLARGE`  |
+| `LARGE`   |
+| `MEDIUM`  |
+| `SMALL`   |
+| `XSMALL`  |
+| `INHERIT` |
+
+```javascript
+<Text size={...}>...</Text>
+```
+
+#### XLarge
+
+```javascript
+<Text size={TextSize.XLARGE}>...</Text>
+```
+
+<Canvas>
+  <Story name="Size - xlarge">
+    <Text size={TextSize.XLARGE}>{mockText}</Text>
+  </Story>
+</Canvas>
+
+#### Large
+
+```javascript
+<Text size={TextSize.LARGE}>...</Text>
+```
+
+<Canvas>
+  <Story name="Size - large">
+    <Text size={TextSize.LARGE}>{mockText}</Text>
+  </Story>
+</Canvas>
+
+#### Medium
+
+```javascript
+<Text size={TextSize.MEDIUM}>...</Text>
+```
+
+<Canvas>
+  <Story name="Size - medium">
+    <Text size={TextSize.MEDIUM}>{mockText}</Text>
+  </Story>
+</Canvas>
+
+#### Small
+
+```javascript
+<Text size={TextSize.SMALL}>...</Text>
+```
+
+<Canvas>
+  <Story name="Size - small">
+    <Text size={TextSize.SMALL}>{mockText}</Text>
+  </Story>
+</Canvas>
+
+#### XSmall
+
+```javascript
+<Text size={TextSize.XSMALL}>...</Text>
+```
+
+<Canvas>
+  <Story name="Size - xsmall">
+    <Text size={TextSize.XSMALL}>{mockText}</Text>
+  </Story>
+</Canvas>
+
+#### Inherit
+
+```javascript
+<Text size={TextSize.INHERIT}>...</Text>
+```
+
+<Canvas>
+  <Story name="Size - inherit">
+    <Text size={TextSize.INHERIT}>{mockText}</Text>
+  </Story>
+</Canvas>
+
+---
+
+### Type
+
+Use the `type` prop to set a type. Uses the `TextType` enum.
+
+| TextType              |
+|-----------------------|
+| `EXTRA_LARGE_CONTENT` |
+| `EXTRA_CONTENT`       |
+| `CONTENT`             |
+| `SUB_CONTENT`         |
+
+```javascript
+<Text type={...}>...</Text>
+```
+#### Extra Large Content
+
+```javascript
+<Text size={TextType.EXTRA_LARGE_CONTENT}>...</Text>
+```
+
+<Canvas>
+  <Story name="Type - extra large content">
+    <Text size={TextType.EXTRA_LARGE_CONTENT}>{mockText}</Text>
+  </Story>
+</Canvas>
+
+#### Extra Content
+
+```javascript
+<Text size={TextType.EXTRA_CONTENT}>...</Text>
+```
+
+<Canvas>
+  <Story name="Type - extra content">
+    <Text size={TextType.EXTRA_CONTENT}>{mockText}</Text>
+  </Story>
+</Canvas>
+
+#### Content
+
+```javascript
+<Text size={TextType.CONTENT}>...</Text>
+```
+
+<Canvas>
+  <Story name="Type - content">
+    <Text size={TextType.CONTENT}>{mockText}</Text>
+  </Story>
+</Canvas>
+
+#### Sub Content
+
+```javascript
+<Text size={TextType.SUB_CONTENT}>...</Text>
+```
+
+<Canvas>
+  <Story name="Type - sub content">
+    <Text size={TextType.SUB_CONTENT}>{mockText}</Text>
+  </Story>
+</Canvas>
+
+#### Title
+
+```javascript
+<Text size={TextType.TITLE}>...</Text>
+```
+
+<Canvas>
+  <Story name="Type - title">
+    <Text size={TextType.TITLE}>{mockText}</Text>
+  </Story>
+</Canvas>
+
+---
+
+### Color
+
+Use the `color` prop to set a color. Uses the `TextColor` enum.
+
+| TextColor   |
+|-------------|
+| `NEGATIVE`  |
+| `POSITIVE`  |
+| `SUBTLE`    |
+| `DISCOUNT`  |
+| `INHERIT`   |
+| `INFO`      |
+| `NOTICE`    |
+
+```javascript
+<Text color={...}>...</Text>
+```
+
+#### Negative
+
+```javascript
+<Text color={TextColor.NEGATIVE}>...</Text>
+```
+
+<Canvas>
+  <Story name="Color - negative">
+    <Text color={TextColor.NEGATIVE}>{mockText}</Text>
+  </Story>
+</Canvas>
+
+#### Positive
+
+```javascript
+<Text color={TextColor.POSITIVE}>...</Text>
+```
+
+<Canvas>
+  <Story name="Color - positive">
+    <Text color={TextColor.POSITIVE}>{mockText}</Text>
+  </Story>
+</Canvas>
+
+#### Subtle
+
+```javascript
+<Text color={TextColor.SUBTLE}>...</Text>
+```
+
+<Canvas>
+  <Story name="Color - subtle">
+    <Text color={TextColor.SUBTLE}>{mockText}</Text>
+  </Story>
+</Canvas>
+
+#### Discount
+
+```javascript
+<Text color={TextColor.DISCOUNT}>...</Text>
+```
+
+<Canvas>
+  <Story name="Color - discount">
+    <Text color={TextColor.DISCOUNT}>{mockText}</Text>
+  </Story>
+</Canvas>
+
+#### Inherit
+
+```javascript
+<Text color={TextColor.INHERIT}>...</Text>
+```
+
+<Canvas>
+  <Story name="Color - inherit">
+    <span style={{color: 'purple'}}>
+      <Text color={TextColor.INHERIT}>{mockText}</Text>
+    </span>
+  </Story>
+</Canvas>
+
+#### Info
+
+```javascript
+<Text color={TextColor.INFO}>...</Text>
+```
+
+<Canvas>
+  <Story name="Color - info">
+    <Text color={TextColor.INFO}>{mockText}</Text>
+  </Story>
+</Canvas>
+
+#### Notice
+
+```javascript
+<Text color={TextColor.NOTICE}>...</Text>
+```
+
+<Canvas>
+  <Story name="Color - notice">
+    <Text color={TextColor.NOTICE}>{mockText}</Text>
+  </Story>
+</Canvas>
+
+---
+
+### Strike
+
+Use the `strike` prop to add a strikethrough line.
+
+```javascript
+<Text strike>...</Text>
+```
+
+<Canvas>
+  <Story name="Strike">
+    <Text strike>{mockText}</Text>
+  </Story>
+</Canvas>
+
+---
+
+### Emphasized
+
+Use the `emphasized` prop to use the emphasized font-map.
+
+
+```javascript
+<Text emphasized>...</Text>
+```
+
+<Canvas>
+  <Story name="Emphasized">
+    <Text emphasized>{mockText}</Text>
+  </Story>
+</Canvas>
+
+---
+
+### Paragraph
+
+Use the `paragraph` prop to make it a paragraph.
+
+```javascript
+<Text paragraph>...</Text>
+```
+
+<Canvas>
+  <Story name="Paragraph">
+    <React.Fragment>
+      <Text paragraph>{mockText}</Text>
+      <Text paragraph>{mockText}</Text>
+    </React.Fragment>
+  </Story>
+</Canvas>
+
+---
+
+### Inline
+
+Use the `inline` prop to replace `div` to `span` element.
+
+```javascript
+<Text inline>...</Text>
+```
+
+<Canvas>
+  <Story name="inline">
+    <React.Fragment>
+      <Text inline>{mockText}</Text>
+      <Text inline>{mockText}</Text>
+    </React.Fragment>
+  </Story>
+</Canvas>
+
+---
+
+### Alignment
+
+Use the `align` prop to set the alignment of the text. Uses the `TextAlign` enum.
+
+| TextAlign |
+|-----------|
+| `CENTER`  |
+| `RIGHT`   |
+
+```javascript
+<Text align={...} paragraph>...</Text>
+```
+
+#### Left
+
+```javascript
+<Text paragraph>...</Text>
+```
+
+<Canvas>
+  <Story name="Align - left">
+    <Text paragraph>{mockText}</Text>
+  </Story>
+</Canvas>
+
+#### Center
+
+```javascript
+<Text align={TextAlign.CENTER} paragraph>...</Text>
+```
+
+<Canvas>
+  <Story name="Align - center">
+    <Text align={TextAlign.CENTER} paragraph>{mockText}</Text>
+  </Story>
+</Canvas>
+
+#### Right
+
+```javascript
+<Text align={TextAlign.RIGHT} paragraph>...</Text>
+```
+
+<Canvas>
+  <Story name="Align - right">
+    <Text align={TextAlign.RIGHT} paragraph>{mockText}</Text>
+  </Story>
+</Canvas>
+
+---
+
+### Feature
+
+Use the `feature` prop to set a specific feature type. Uses the `TextFeature` enum.
+
+| TextFeature                       |
+|-----------------------------------|
+| `PRODUCT_TECHNICAL_FEATURES_ODD`  |
+| `PRODUCT_TECHNICAL_FEATURES_EVEN` |
+| `PRODUCT_DETAILS`                 |
+| `PRODUCT_TECHNICAL_DESCRIPTION`   |
+
+```javascript
+<Text feature={...}>...</Text>
+```
+
+#### Product technical features odd
+
+```javascript
+<Text feature={TextFeature.PRODUCT_TECHNICAL_FEATURES_ODD}>...</Text>
+```
+
+<Canvas>
+  <Story name="Feature - Technical - Odd">
+    <Text feature={TextFeature.PRODUCT_TECHNICAL_FEATURES_ODD}>
+      <ul>
+        <li>Waterdicht: Ja</li>
+        <li>Model: Heren</li>
+        <li>Materiaal: 100% Polyester</li>
+        <li>Capuchon: Ja</li>
+        <li>Pasvorm: Regular Fit</li>
+        <li>Waterafstotende behandeling: Ja</li>
+      </ul>
+    </Text>
+  </Story>
+</Canvas>
+
+#### Product technical features even
+
+```javascript
+<Text feature={TextFeature.PRODUCT_TECHNICAL_FEATURES_EVEN}>...</Text>
+```
+
+<Canvas>
+  <Story name="Feature - Technical - Even">
+    <Text feature={TextFeature.PRODUCT_TECHNICAL_FEATURES_EVEN}>
+      <ul>
+        <li>Waterdicht: Ja</li>
+        <li>Model: Heren</li>
+        <li>Materiaal: 100% Polyester</li>
+        <li>Capuchon: Ja</li>
+        <li>Pasvorm: Regular Fit</li>
+        <li>Waterafstotende behandeling: Ja</li>
+      </ul>
+    </Text>
+  </Story>
+</Canvas>
+
+#### Product details
+
+```javascript
+<Text feature={TextFeature.PRODUCT_DETAILS}>...</Text>
+```
+
+<Canvas>
+  <Story name="Feature - Details">
+    <Text feature={TextFeature.PRODUCT_DETAILS}>
+      <ul>
+        <li>Getapete naden</li>
+        <li>Borstzak met waterdichte rits</li>
+        <li>Uitritsbare fleece binnenjas met steekzakken</li>
+      </ul>
+    </Text>
+  </Story>
+</Canvas>
+
+#### Product technical description
+
+```javascript
+<Text feature={TextFeature.PRODUCT_TECHNICAL_DESCRIPTION}>...</Text>
+```
+
+<Canvas>
+  <Story name="Feature - Technical description">
+    <Text feature={TextFeature.PRODUCT_TECHNICAL_DESCRIPTION}>
+      <ul>
+        <li>Getapete naden</li>
+        <li>Borstzak met waterdichte rits</li>
+        <li>Uitritsbare fleece binnenjas met steekzakken</li>
+      </ul>
+    </Text>
+  </Story>
+</Canvas>
+
+---
+
+### Clipped text
+
+Use the `isClipped` prop to make the text clip and show an ellipsis when it overflows it's parent.
+
+```javascript
+<Text isClipped>...</Text>
+```
+
+<Canvas>
+  <Story name="Clipped text">
+    <div style={{ width: 300 }}>
+      <Text isClipped>
+        {mockText}
+      </Text>
+    </div>
+  </Story>
+</Canvas>
+
+---
+
+### Line Clamp text
+
+Use the `lineClamp` prop to truncate text at a specific number of lines.
+
+```javascript
+<Text lineClamp={2}>...</Text>
+```
+
+<Canvas>
+  <Story name="Line Clamp text">
+    <Text lineClamp={2}>{mockText.repeat(2)}</Text>
+  </Story>
+</Canvas>
+
+---
+
+### Uppercase
+
+Use the `isUppercase` prop to make the text uppercase.
+
+```javascript
+<Text isUppercase>...</Text>
+```
+
+<Canvas>
+  <Story name="Uppercase">
+    <Text isUppercase>
+      {mockText}
+    </Text>
+  </Story>
+</Canvas>
+
+---
+
+### HTML
+
+Use the `html` prop to set inner html.
+
+```javascript
+<Text html="<div/>">...</Text>
+```
+
+<Canvas>
+  <Story name="HTML">
+    <Text html={mockHtml} />
+  </Story>
+</Canvas>
+
+---
+
+### Other
+
+Other props that can be added:
+- `className`
+- `dataQA`
+- `withGlossary` - adds `GLOSSARY_HIGHLIGHT_CLASS` className. Needs for tooltip functionality
+- `itemProp`
+- `itemContent`
+
+---
+
+## Examples
+
+Some examples of texts.
+
+---
+
+### Links
+
+An anchor inside of a text atom (without tepsi classes: `as-...`) will be styled to look like a default link.
+
+<Canvas>
+  <Story name="Contains link">
+    <Text size={TextSize.XLARGE} color={TextColor.POSITIVE}>
+      We believe there’s no substitute for <a href="#">experience</a>.
+    </Text>
+  </Story>
+</Canvas>

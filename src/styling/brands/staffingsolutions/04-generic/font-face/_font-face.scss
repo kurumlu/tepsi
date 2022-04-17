@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'GT-Pressura-Bold';
+
+  src: url('#{$asset_base_path}/assets/fonts/gt-pressura/GT-Pressura-Bold-subset.woff2') format("woff2"),
+  url('#{$asset_base_path}/assets/fonts/gt-pressura/GT-Pressura-Bold-subset.zopfli.woff') format("woff"),
+  url('#{$asset_base_path}/assets/fonts/gt-pressura/GT-Pressura-Bold-subset.otf') format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}

@@ -1,0 +1,17 @@
+@keyframes bop {
+  0%, 25%, 50% {
+    transform: translateY(0);
+  }
+  12.5%, 37.5% {
+    transform: translateY(-.25em);
+  }
+}
+
+@keyframes bop-cpu {
+  0%, 25%, 50% {
+    top: 0;
+  }
+  12.5%, 37.5% {
+    top: -.25em;
+  }
+}

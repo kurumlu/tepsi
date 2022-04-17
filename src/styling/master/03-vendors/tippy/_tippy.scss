@@ -1,0 +1,212 @@
+/**
+ * Tippy - Custom themes
+ *
+ * Documentation:
+ * https://atomiks.github.io/tippyjs/themes/#creating-a-theme
+ */
+
+$tippy-tooltip--glossary-light-theme--padding: get-spacing(2) !default;
+$tippy-tooltip--glossary-light-theme--border-radius: $t2-border-radius__xl !default;
+$tippy-tooltip--glossary-light-theme--background: $t2-color__background !default;
+$tippy-tooltip--glossary-light-theme--color: $t2-color__foreground !default;
+$tippy-tooltip--glossary-light-theme--box-shadow: 0 get-spacing(2) get-spacing(3) $t2-color__fade-black-15, 0 -#{get-spacing(2)} get-spacing(3) $t2-color__fade-black-15 !default;
+$tippy-tooltip--glossary-light-theme--font-size: $t2-font-size__body-s !default;
+$tippy-tooltip--glossary-light-theme--line-height: $t2-line-height__s !default;
+$tippy-tooltip--glossary-light-theme--tablet--padding: get-spacing(3) get-spacing(4) get-spacing(4) !default;
+$tippy-tooltip--glossary-light-theme__tippy-arrow--border-color: $t2-color__white !default;
+
+$tippy-tooltip--glossary-light-theme__tippy-content__title--margin-bottom: get-spacing(1) !default;
+$tippy-tooltip--glossary-light-theme__tippy-content__title--margin-right: get-spacing(3) !default;
+$tippy-tooltip--glossary-light-theme__tippy-content__title--font-size: $t2-font-size__heading-xxs !default;
+$tippy-tooltip--glossary-light-theme__tippy-content__title--line-height: $t2-line-height__xxs !default;
+$tippy-tooltip--glossary-light-theme__tippy-content__title--tablet--margin-bottom: get-spacing(1.5) !default;
+$tippy-tooltip--glossary-light-theme__tippy-content__title--tablet--font-size: $t2-font-size__heading-s !default;
+$tippy-tooltip--glossary-light-theme__tippy-content__title--tablet--line-height: $t2-line-height__s !default;
+
+$tippy-tooltip--glossary-light-theme__tippy-content__description--margin-right: get-spacing(2) !default;
+$tippy-tooltip--glossary-light-theme__tippy-content__close--top: get-spacing(1.5) !default;
+$tippy-tooltip--glossary-light-theme__tippy-content__close--right: get-spacing(1.5) !default;
+$tippy-tooltip--glossary-light-theme__tippy-content__close--font-size: $t2-font-size__icon-l !default;
+$tippy-tooltip--glossary-light-theme__tippy-content__close--line-height: 1 !default;
+$tippy-tooltip--glossary-light-theme__tippy-content__close--hover--scale: 1.12 !default;
+$tippy-tooltip--glossary-light-theme__tippy-content__close__icon--color: get-brand-color(secondary) !default;
+$tippy-tooltip--glossary-light-theme__tippy-content__close--tablet--top: get-spacing(3) !default;
+$tippy-tooltip--glossary-light-theme__tippy-content__close--tablet--right: get-spacing(3) !default;
+
+// ------ GLOSSARY THEME ------
+
+/* FIXME: currently overwriting AEM styling of the tippy custom theme: Glossary
+ * The tippy custom theme 'Glossary' has been created in the AEM project and is used for glossary tooltips.
+ * Since the PDP still uses the old highlight script it needs to overwrite this styling from the AEM project.
+ * In future this will need to be changed so that the glossary-highlighter script sets tepsi classes and tooltips.
+ */
+
+.tippy-tooltip.glossary-theme {
+  padding: get-spacing(3);
+  border-radius: 0;
+
+  background: $t2-color__background;
+  color: $t2-color__foreground;
+  box-shadow: 0 0 get-spacing(1.5) $t2-color__fade-dark-15;
+
+  @include font-map($t2-font-map__body);
+  font-size: $t2-font-size__body-s;
+  line-height: $t2-line-height__s;
+  text-align: left;
+
+  // Set tooltip arrow color
+  $arrow-positions: ('top', 'bottom', 'left', 'right');
+  @each $position in $arrow-positions {
+    &[data-placement^='#{$position}'] .tippy-arrow {
+      border-#{$position}-color: $t2-color__white;
+    }
+  }
+
+  // Content
+  .tippy-content__title {
+    margin-bottom: get-spacing(1);
+    margin-right: get-spacing(3); // Make up for close button
+
+    color: inherit;
+
+    @include font-map($t2-font-map__heading);
+    font-size: $t2-font-size__heading-xs;
+    line-height: $t2-line-height__l;
+    text-transform: capitalize;
+  }
+
+  .tippy-content__description {
+    margin-right: get-spacing(2); // Make up for close button
+  }
+
+  .tippy-content__title + .tippy-content__description {
+    margin-right: 0; // If title remove margin from description
+  }
+
+  .tippy-content__close {
+    position: absolute;
+    top: get-spacing(2);
+    right: get-spacing(2);
+
+    background: transparent;
+    color: $t2-color__gray-50;
+
+    font-size: $t2-font-size__icon-xs;
+    line-height: 1;
+
+    cursor: pointer;
+
+    &::after {
+      display: none;
+    }
+
+    // TODO: Replace with <Icon />
+    @include icon(before, close);
+
+    &:hover {
+      color: inherit;
+    }
+  }
+}
+
+.tippy-tooltip.glossary-theme[data-placement^=bottom-start],
+.tippy-tooltip.glossary-light-theme[data-placement^=bottom-start] {
+  left: 5px !important;
+}
+
+
+// ------ GLOSSARY LIGHT THEME ------
+
+.tippy-tooltip.glossary-light-theme {
+  padding: $tippy-tooltip--glossary-light-theme--padding;
+  border-radius: $tippy-tooltip--glossary-light-theme--border-radius;
+
+  background: $tippy-tooltip--glossary-light-theme--background;
+  color: $tippy-tooltip--glossary-light-theme--color;
+  box-shadow: $tippy-tooltip--glossary-light-theme--box-shadow;
+
+
+  @include font-map($t2-font-map__body);
+  font-size: $tippy-tooltip--glossary-light-theme--font-size;
+  line-height: $tippy-tooltip--glossary-light-theme--line-height;
+  text-align: left;
+
+  $arrow-positions: ('top', 'bottom', 'left', 'right');
+  @each $position in $arrow-positions {
+    &[data-placement^='#{$position}'] .tippy-arrow {
+      border-#{$position}-color: $tippy-tooltip--glossary-light-theme__tippy-arrow--border-color;
+    }
+  }
+
+  @include mq($from: tablet) {
+    padding: $tippy-tooltip--glossary-light-theme--tablet--padding;
+  }
+
+  .tippy-content__title {
+    margin-bottom: $tippy-tooltip--glossary-light-theme__tippy-content__title--margin-bottom;
+    margin-right: $tippy-tooltip--glossary-light-theme__tippy-content__title--margin-right;
+
+    color: inherit;
+    font-size: $tippy-tooltip--glossary-light-theme__tippy-content__title--font-size;
+    line-height: $tippy-tooltip--glossary-light-theme__tippy-content__title--line-height;
+    text-transform: capitalize;
+
+    @include font-map($t2-font-map__heading);
+
+    @include mq($from: tablet) {
+      margin-bottom: $tippy-tooltip--glossary-light-theme__tippy-content__title--tablet--margin-bottom;
+
+      font-size: $tippy-tooltip--glossary-light-theme__tippy-content__title--tablet--font-size;
+      line-height: $tippy-tooltip--glossary-light-theme__tippy-content__title--tablet--line-height;
+    }
+  }
+
+  .tippy-content__title + .tippy-content__description {
+    margin-right: 0;
+  }
+
+  // stylelint-disable no-descending-specificity
+  // Disable no-descending-specificity since these selectors don't overlap
+  /*
+    Expected selector ".tippy-tooltip.glossary-light-theme .tippy-content__description" to come before selector
+      ".tippy-tooltip.glossary-theme .tippy-content__title + .tippy-content__description"
+    Expected selector ".tippy-tooltip.glossary-light-theme .tippy-content__description" to come before selector
+      ".tippy-tooltip.glossary-light-theme .tippy-content__title + .tippy-content__description"
+  */
+  .tippy-content__description {
+    margin-right: $tippy-tooltip--glossary-light-theme__tippy-content__description--margin-right;
+  }
+
+  /*
+    Expected selector ".tippy-tooltip.glossary-light-theme .tippy-content__close" to come before selector
+      ".tippy-tooltip.glossary-theme .tippy-content__close:hover"
+  */
+  .tippy-content__close {
+    position: absolute;
+    top: $tippy-tooltip--glossary-light-theme__tippy-content__close--top;
+    right: $tippy-tooltip--glossary-light-theme__tippy-content__close--right;
+    background: transparent;
+    font-size: $tippy-tooltip--glossary-light-theme__tippy-content__close--font-size;
+    line-height: $tippy-tooltip--glossary-light-theme__tippy-content__close--line-height;
+    cursor: pointer;
+
+    &::after {
+      display: none;
+    }
+
+    &:hover {
+      transform: scale($tippy-tooltip--glossary-light-theme__tippy-content__close--hover--scale);
+    }
+
+    // TODO: Replace with <Icon />
+    @include icon(before, close) {
+      color: $tippy-tooltip--glossary-light-theme__tippy-content__close__icon--color;
+    }
+
+    @include mq($from: tablet) {
+      top: $tippy-tooltip--glossary-light-theme__tippy-content__close--tablet--top;
+      right: $tippy-tooltip--glossary-light-theme__tippy-content__close--tablet--right;
+    }
+  }
+  // stylelint-enable no-descending-specificity
+}

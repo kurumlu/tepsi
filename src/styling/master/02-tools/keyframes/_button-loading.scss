@@ -1,0 +1,12 @@
+@keyframes button-loading {
+  from {
+    transform:
+      scaleX(.5)
+      translateX(-150%);
+  }
+  to {
+    transform:
+      scaleX(.5)
+      translateX(150%);
+  }
+}

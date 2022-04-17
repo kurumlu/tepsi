@@ -1,0 +1,31 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { withStyleGrid } from '../../../../storybook_addons/storyWrapperDecorator';
+import { Row } from './Row';
+import { Column } from '../column/Column';
+
+<Meta
+  title="Design system/Patterns/Settings/Grid/Row"
+  component={Row}
+  decorators={[withStyleGrid]}
+/>
+
+# Row
+
+## Available props:
+
+| Name        | Type      | Required | Default value |
+|-------------|-----------|----------|---------------|
+| `parent`    | *boolean* |          | *false*       |
+| `clear`     | *boolean* |          | *false*       |
+| `className` | *string*  |          |               |
+
+## Examples
+
+### Row with default props:
+<Canvas>
+  <Story name="basic">
+    <Row>
+      <Column grid={12}>Row wrapper</Column>
+    </Row>
+  </Story>
+</Canvas>

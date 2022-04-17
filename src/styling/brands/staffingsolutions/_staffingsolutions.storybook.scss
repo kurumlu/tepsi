@@ -1,0 +1,10 @@
+// Welcome to tepsi - staffing solutions styling
+// Hopefully this will almost be the only folder where you need to do something within this project ;)
+//
+// Structure is based on a original post by Harry Roberts https://www.creativebloq.com/web-design/manage-large-css-projects-itcss-101517528
+
+// Main styling
+@import './staffingsolutions.main';
+
+// Aditional storybook specific styling
+@import '../../storybook/storybook';

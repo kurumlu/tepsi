@@ -1,0 +1,78 @@
+// Variables for Badge ATOM
+$a-badge--size: get-spacing(2) !default;
+$a-badge--padding: 0 get-spacing(.5) !default;
+$a-badge--border-radius: $t2-border-radius__round !default;
+
+$a-badge--font-map: $t2-font-map__body-emp !default;
+$a-badge--font-size: $t2-font-size__body-xxs !default;
+
+$a-badge--background: get-brand-color($t2-color-map-key__action-checkout) !default;
+$a-badge--color: $t2-color__white !default;
+
+// --secondary
+$a-badge--secondary--background: get-brand-color(secondary) !default;
+$a-badge--secondary--color: $t2-color__white !default;
+
+// --subtle
+$a-badge--subtle--background: $t2-color__gray-30 !default;
+$a-badge--subtle--color: $t2-color__white !default;
+
+// --large
+$a-badge--l--size: get-spacing(3) !default;
+$a-badge--l--padding: 0 get-spacing(1) !default;
+$a-badge--l--font-size: $t2-font-size__body-m !default;
+$a-badge--l--line-height: $t2-line-height__m !default;
+
+// Code for Badge ATOM
+.as-a-badge {
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  min-width: $a-badge--size;
+  min-height: $a-badge--size;
+  line-height: 1;
+
+  padding: $a-badge--padding;
+  border-radius: $a-badge--border-radius;
+
+  @include font-map($a-badge--font-map);
+  font-size: $a-badge--font-size;
+
+  background: $a-badge--background;
+  color: $a-badge--color;
+
+  &::after {
+    content:'';
+    min-height:inherit;
+    font-size:0;
+  }
+}
+
+// --badge-color
+.as-a-badge--secondary {
+  background: $a-badge--secondary--background;
+  color: $a-badge--secondary--color;
+}
+
+.as-a-badge--subtle {
+  background: $a-badge--subtle--background;
+  color: $a-badge--subtle--color;
+}
+
+// --badge-size
+.as-a-badge--l {
+  min-width: $a-badge--l--size;
+  min-height: $a-badge--l--size;
+  padding: $a-badge--l--padding;
+  font-size: $a-badge--l--font-size;
+  line-height: $a-badge--l--line-height;
+}
+
+
+// Badge inside Heading
+.as-a-heading .as-a-badge {
+  margin-left: get-spacing(1.5);
+}

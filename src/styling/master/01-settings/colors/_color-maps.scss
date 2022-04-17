@@ -1,0 +1,98 @@
+/* ==========================================================================
+   #COLOR-MAPS
+   ========================================================================== */
+
+/* ------------ Brand color maps ------------
+ * SCSS maps for the brand colors
+ * Do not change or overwrite on brand level, instead change or overwrite the tier 1 variables!
+ */
+
+$t2-color-map__primary: (
+  regular: $t1-color__primary,
+  light:   $t1-color__primary-light,
+  dark:    $t1-color__primary-dark
+);
+
+$t2-color-map__secondary: (
+  regular: $t1-color__secondary,
+  light:   $t1-color__secondary-light,
+  dark:    $t1-color__secondary-dark
+);
+
+$t2-color-map__tertiary: (
+  regular: $t1-color__tertiary,
+  light:   $t1-color__tertiary-light,
+  dark:    $t1-color__tertiary-dark
+);
+
+$t2-color-map__quaternary: (
+  regular: $t1-color__quaternary,
+  light:   $t1-color__quaternary-light,
+  dark:    $t1-color__quaternary-dark
+);
+
+$t2-color-map__quinary: (
+  regular: $t1-color__quinary,
+  light:   $t1-color__quinary-light,
+  dark:    $t1-color__quinary-dark
+);
+
+$t2-color-map__senary: (
+  regular: $t1-color__senary,
+  light:   $t1-color__senary-light,
+  dark:    $t1-color__senary-dark
+);
+
+$t2-color-map__septenary: (
+  regular: $t1-color__septenary,
+  light:   $t1-color__septenary-light,
+  dark:    $t1-color__septenary-dark
+);
+
+$t2-color-map__brand: (
+  primary:    $t2-color-map__primary,
+  secondary:  $t2-color-map__secondary,
+  tertiary:   $t2-color-map__tertiary,
+  quaternary: $t2-color-map__quaternary,
+  quinary:    $t2-color-map__quinary,
+  senary:     $t2-color-map__senary,
+  septenary:  $t2-color-map__septenary
+);
+
+
+/* ------------ UI color maps ------------
+ * SCSS maps for the UI colors
+ * Do not change or overwrite on brand level!
+ */
+
+$t2-color-map__red: (
+  regular: $t1-color__red,
+  light:   $t1-color__red-light,
+  dark:    $t1-color__red-dark
+);
+
+$t2-color-map__green: (
+  regular: $t1-color__green,
+  light:   $t1-color__green-light,
+  dark:    $t1-color__green-dark
+);
+
+$t2-color-map__blue: (
+  regular: $t1-color__blue,
+  light:   $t1-color__blue-light,
+  dark:    $t1-color__blue-dark
+);
+
+$t2-color-map__orange: (
+  regular: $t1-color__orange,
+  light:   $t1-color__orange-light,
+  dark:    $t1-color__orange-dark
+);
+
+$t2-color-map__ui: (
+  r: $t2-color-map__red,
+  g: $t2-color-map__green,
+  b: $t2-color-map__blue,
+  o: $t2-color-map__orange
+);
+

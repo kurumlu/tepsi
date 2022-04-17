@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Step /> renders <Step /> component: one step 1`] = `
+<div
+  className="as-m-step"
+>
+  <div
+    className="as-m-step__number"
+  >
+    NaN
+  </div>
+  <div
+    className="as-m-step__content"
+  >
+    title
+  </div>
+</div>
+`;
+
+exports[`<Steps /> renders <Steps /> component with 3 Steps: with 3 steps 1`] = `
+<div
+  className="as-m-steps"
+>
+  <div
+    className="as-m-steps__content"
+  >
+    <Step
+      index={0}
+      key=".0"
+      passed={true}
+      title="Aflevering"
+    />
+    <Step
+      current={true}
+      index={1}
+      key=".1"
+      title="Betaling"
+    />
+    <Step
+      index={2}
+      key=".2"
+      title="Bevestiging"
+    />
+  </div>
+</div>
+`;
+
+exports[`<Steps /> renders empty <Steps /> component: empty 1`] = `""`;

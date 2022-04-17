@@ -1,0 +1,12 @@
+@keyframes input-loading {
+  from {
+    transform:
+      scaleX(.2)
+      translateX(-300%);
+  }
+  to {
+    transform:
+      scaleX(.2)
+      translateX(300%);
+  }
+}

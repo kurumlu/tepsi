@@ -1,0 +1,125 @@
+// Variables for Group MOLECULE
+$m-group--xs--margin: get-spacing(.25) !default;
+$m-group--s--margin:  get-spacing(.5)  !default;
+$m-group--m--margin:  get-spacing(1)   !default;
+$m-group--l--margin:  get-spacing(1.5) !default;
+$m-group--xl--margin: get-spacing(2)   !default;
+
+
+// Code for Group MOLECULE
+.as-m-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+// --align
+.as-m-group--align-left {
+  justify-content: flex-start;
+}
+
+.as-m-group--align-center {
+  justify-content: center;
+}
+
+.as-m-group--align-right {
+  justify-content: flex-end;
+}
+
+.as-m-group--align-space-around {
+  justify-content: space-around;
+}
+
+.as-m-group--align-space-between {
+  justify-content: space-between;
+}
+
+.as-m-group--valign-center {
+  align-items: center;
+}
+
+.as-m-group--valign-top {
+  align-items: flex-start;
+}
+
+.as-m-group--valign-bottom {
+  align-items: flex-end;
+}
+
+.as-m-group--valign-baseline {
+  align-items: baseline;
+}
+
+.as-m-group--inline {
+  flex-wrap: nowrap;
+}
+
+.as-m-group--equal-size > * {
+  flex: 1;
+}
+
+.as-m-group--full-height {
+  height: 100%;
+}
+
+// --column
+.as-m-group--column {
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+// --gutter
+$m-group-gutter-map: (
+  xs: $m-group--xs--margin,
+  s: $m-group--s--margin,
+  m: $m-group--m--margin,
+  l: $m-group--l--margin,
+  xl: $m-group--xl--margin,
+);
+
+// Generate code for Group gutters
+@each $size, $gutter in $m-group-gutter-map {
+  .as-m-group--#{$size} {
+    margin: -1 * $gutter;
+
+    > * {
+      margin: $gutter;
+    }
+  }
+
+  .as-m-group--x-#{$size} {
+    margin-left: -1 * $gutter;
+    margin-right: -1 * $gutter;
+
+    > * {
+      margin-left: $gutter;
+      margin-right: $gutter;
+    }
+  }
+
+  .as-m-group--y-#{$size} {
+    margin-top: -1 * $gutter;
+    margin-bottom: -1 * $gutter;
+
+    > * {
+      margin-top: $gutter;
+      margin-bottom: $gutter;
+    }
+  }
+}
+
+// https://css-tricks.com/flexbox-truncated-text/
+.as-m-group--inline .as-t-box {
+  min-width: 0;
+}
+
+// --wrap
+.as-m-group--wrap-wrap {
+  flex-wrap: wrap;
+}
+.as-m-group--wrap-nowrap {
+  flex-wrap: nowrap;
+}
+.as-m-group--wrap-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}

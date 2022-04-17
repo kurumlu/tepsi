@@ -1,0 +1,21 @@
+// Variables for html ELEMENT
+$html--color: $t2-color__foreground !default;
+$html--background: $t2-color__background !default;
+
+$html--font-size: $t2-font-size__base; // No default rule, this sets 1rem
+$html--font-map: $t2-font-map__body !default;
+$html--line-height: $t2-line-height__m !default;
+
+
+// Code for html ELEMENT
+/*
+html {
+  height: 100%;
+  overflow: auto;
+  background: $html--background;
+  color: $html--color;
+  font-size: $html--font-size;
+  line-height: $html--line-height;
+  @include font-map($html--font-map);
+}
+*/

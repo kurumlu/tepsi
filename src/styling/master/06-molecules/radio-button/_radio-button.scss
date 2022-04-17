@@ -1,0 +1,31 @@
+$m-radio-button__label-padding-left: get-spacing(1) !default;
+$m-radio-button--form-element--height: get-spacing(4) !default;
+$m-radio-button--form-element--tablet--height: $t2-form-element--height !default;
+$m-radio-button__label--minor--font-size: $t2-font-size__body-s !default;
+
+.as-m-radio-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.as-m-radio-button--form-element {
+  height: $m-radio-button--form-element--height;
+
+  @include mq($from: tablet) {
+    height: $m-radio-button--form-element--tablet--height;
+  }
+}
+
+.as-m-radio-button__input {
+  position: absolute;
+}
+
+.as-m-radio-button__label {
+  flex-grow: 1;
+  padding-left: $m-radio-button__label-padding-left;
+}
+
+.as-m-radio-button__label--minor {
+  font-size: $m-radio-button__label--minor--font-size;
+}

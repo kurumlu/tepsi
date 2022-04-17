@@ -1,0 +1,133 @@
+$a-heading--color: $t2-color__foreground !default;
+$a-heading--font-map: $t2-font-map__heading !default;
+
+$a-heading--xl--font-size: $t2-font-size__heading-xl !default;
+$a-heading--xl--line-height: $t2-line-height__m !default;
+
+$a-heading--l--font-size: $t2-font-size__heading-l !default;
+$a-heading--l--line-height: $t2-line-height__s !default;
+
+$a-heading--m--font-size: $t2-font-size__heading-m !default;
+$a-heading--m--line-height: $t2-line-height__xxs !default;
+
+$a-heading--s--font-size: $t2-font-size__heading-s !default;
+$a-heading--s--line-height: $t2-line-height__xs !default;
+
+$a-heading--xs--font-size: $t2-font-size__heading-xs !default;
+$a-heading--xs--line-height: $t2-line-height__l !default;
+
+$a-heading--xxs--font-size: $t2-font-size__heading-xxs !default;
+$a-heading--xxs--line-height: $t2-line-height__s !default;
+
+.as-a-heading {
+  color: $a-heading--color;
+  margin: 0;
+  @include font-map($a-heading--font-map);
+}
+
+.heading .as-a-heading {
+  color: inherit;
+  @include font-map($a-heading--font-map);
+}
+
+.as-a-heading--xl {
+  font-size: $a-heading--xl--font-size;
+  line-height: $a-heading--xl--line-height;
+}
+
+.as-a-heading--l {
+  font-size: $a-heading--l--font-size;
+  line-height: $a-heading--l--line-height;
+}
+
+.as-a-heading--m {
+  font-size: $a-heading--m--font-size;
+  line-height: $a-heading--m--line-height;
+}
+
+.as-a-heading--s {
+  font-size: $a-heading--s--font-size;
+  line-height: $a-heading--s--line-height;
+}
+
+.as-a-heading--xs {
+  font-size: $a-heading--xs--font-size;
+  line-height: $a-heading--xs--line-height;
+}
+
+.as-a-heading--extra-title {
+  font-size: $a-heading--m--font-size;
+  line-height: $a-heading--m--line-height;
+
+  @include mq($from: tablet) {
+    font-size: $a-heading--l--font-size;
+    line-height: $a-heading--l--line-height;
+  }
+
+  @include mq($from: desktop) {
+    font-size: $a-heading--xl--font-size;
+    line-height: $a-heading--xl--line-height;
+  }
+}
+
+.as-a-heading--title {
+  font-size: $a-heading--s--font-size;
+  line-height: $a-heading--s--line-height;
+
+  @include mq($from: tablet) {
+    font-size: $a-heading--m--font-size;
+    line-height: $a-heading--m--line-height;
+  }
+
+  @include mq($from: desktop) {
+    font-size: $a-heading--l--font-size;
+    line-height: $a-heading--l--line-height;
+  }
+}
+
+.as-a-heading--subtitle {
+  font-size: $a-heading--xs--font-size;
+  line-height: $a-heading--xs--line-height;
+
+  @include mq($from: tablet) {
+    font-size: $a-heading--m--font-size;
+    line-height: $a-heading--m--line-height;
+  }
+}
+
+.as-a-heading--small-title {
+  font-size: $a-heading--xs--font-size;
+  line-height: $a-heading--xs--line-height;
+
+  @include mq($from: tablet) {
+    font-size: $a-heading--s--font-size;
+    line-height: $a-heading--s--line-height;
+  }
+
+  @include mq($from: desktop) {
+    font-size: $a-heading--m--font-size;
+    line-height: $a-heading--m--line-height;
+  }
+}
+
+.as-a-heading--extra-small-title {
+  font-size: $a-heading--xxs--font-size;
+  line-height: $a-heading--xxs--line-height;
+
+  @include mq($from: tablet) {
+    font-size: $a-heading--xs--font-size;
+    line-height: $a-heading--xs--line-height;
+  }
+}
+
+.as-a-heading--center {
+  text-align: center;
+}
+
+.as-a-heading--right {
+  text-align: right;
+}
+
+.as-a-heading--inherit {
+  color: inherit;
+}

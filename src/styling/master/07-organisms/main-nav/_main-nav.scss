@@ -1,0 +1,51 @@
+// Main navigator
+$o-main-nav-wrapper--background-color: $t2-color__menu-background !default;
+$o-main-nav-wrapper--desktop--height: get-spacing(8) !default;
+
+$o-main-nav--padding-top: get-spacing(1) !default;
+$o-main-nav--background-color: $t2-color__background !default;
+$o-main-nav--desktop--background-color: $t2-color__menu-background !default;
+$o-main-nav--desktop--max-width: $t2-config__page-max-width !default;
+
+// FIXME: not ABEM
+.as-o-main-nav-wrapper {
+  background-color: $o-main-nav-wrapper--background-color;
+
+  @include mq($from: desktop) {
+    height: $o-main-nav-wrapper--desktop--height;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 0;
+    position: relative;
+  }
+}
+
+.as-o-main-nav {
+  padding-top: $o-main-nav--padding-top;
+  padding-left: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  margin: 0;
+  background-color: $o-main-nav--background-color;
+
+  @include mq($from: desktop) {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    max-width: $o-main-nav--desktop--max-width;
+    margin: 0;
+    padding: 0 $t2-config__page-padding-desktop;
+    flex-wrap: wrap;
+    background-color: $o-main-nav--desktop--background-color;
+    height: 100%;
+    overflow: hidden;
+  }
+}

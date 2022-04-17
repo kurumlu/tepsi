@@ -1,0 +1,254 @@
+// Variables for Text ATOM
+$a-text--color: $t2-color__foreground !default;
+$a-text--font-size: $t2-font-size__body-m !default;
+$a-text--line-height: $t2-line-height__m !default;
+$a-text--font-map: $t2-font-map__body !default;
+
+// --size
+$a-text--xs--font-size: $t2-font-size__body-xs !default;
+$a-text--xs--line-height: $t2-line-height__xxs !default;
+
+$a-text--s--font-size: $t2-font-size__body-s !default;
+$a-text--s--line-height: $t2-line-height__s !default;
+
+$a-text--l--font-size: $t2-font-size__body-l !default;
+$a-text--l--line-height: $t2-line-height__l !default;
+
+$a-text--xl--font-size: $t2-font-size__body-xl !default;
+$a-text--xl--line-height: $t2-line-height__xxs !default;
+
+// --color
+$a-text--subtle--color: $t2-color__subtle !default;
+$a-text--positive--color: $t2-color__positive !default;
+$a-text--negative--color: $t2-color__negative !default;
+$a-text--discount--color: $t2-color__discount !default;
+$a-text--info--color: $t2-color__data !default;
+$a-text--notice--color: get-ui-color(o, light) !default;
+
+// --product-technical-features section
+$a-text--product-technical-features--padding: get-spacing(1.5) 0 get-spacing(1.5) get-spacing(3) !default;
+$a-text--product-technical-features--mobile--padding: get-spacing(1.5) get-spacing(2) !default;
+$a-text--product-technical-features__li--nth-child--background: $t2-color__gray-10 !default;
+
+// --product-details
+$a-text--product-details__li--margin-bottom: get-spacing(1) !default;
+
+// --product-technical-description
+$a-text--product-technical-description__ul--padding-left: get-spacing(2) !default;
+$a-text--product-technical-description__li--margin-bottom: get-spacing(2) !default;
+
+// Code for Text ATOM
+.as-a-text {
+  color: $a-text--color;
+  font-size: $a-text--font-size;
+  line-height: $a-text--line-height;
+
+  @include font-map($a-text--font-map);
+
+  text-decoration: none;
+}
+
+// --size
+.as-a-text--xs {
+  font-size: $a-text--xs--font-size;
+  line-height: $a-text--xs--line-height;
+}
+
+.as-a-text--s {
+  font-size: $a-text--s--font-size;
+  line-height: $a-text--s--line-height;
+}
+
+.as-a-text--l {
+  font-size: $a-text--l--font-size;
+  line-height: $a-text--l--line-height;
+}
+
+.as-a-text--xl {
+  font-size: $a-text--xl--font-size;
+  line-height: $a-text--xl--line-height;
+}
+
+// --type
+.as-a-text--extra-large-content {
+  font-size: $a-text--s--font-size;
+  line-height: $a-text--s--line-height;
+
+  @include mq($from: tablet) {
+    font-size: $a-text--font-size;
+    line-height: $a-text--line-height;
+  }
+
+  @include mq($from: desktop) {
+    font-size: $a-text--xl--font-size;
+    line-height: $a-text--xl--line-height;
+  }
+}
+
+.as-a-text--extra-content {
+  font-size: $a-text--font-size;
+  line-height: $a-text--line-height;
+
+  @include mq($from: tablet) {
+    font-size: $a-text--l--font-size;
+    line-height: $a-text--l--line-height;
+  }
+}
+
+.as-a-text--content {
+  font-size: $a-text--s--font-size;
+  line-height: $a-text--s--line-height;
+
+  @include mq($from: tablet) {
+    font-size: $a-text--font-size;
+    line-height: $a-text--line-height;
+  }
+}
+
+.as-a-text--sub-content {
+  font-size: $a-text--xs--font-size;
+  line-height: $a-text--xs--line-height;
+
+  @include mq($from: tablet) {
+    font-size: $a-text--s--font-size;
+    line-height: $a-text--s--line-height;
+  }
+}
+
+.as-a-text--title {
+  font-size: $a-text--l--font-size;
+  line-height: $a-text--l--line-height;
+
+  @include mq($from: tablet) {
+    font-size: $a-text--xl--font-size;
+    line-height: $a-text--xl--line-height;
+  }
+}
+
+.as-a-text--none {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+// --color
+.as-a-text--subtle {
+  color: $a-text--subtle--color;
+}
+
+.as-a-text--positive {
+  color: $a-text--positive--color;
+}
+
+.as-a-text--negative {
+  color: $a-text--negative--color;
+}
+
+.as-a-text--discount {
+  color: $a-text--discount--color;
+}
+
+.as-a-text--inherit {
+  color: inherit;
+}
+
+.as-a-text--info {
+  color: $a-text--info--color;
+}
+
+.as-a-text--notice {
+  color: $a-text--notice--color;
+}
+
+// --align
+.as-a-text--center {
+  text-align: center;
+}
+
+.as-a-text--right {
+  text-align: right;
+}
+
+// --uppercase
+.as-a-text--uppercase {
+  text-transform: uppercase;
+}
+
+// emphasized
+strong.as-a-text,
+.as-a-text strong {
+  @include font-map(
+    $map: $t2-font-map__body-emp,
+    $style: inherit,
+    $letter-spacing: inherit,
+    $text-transform: inherit
+  );
+}
+
+// clipped
+.as-a-text--clipped {
+  @include text-truncate;
+}
+
+// line-clamp
+@for $i from 0 through 5 {
+  .as-a-text--line-clamp-#{$i} {
+    @include line-clamp($i);
+  }
+}
+
+// html reset elements
+.as-a-text--html p {
+  margin: 0;
+}
+
+
+// --product-technical-features
+.as-a-text--product-technical-features-odd,
+.as-a-text--product-technical-features-even {
+  width: 100%;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    padding: $a-text--product-technical-features--mobile--padding;
+
+    @include mq($from: tablet-small) {
+      padding: $a-text--product-technical-features--padding;
+    }
+  }
+}
+
+.as-a-text--product-technical-features-odd {
+  li:nth-child(odd) {
+    background: $a-text--product-technical-features__li--nth-child--background;
+  }
+}
+
+.as-a-text--product-technical-features-even {
+  li:nth-child(even) {
+    background: $a-text--product-technical-features__li--nth-child--background;
+  }
+}
+
+// --product-details
+.as-a-text--product-details {
+  li:not(:last-child) {
+    margin-bottom: $a-text--product-details__li--margin-bottom;
+  }
+}
+
+// --product-technical-description
+.as-a-text--product-technical-description {
+  ul {
+    margin: 0;
+    padding-left: $a-text--product-technical-description__ul--padding-left;
+  }
+
+  li:not(:last-child) {
+    margin-bottom: $a-text--product-technical-description__li--margin-bottom;
+  }
+}

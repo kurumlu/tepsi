@@ -1,0 +1,118 @@
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs';
+import { iconShowCase } from '../../../storybook_addons/storyWrapperDecorator';
+import { Icon, IconName, IconColor, IconSize, IconAnimation } from './Icon';
+import { Group, GroupGutter } from '../../06-molecules/group/Group';
+import { Text, TextSize, TextColor } from '../text/Text';
+
+
+<Meta
+  title="Design system/Patterns/Atoms/Icon"
+  component={Icon}
+  decorators={[
+    (Story) => (
+      <Group gutter={GroupGutter.MEDIUM}>
+        <Story />
+      </Group>
+    ),
+  ]}
+/>
+
+# Icon
+
+<Canvas>
+  <Story name="All">
+    {Object.values(IconName).map((name, i) => (
+      <div style={{ width: 300 }}>
+        <Group gutter={GroupGutter.MEDIUM}>
+          <Icon title={`IconName.${Object.keys(IconName)[i]}`} name={name} key={i} />
+          <Text size={TextSize.SMALL} color={TextColor.SUBTLE}>{Object.keys(IconName)[i]}</Text>
+        </Group>
+      </div>
+    ))}
+  </Story>
+</Canvas>
+
+---
+
+## Available props
+
+<ArgsTable for={Icon} />
+
+---
+
+### Name
+
+Use the `name` prop to choose an icon. Uses a component from `IconName`.
+
+```javascript
+<Icon name={...} />
+```
+
+### Color
+
+Use the `color` prop to change the color of the icon. Uses the `IconColor` enum.
+
+```javascript
+<Icon color={...} />
+```
+
+<Canvas>
+  <Story name="Color">
+    <Icon name={IconName.STORE} color={IconColor.PRIMARY} />
+    <Icon name={IconName.STORE} color={IconColor.SECONDARY} />
+    <Icon name={IconName.STORE} color={IconColor.TERTIARY} />
+    <Icon name={IconName.STORE} color={IconColor.ACTION} />
+    <Icon name={IconName.STORE} color={IconColor.ACTION_NAV} />
+    <Icon name={IconName.STORE} color={IconColor.NEGATIVE} />
+    <Icon name={IconName.STORE} color={IconColor.POSITIVE} />
+    <Icon name={IconName.STORE} color={IconColor.SUBTLE} />
+    <Icon name={IconName.STORE} color={IconColor.NOTICE} />
+  </Story>
+</Canvas>
+
+
+### Size
+
+Use the `size` prop to change the size of the icon. Uses the `IconSize` enum.
+
+```javascript
+<Icon size={...} />
+```
+
+<Canvas>
+  <Story name="Size">
+    <Icon name={IconName.GIFT} size={IconSize.EXTRA_MINOR} />
+    <Icon name={IconName.GIFT} size={IconSize.MINOR} />
+    <Icon name={IconName.GIFT} size={IconSize.MEDIUM} />
+    <Icon name={IconName.GIFT} size={IconSize.MAJOR} />
+    <Icon name={IconName.GIFT} size={IconSize.EXTRA_MAJOR} />
+  </Story>
+</Canvas>
+
+
+### Animation
+
+Use the `animation` prop to set the special type of the animation for icon. Uses the `IconAnimation` enum.
+
+```javascript
+<Icon animation={...} />
+```
+
+<Canvas>
+  <Story name="Animation">
+    <Icon name={IconName.LOCATION} animation={IconAnimation.BOP} />
+    <Icon name={IconName.LOCATION} animation={IconAnimation.HEART_PULSE} />
+    <Icon name={IconName.LOCATION} animation={IconAnimation.SPIN} />
+  </Story>
+</Canvas>
+
+
+### Other
+
+Other props that can be added:
+- `id`
+- `className`
+- `dynamicContent`
+- `ariaLabel`
+- `ariaHidden`
+- `inline`

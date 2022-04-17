@@ -1,0 +1,98 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { MediaQueryWrapper, MediaQueryWrapperQuery } from './MediaQueryWrapper';
+
+<Meta
+ title="Design system/Patterns/Templates/Media query wrapper"
+  component={MediaQueryWrapper}
+/>
+
+# Media query wrapper
+
+Use this component to show content on a specific view size.
+
+## Available props
+| Name    | Type                     | Required | Default value |
+|---------|--------------------------|----------|---------------|
+| `query` | *MediaQueryWrapperQuery* | *false*  | *MOBILE*      |
+
+#### MediaQueryWrapperQuery
+| Key             |
+|-----------------|
+| *MOBILE*        |
+| *DESKTOP*       |
+| *TABLET*        |
+| *TABLET-SMALL * |
+
+## Examples
+
+### Mobile
+<Canvas>
+  <Story name="Mobile">
+    <MediaQueryWrapper query={MediaQueryWrapperQuery.MOBILE}>
+      I only show on mobile.
+    </MediaQueryWrapper>
+  </Story>
+</Canvas>
+
+### Tablet Small
+<Canvas>
+  <Story name="Tablet Small">
+    <MediaQueryWrapper query={MediaQueryWrapperQuery.TABLET_SMALL}>
+      I only show on tablet-small.
+    </MediaQueryWrapper>
+  </Story>
+</Canvas>
+
+### Tablet
+<Canvas>
+  <Story name="Tablet">
+    <MediaQueryWrapper query={MediaQueryWrapperQuery.TABLET}>
+      I only show on tablet.
+    </MediaQueryWrapper>
+  </Story>
+</Canvas>
+
+### Desktop
+<Canvas>
+  <Story name="Desktop">
+    <MediaQueryWrapper query={MediaQueryWrapperQuery.DESKTOP}>
+      I only show on desktop.
+    </MediaQueryWrapper>
+  </Story>
+</Canvas>
+
+### Mobile and Tablet
+<Canvas>
+  <Story name="Mobile and Tablet">
+    <MediaQueryWrapper query={[MediaQueryWrapperQuery.MOBILE, MediaQueryWrapperQuery.TABLET]}>
+      I only show on mobile and tablet.
+    </MediaQueryWrapper>
+  </Story>
+</Canvas>
+
+### Desktop and Tablet
+<Canvas>
+  <Story name="Desktop and Tablet">
+    <MediaQueryWrapper query={[MediaQueryWrapperQuery.DESKTOP, MediaQueryWrapperQuery.TABLET]}>
+      I only show on desktop and tablet.
+    </MediaQueryWrapper>
+  </Story>
+</Canvas>
+
+### Mobile and Desktop
+<Canvas>
+  <Story name="Mobile and Desktop">
+    <MediaQueryWrapper query={[MediaQueryWrapperQuery.DESKTOP, MediaQueryWrapperQuery.MOBILE]}>
+      I only show on desktop and mobile.
+    </MediaQueryWrapper>
+  </Story>
+</Canvas>
+
+### Mobile, Tablet Small and Desktop
+<Canvas>
+  <Story name="Mobile, Tablet Small and Desktop">
+    <MediaQueryWrapper query={[MediaQueryWrapperQuery.DESKTOP, MediaQueryWrapperQuery.MOBILE, MediaQueryWrapperQuery.TABLET_SMALL]}>
+      I only show on desktop, tablet-small and mobile.
+    </MediaQueryWrapper>
+  </Story>
+</Canvas>

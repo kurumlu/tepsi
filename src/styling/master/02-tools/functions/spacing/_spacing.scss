@@ -1,0 +1,5 @@
+/* Spacing functions */
+
+@function get-spacing($key) {
+  @return map-get($t2-spacing__map, $key);
+}

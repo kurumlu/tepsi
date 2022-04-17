@@ -1,0 +1,37 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { Required } from '../../storybook-elements/constants/Required';
+import { StepperSimple } from './StepperSimple';
+
+<Meta
+  title="Design system/Patterns/Molecules/Stepper Simple"
+  component={StepperSimple}
+/>
+
+# Stepper Simple
+
+> Steppers convey progress through steps. It provides a wizard-like workflow.
+
+<Canvas>
+  <Story name="Default">
+    <StepperSimple size={4} />
+  </Story>
+</Canvas>
+
+---
+
+## Available props
+
+| Name         | Type     | Required    | Default value |
+|--------------|----------|-------------|---------------|
+| `activeStep` | *number* |             | *1*           |
+| `dataQA`     | *string* |             |               |
+| `size`       | *number* | <Required/> |               |
+
+---
+
+### Custom stepper
+<Canvas>
+  <Story name="Custom">
+    <StepperSimple size={6} activeStep={2} />
+  </Story>
+</Canvas>

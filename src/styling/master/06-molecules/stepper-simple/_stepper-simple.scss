@@ -1,0 +1,24 @@
+$m-stepper-simple__item--width: get-spacing(4) !default;
+$m-stepper-simple__item--height: get-spacing(0.5) !default;
+$m-stepper-simple__item--margin-right: get-spacing(0.5) !default;
+$m-stepper-simple__item--background-color: $t2-color__gray-30 !default;
+$m-stepper-simple__item--active--background-color: $t2-color__gray-100 !default;
+
+.as-m-stepper-simple {
+  display: flex;
+}
+
+.as-m-stepper-simple__item {
+  width: $m-stepper-simple__item--width;
+  height: $m-stepper-simple__item--height;
+  margin-right: $m-stepper-simple__item--margin-right;
+  background-color: $m-stepper-simple__item--background-color;
+}
+
+.as-m-stepper-simple__item:last-child {
+  margin-right: 0;
+}
+
+.as-m-stepper-simple__item--active {
+  background-color: $m-stepper-simple__item--active--background-color;
+}

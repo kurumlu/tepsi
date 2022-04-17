@@ -1,0 +1,357 @@
+/* TODO: Refactor
+ * wrong ABEM classnames,
+ * styling of other elements (a-link)
+ **/
+
+// Variables for Category-flyout ORGANISM
+$o-category-flyout--desktop--max-width: $t2-config__page-max-width !default;
+$o-category-flyout--tablet--max-width: 525px !default;
+
+$o-category-flyout-wrapper--desktop--box-shadow: 0 get-spacing(2) get-spacing(2) 0 rgba(0,0,0,0.1) !default;
+$o-category-flyout-wrapper--desktop--top: -9999px !default;
+$o-category-flyout-wrapper--max-width: 525px !default;
+$o-category-flyout-wrapper--background-color: $t2-color__white !default;
+$o-category-flyout-wrapper--animation: top-fade-in .1s ease-in-out .1s normal backwards !default;
+
+$o-category-flyout-title--font-size: $t2-font-size__body-l !default;
+$o-category-flyout-title--margin-top: get-spacing(3) !default;
+$o-category-flyout-title--margin-right: 0 !default;
+$o-category-flyout-title--margin-bottom: get-spacing(2.5) !default;
+$o-category-flyout-title--margin-left: get-spacing(4) !default;
+
+$o-category-flyout-menu--padding-top: get-spacing(1) !default;
+$o-category-flyout-menu--desktop--margin: 0 get-spacing(4) get-spacing(4) !default;
+
+$o-category-flyout-menu__column--padding-right: get-spacing(3) !default;
+$o-category-flyout-menu__column--desktop--width: calc(100% / 6) !default;
+$o-category-flyout-menu__column--first-child--desktop--margin-bottom: get-spacing(1.5) !default;
+$o-category-flyout-menu__column--desktop--color: $t2-color__foreground !default;
+
+$o-category-flyout-menu__column-item--border-bottom: thin solid $t2-color__divider !default;
+$o-category-flyout-menu__column-item--margin-top: get-spacing(3) !default;
+
+$o-category-flyout-menu__mobile-item--mobile--margin: 0 get-spacing(2) !default;
+$o-category-flyout-menu__a-menu-item--mobile-only--border-bottom: thin solid $t2-color__divider !default;
+
+$o-category-flyout__menu-wrapper--mobile--box-shadow: 0 get-spacing(1) get-spacing(2) 0 rgba(0, 0, 0, 0.1) !default;
+
+$o-category-flyout__menu-block--margin-bottom: get-spacing(3) !default;
+$o-category-flyout__menu-block--padding: get-spacing(1) 0 0 0 !default;
+$o-category-flyout__menu-block--desktop--margin-top: get-spacing(1.5) !default;
+$o-category-flyout__menu-block--desktop__children--margin-bottom: get-spacing(1.5) !default;
+$o-category-flyout__menu-block--margin-bottom: get-spacing(1.5) !default;
+$o-category-flyout__menu-block__o-category-flyout-menu__mobile-item--mobile--border-bottom: thin solid $t2-color__divider !default;
+
+$o-category-flyout-menu__mobile-item__a-link--mobile--hover--background-color: $t2-color__gray-10 !default;
+$o-category-flyout-menu__mobile-item__a-link--emp--mobile--color: $t2-color__foreground !default;
+
+$o-category-flyout-links-block--margin: get-spacing(3) 0 !default;
+$o-category-flyout-links-block__children--margin-bottom: get-spacing(1.5) !default;
+
+$a-link-main-nav__label--padding: get-spacing(2) !default;
+$a-link-main-nav__label--margin: 0 -#{get-spacing(2)} !default;
+$a-link-main-nav__label--font-size: $t2-font-size__body-m !default;
+$a-link-main-nav__label--font-map: $t2-font-map__body !default;
+$a-link-main-nav__label--hover--desktop--background-color: $t2-color__gray-10 !default;
+$a-link-main-nav__label--line-height: $t2-line-height__m !default;
+
+
+// Styling for Category-flyout ORGANISM
+.as-o-category-flyout-wrapper {
+  display: none;
+  position: fixed;
+  z-index: get-z-index(above);
+  top: 0;
+  left: 0;
+  max-width: $o-category-flyout-wrapper--max-width;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  flex-flow: column;
+  align-items: flex-start;
+  background: $o-category-flyout-wrapper--background-color;
+  text-align: left;
+  padding: 0;
+
+  @include mq($from: desktop) {
+    position: absolute;
+    top: $o-category-flyout-wrapper--desktop--top;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+    width: 100%;
+    max-width: none;
+    height: auto;
+    box-shadow: $o-category-flyout-wrapper--desktop--box-shadow;
+  }
+}
+
+.as-o-category-flyout {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  height: 100%;
+
+  @include mq($from: desktop) {
+    max-width: $o-category-flyout--desktop--max-width;
+  }
+}
+
+.as-o-category-flyout-title {
+  display: none;
+  font-size: $o-category-flyout-title--font-size;
+  margin: $o-category-flyout-title--margin-top $o-category-flyout-title--margin-right $o-category-flyout-title--margin-bottom $o-category-flyout-title--margin-left;
+  @include mq($from: desktop) {
+    display: inline-block;
+  }
+}
+
+.as-o-main-nav__item--state-toggle {
+  display: none;
+}
+
+.as-o-main-nav__item--state-toggle:checked ~ .as-o-category-flyout-wrapper {
+  @include mq($until: desktop) {
+    left: 0;
+    display: block;
+  }
+}
+
+.as-a-menu-item--active:not(.as-a-menu-item--disabled) .as-o-category-flyout-wrapper,
+.as-a-menu-item:not(.as-a-menu-item--disabled):hover .as-o-category-flyout-wrapper {
+  @include mq($from: desktop) {
+    display: flex;
+    top: 100%;
+    animation: $o-category-flyout-wrapper--animation;
+  }
+}
+
+.as-a-link-main-nav__label {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  font-size: $a-link-main-nav__label--font-size;
+  @include font-map($a-link-main-nav__label--font-map);
+  width: 100%;
+  padding: $a-link-main-nav__label--padding;
+  margin: $a-link-main-nav__label--margin;
+  line-height: $a-link-main-nav__label--line-height;
+  color: inherit;
+
+  @include mq($from: desktop) {
+    display: none;
+  }
+}
+
+.as-a-link-main-nav__label:hover {
+  @include mq($until: desktop) {
+    background-color: $a-link-main-nav__label--hover--desktop--background-color;
+  }
+}
+
+.as-o-category-flyout-menu {
+  overflow-y: auto;
+  padding-top: $o-category-flyout-menu--padding-top;
+
+  @include mq($from: desktop) {
+    display: flex;
+    justify-content: flex-start;
+    margin: $o-category-flyout-menu--desktop--margin;
+    padding-top: 0;
+    height: auto;
+  }
+}
+
+.as-o-category-flyout-menu__column {
+  @include mq($from: desktop) {
+    box-sizing: border-box;
+    width: $o-category-flyout-menu__column--desktop--width;
+    padding-right: $o-category-flyout-menu__column--padding-right;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+
+    color: $o-category-flyout-menu__column--desktop--color;
+
+    overflow-wrap: normal;
+    word-wrap: normal;
+    word-break: break-word;
+    line-break: auto;
+    hyphens: manual;
+  }
+}
+
+.as-o-category-flyout-menu__column-item {
+  width: 100%;
+  border-bottom: $o-category-flyout-menu__column-item--border-bottom;
+
+  &:not(:first-child) {
+    @include mq($from: desktop) {
+      margin-top: $o-category-flyout-menu__column-item--margin-top;
+    }
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  @include mq($from: desktop) {
+    border-bottom: none;
+  }
+}
+
+.as-o-category-flyout-menu__grid-column {
+  display: none;
+
+  @include mq($from: desktop) {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column;
+    max-width: $t2-config__nav-content-size-max;
+    width: calc(100% / 6);
+    margin-left: auto;
+  }
+}
+.as-o-category-flyout-menu__grid-column--2 {
+  @include mq($from: desktop) {
+    max-width: $t2-config__nav-content-full-size-max;
+    width: calc(100% / 3);
+  }
+}
+
+.as-o-category-flyout-menu__column:first-child {
+  @include mq($from: desktop) {
+    margin-bottom: $o-category-flyout-menu__column--first-child--desktop--margin-bottom;
+  }
+}
+
+.as-o-category-flyout-menu__column:last-child {
+  @include mq($from: desktop) {
+    margin-right: 0;
+  }
+}
+
+.as-o-category-flyout-menu__mobile-item {
+  @include mq($until: desktop) {
+    margin: $o-category-flyout-menu__mobile-item--mobile--margin;
+  }
+}
+
+.as-o-category-flyout-menu__mobile-item:hover > .as-a-link {
+  @include mq($until: desktop) {
+    background-color: $o-category-flyout-menu__mobile-item__a-link--mobile--hover--background-color;
+  }
+}
+
+.as-o-category-flyout-menu__mobile-item .as-a-link--emp {
+  @include mq($until: desktop) {
+    color: $o-category-flyout-menu__mobile-item__a-link--emp--mobile--color;
+    display: flex;
+  }
+}
+
+.as-o-category-flyout-menu > .as-a-menu-item--mobile-only {
+  border-bottom: $o-category-flyout-menu__a-menu-item--mobile-only--border-bottom;
+}
+
+.as-o-category-flyout-links-block {
+  display: flex;
+  flex-flow: column;
+  margin: $o-category-flyout-links-block--margin;
+
+  & > * {
+    margin-bottom: $o-category-flyout-links-block__children--margin-bottom;
+  }
+
+  &:first-child {
+    margin: 0;
+  }
+}
+
+.as-o-category-flyout__menu-wrapper {
+  display: none;
+  text-align: left;
+  padding: 0;
+  top: 0;
+  left: 0;
+
+  @include mq(tablet-small, desktop) {
+    max-width: $o-category-flyout--tablet--max-width;
+  }
+
+  @include mq($until: desktop) {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100%;
+    box-shadow: $o-category-flyout__menu-wrapper--mobile--box-shadow;
+    overflow-y: auto;
+    overflow-x: hidden;
+    flex-flow: column;
+    align-items: flex-start;
+    background: $o-category-flyout-wrapper--background-color;
+    left: -100%;
+    z-index: get-z-index(default);
+  }
+
+  @include mq($from: desktop) {
+    max-width: $o-category-flyout--desktop--max-width;
+    height: auto;
+    display: flex;
+  }
+}
+
+.as-o-category-flyout__menu {
+  flex-grow: 1;
+  width: 100%;
+}
+
+.as-o-category-flyout__menu-block {
+  list-style: none;
+  padding: $o-category-flyout__menu-block--padding;
+  width: 100%;
+  margin-top: 0;
+  overflow-y: auto;
+
+  @include mq($from: desktop) {
+    margin-top: $o-category-flyout__menu-block--desktop--margin-top;
+    padding: 0;
+    height: auto;
+
+    & > * {
+      margin-bottom: $o-category-flyout__menu-block--desktop__children--margin-bottom;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.as-o-category-flyout-menu--state-toggle {
+  display: none;
+}
+
+.as-o-category-flyout-menu--state-toggle:checked ~ .as-o-category-flyout__menu-wrapper {
+  @include mq($until: desktop) {
+    left: 0;
+    display: flex;
+  }
+}
+
+.as-o-category-flyout__menu-block > .as-o-category-flyout-menu__mobile-item {
+  @include mq($until: desktop) {
+    border-bottom: $o-category-flyout__menu-block__o-category-flyout-menu__mobile-item--mobile--border-bottom;
+  }
+}
+
+// reset on touch devices (PLTR-1051)
+.as-a-menu-item:not(.as-a-menu-item--active):hover .as-o-category-flyout-wrapper {
+  @include mq($from: desktop) {
+    @media (hover: none) {
+      display: none;
+    }
+  }
+}

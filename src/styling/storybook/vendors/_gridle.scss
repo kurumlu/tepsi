@@ -1,0 +1,74 @@
+.fluid-container {
+  @include clearfix;
+}
+/*
+Documentation: https://<<sdworx>>.atlassian.net/wiki/spaces/WEB/pages/1354924048/Gridle+States+mediaqueries
+*/
+
+@import "~gridle/sass/gridle/gridle";
+$gutter-size: 16px !default;
+
+// @import "../variables";
+$settings: (
+  context: 12, //number of columns in your grid
+  gutter-width: $gutter-size, //size of gutters
+  direction: ltr, //direction
+  name-multiplicator: 1 // to generate like grid-5, grid-10, etc...
+);
+@include gridle_setup($settings);
+
+@include gridle_register_state(mobile, (
+  max-width: 400px,
+));
+
+@include gridle_register_state(mobile-large, (
+  min-width: 401px,
+  max-width: 525px,
+));
+
+@include gridle_register_state(tablet-small, (
+  min-width: 526px,
+  max-width: 767px,
+));
+
+@include gridle_register_state(tablet, (
+  min-width: 768px,
+  max-width: 1024px,
+));
+
+@include gridle_register_state(desktop, (
+  min-width: 1025px,
+));
+
+@include gridle_register_state(desktop-specific, (
+  min-width: 1025px,
+  max-width: 1399px,
+));
+
+@include gridle_register_state(desktop-large, (
+  min-width: 1400px,
+));
+
+@include gridle_generate_classes();
+
+// generate a center custom class for all the states :
+@include gridle_generate_custom_class(('text--center', '%-', '%state')) {
+  text-align: center;
+}
+
+// generate a center custom class for all the states :
+@include gridle_generate_custom_class(('text--left', '%-', '%state')) {
+  text-align: left;
+}
+
+// generate a center custom class for all the states :
+@include gridle_generate_custom_class(('text--right', '%-', '%state')) {
+  text-align: right;
+}
+
+@include gridle_generate_custom_class(('fluid-container')) {
+  width: 100%;
+}
+
+@include gridle_register_state(range-small, (max-width: 767px));
+@include gridle_register_state(range-large, (min-width: 768px));

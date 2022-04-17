@@ -1,0 +1,19 @@
+$a-progress--height: get-spacing(0.5) !default;
+$a-progress--background-color: $t2-color__gray-30 !default;
+$a-progress--border-radius: $t2-border-radius__round !default;
+
+$a-progress__bar--background-color: $t2-color__info !default;
+$a-progress__bar--border-radius: $t2-border-radius__round !default;
+
+.as-a-progress {
+  width: 100%;
+  height: $a-progress--height;
+  background-color: $a-progress--background-color;
+  border-radius: $a-progress--border-radius;
+}
+
+.as-a-progress__bar {
+  height: 100%;
+  background-color: $a-progress__bar--background-color;
+  border-radius: $a-progress__bar--border-radius;
+}

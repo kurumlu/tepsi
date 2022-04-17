@@ -1,0 +1,410 @@
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs/blocks';
+import { Box, BoxTheme, SpacingProps } from './Box';
+import { mockText } from './box.mock';
+import { Text } from '../../05-atoms/text/Text';
+
+
+<Meta
+  title="Design system/Patterns/Templates/Box"
+  component={Box}
+/>
+
+# Box Component
+
+> Box component wraps a content to a div to modify an element’s appearance.
+
+---
+
+## Available props:
+
+<ArgsTable of={Box} />
+
+
+### FlexObject
+
+| Name      | Type                 |
+|-----------|----------------------|
+| `grow`    | *number*             |
+| `shrink`  | *number*             |
+| `basis`   | *number | string*    |
+
+---
+
+> Property `spacing` depends on viewport and takes a list of different margin/padding values.
+Values are not any and should be used from sass spacing variables list `$spacing-scale-map`:
+
+```javascript
+$spacing-scale-map: (0, .25, .5, 1, 1.5, 2, 2.5, 3, 4, 5, 6, 7, 8, 9, 10, 12, 16);
+```
+### With margin
+
+```javascript
+<Box
+  desktop={{ spacing: { marginLeft: 2, marginRight: 2 }}}
+  mobile={{ spacing: { marginLeft: 1, marginRight: 1 }}}>
+  <Text>{mockText}</Text>
+</Box>
+```
+
+<Canvas>
+  <Story name="With margin">
+    <Box
+      desktop={{ spacing: { marginLeft: 2, marginRight: 2 }}}
+      mobile={{ spacing: { marginLeft: 1, marginRight: 1 }}}>
+      <Text>{mockText}</Text>
+    </Box>
+  </Story>
+</Canvas>
+
+### With padding
+
+```javascript
+<Box
+  desktop={{ spacing: { paddingLeft: 2, paddingRight: 2 }}}
+  mobile={{ spacing: { paddingLeft: 1, paddingRight: 1 }}}>
+  <Text>{mockText}</Text>
+</Box>
+```
+
+<Canvas>
+  <Story name="With padding">
+    <Box
+      desktop={{ spacing: { paddingLeft: 2, paddingRight: 2 }}}
+      mobile={{ spacing: { paddingLeft: 1, paddingRight: 1 }}}>
+      <Text>{mockText}</Text>
+    </Box>
+  </Story>
+</Canvas>
+
+### With margin and theme
+
+```javascript
+<Box
+  desktop={{ spacing: { marginLeft: 2, marginRight: 2 }}}
+  mobile={{ spacing: { marginLeft: 1, marginRight: 1 }, theme: BoxTheme.SECONDARY}}>
+  <Text>{mockText}</Text>
+</Box>
+```
+
+<Canvas>
+  <Story name="With margin and theme">
+    <Box
+      desktop={{ spacing: { marginLeft: 2, marginRight: 2 }}}
+      mobile={{ spacing: { marginLeft: 1, marginRight: 1 }, theme: BoxTheme.SECONDARY}}>
+      <Text>{mockText}</Text>
+    </Box>
+  </Story>
+</Canvas>
+
+---
+
+### With shadow
+
+```javascript
+<Box withShadow mobile={{ theme: BoxTheme.PRIMARY}}>
+  <Text>{mockText}</Text>
+</Box>
+```
+
+<Canvas>
+  <Story name="With shadow">
+    <Box
+      withShadow
+      mobile={{ spacing: { padding: 4, margin: 4 }, theme: BoxTheme.PRIMARY}}>
+      <Text>{mockText}</Text>
+      <Text>{mockText}</Text>
+      <Text>{mockText}</Text>
+      <Text>{mockText}</Text>
+    </Box>
+  </Story>
+</Canvas>
+
+### With flex properties
+
+```javascript
+<Box flex={{ grow: 1, shrink: 1 }}>
+  <Text>{mockText}</Text>
+</Box>
+```
+
+<Canvas>
+  <Story name="With flex properties">
+    <Box
+      flex={{ grow: 1, shrink: 1 }}>
+      <Text>{mockText}</Text>
+    </Box>
+  </Story>
+</Canvas>
+
+---
+
+### With hidden
+
+```javascript
+<Box hidden>
+  <Text>{mockText}</Text>
+</Box>
+```
+
+<Canvas>
+  <Story name="With hidden">
+    <Box hidden>
+      <Text>{mockText}</Text>
+    </Box>
+  </Story>
+</Canvas>
+
+---
+
+## Themes
+
+| BoxTheme          |
+|-------------------|
+| `PRIMARY`         |
+| `SECONDARY`       |
+| `SECONDARY_LIGHT` |
+| `TERTIARY`        |
+| `TERTIARY_LIGHT`  |
+| `QUATERNARY`      |
+| `EXTERNAL`        |
+| `WHITE`           |
+| `NOTICE`          |
+| `NONE`            |
+
+Themes are optional and alter the look of the box and its content. For example a background color, font size, etc...
+Background Theme is integrated in viewPortProps such that it can specifically be configured by media type
+
+### Without theme
+<Canvas>
+  <Story name="Without theme">
+    <Box
+      desktop={{ spacing: { padding: 3, marginBottom: 5 }}}
+      tablet={{ spacing: { padding: 3, marginBottom: 4 }}}
+      mobile={{ spacing: { padding: 2, marginBottom: 2 }}}>
+      <Text>
+        <b>Test title</b><br/>
+        {mockText}
+      </Text>
+    </Box>
+  </Story>
+</Canvas>
+
+### Primary theme
+<Canvas>
+  <Story name="With primary theme">
+    <Box
+      desktop={{ spacing: { padding: 3, marginBottom: 5 }}}
+      tablet={{ spacing: { padding: 3, marginBottom: 4 }}}
+      mobile={{ spacing: { padding: 2, marginBottom: 2 }, theme: BoxTheme.PRIMARY}}>
+      <Text>
+        <b>Test title</b><br/>
+        {mockText}
+      </Text>
+    </Box>
+  </Story>
+</Canvas>
+
+### Secondary theme
+<Canvas>
+  <Story name="With secondary theme">
+    <Box
+      desktop={{ spacing: { padding: 3, marginBottom: 5 }}}
+      tablet={{ spacing: { padding: 3, marginBottom: 4 }}}
+      mobile={{ spacing: { padding: 2, marginBottom: 2 }, theme: BoxTheme.SECONDARY}}>
+      <Text>
+        <b>Test title</b><br/>
+        {mockText}
+      </Text>
+    </Box>
+  </Story>
+</Canvas>
+
+### Secondary light theme
+<Canvas>
+  <Story name="With secondary light theme">
+    <Box
+      desktop={{ spacing: { padding: 3, marginBottom: 5 }}}
+      tablet={{ spacing: { padding: 3, marginBottom: 4 }}}
+      mobile={{ spacing: { padding: 2, marginBottom: 2 }, theme: BoxTheme.SECONDARY_LIGHT}}>
+      <Text>
+        <b>Test title</b><br/>
+        {mockText}
+      </Text>
+    </Box>
+  </Story>
+</Canvas>
+
+### Tertiary theme
+<Canvas>
+  <Story name="With tertiary theme">
+    <Box
+      desktop={{ spacing: { padding: 3, marginBottom: 5 }}}
+      tablet={{ spacing: { padding: 3, marginBottom: 4 }}}
+      mobile={{ spacing: { padding: 2, marginBottom: 2 }, theme: BoxTheme.TERTIARY}}>
+      <Text>
+        <b>Test title</b><br/>
+        {mockText}
+      </Text>
+    </Box>
+  </Story>
+</Canvas>
+
+### Tertiary light theme
+<Canvas>
+  <Story name="With tertiary light theme">
+    <Box
+      desktop={{ spacing: { padding: 3, marginBottom: 5 }}}
+      tablet={{ spacing: { padding: 3, marginBottom: 4 }}}
+      mobile={{ spacing: { padding: 2, marginBottom: 2 }, theme: BoxTheme.TERTIARY_LIGHT}}>
+      <Text>
+        <b>Test title</b><br/>
+        {mockText}
+      </Text>
+    </Box>
+  </Story>
+</Canvas>
+
+### Quaternary theme
+<Canvas>
+  <Story name="With quaternary theme">
+    <Box
+      desktop={{ spacing: { padding: 3, marginBottom: 5 }}}
+      tablet={{ spacing: { padding: 3, marginBottom: 4 }}}
+      mobile={{ spacing: { padding: 2, marginBottom: 2 }, theme: BoxTheme.QUATERNARY}}>
+      <Text>
+        <b>Test title</b><br/>
+        {mockText}
+      </Text>
+    </Box>
+  </Story>
+</Canvas>
+
+### External theme
+
+> Transparent background colour, but with theme typography features.
+> Needs for Product Placement copy components.
+
+<Canvas>
+  <Story name="With external theme">
+    <Box
+      desktop={{ spacing: { padding: 3, marginBottom: 5 }}}
+      tablet={{ spacing: { padding: 3, marginBottom: 4 }}}
+      mobile={{ spacing: { padding: 2, marginBottom: 2 }, theme: BoxTheme.EXTERNAL}}>
+      <Text>
+        <b>Test title</b><br/>
+        {mockText}
+      </Text>
+    </Box>
+  </Story>
+</Canvas>
+
+### White theme
+<Canvas>
+  <Story name="With white theme">
+    <Box
+      mobile={{ spacing: { padding: 3 }, theme: BoxTheme.QUATERNARY}}>
+      <Box
+        desktop={{ spacing: { padding: 3, marginBottom: 5 }}}
+        tablet={{ spacing: { padding: 3, marginBottom: 4 }}}
+        mobile={{ spacing: { padding: 2, marginBottom: 2 }, theme: BoxTheme.WHITE}}>
+        <Text>
+          <b>WHITE Box inside QUATERNARY Box</b><br/>
+          {mockText}
+        </Text>
+      </Box>
+    </Box>
+  </Story>
+</Canvas>
+
+### Notice theme
+<Canvas>
+  <Story name="With notice theme">
+    <Box
+      desktop={{ spacing: { padding: 3, marginBottom: 5 }}}
+      tablet={{ spacing: { padding: 3, marginBottom: 4 }}}
+      mobile={{ spacing: { padding: 2, marginBottom: 2 }, theme: BoxTheme.NOTICE}}>
+      <Text>
+        <b>Test title</b><br/>
+        {mockText}
+      </Text>
+    </Box>
+  </Story>
+</Canvas>
+
+### Primary theme only for mobile devices
+Theme `primary` is only visible on mobile devices
+
+<Canvas>
+  <Story name="With primary theme only for mobile devices">
+    <Box
+      desktop={{ spacing: { padding: 3, marginBottom: 5 }}}
+      tablet={{ spacing: { padding: 3, marginBottom: 4 }, theme: BoxTheme.NONE}}
+      mobile={{ spacing: { padding: 2, marginBottom: 2 }, theme: BoxTheme.PRIMARY}}>
+      <Text>
+        <b>Test title</b><br/>
+        {mockText}
+      </Text>
+    </Box>
+  </Story>
+</Canvas>
+
+### Secondary theme only in desktop devices
+Theme `secondary` is only visible only on desktop devices
+<Canvas>
+  <Story name="With secondary theme only in desktop devices">
+    <Box
+      desktop={{ spacing: { padding: 3, marginBottom: 5 }, theme: BoxTheme.SECONDARY}}
+      tablet={{ spacing: { padding: 3, marginBottom: 4 }}}
+      mobile={{ spacing: { padding: 2, marginBottom: 2 }}}>
+      <Text>
+        <b>Test title</b><br/>
+        {mockText}
+      </Text>
+    </Box>
+  </Story>
+</Canvas>
+
+---
+
+## Bleed
+
+> In printing, bleed is printing that goes beyond the edge of where the sheet will be trimmed. In other words, the bleed is the area to be trimmed off. The bleed is the part on the side of a document that gives the printer a small amount of space to account for movement of the paper, and design inconsistencies.
+
+The `mobileBleed` and `tabletBleed` props adds a negative margin equal to the main content padding. This adds a kind of "bleed" effect to the component and causes it to stretch across the full width of the page on mobile/tablet.
+
+<Canvas>
+  <Story name="With primary theme and bleed effect">
+    <Box
+      mobileBleed
+      tabletBleed
+      desktop={{ spacing: { padding: 3, marginBottom: 5 }}}
+      tablet={{ spacing: { padding: 3, marginBottom: 4 }}}
+      mobile={{ spacing: { padding: 2, marginBottom: 2 }, theme: BoxTheme.PRIMARY}}>
+      <Text>
+        <b>Test title</b><br/>
+        {mockText}
+      </Text>
+    </Box>
+  </Story>
+</Canvas>
+
+---
+
+## With opacity
+
+
+```javascript
+$box-opacity: 0.25, 0.5, 0.75;
+```
+
+<Canvas>
+  <Story name="With opacity">
+    <Box
+      desktop={{ spacing: { padding: 3, marginBottom: 5 }}}
+      tablet={{ spacing: { padding: 3, marginBottom: 4 }}}
+      mobile={{ spacing: { padding: 2, marginBottom: 2 }, theme: BoxTheme.PRIMARY}}
+      opacity={0.5}>
+      <Text>{mockText}</Text>
+    </Box>
+  </Story>
+</Canvas>

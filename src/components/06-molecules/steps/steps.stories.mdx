@@ -1,0 +1,48 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { Required } from '../../storybook-elements/constants/Required';
+import { Steps } from './Steps';
+
+<Meta
+  title="Design system/Patterns/Molecules/Steps"
+  component={Steps}
+/>
+
+# Steps
+
+> Steps is a navigation bar that guides users through the steps of items.
+
+<Canvas>
+  <Story name="Default">
+    <Steps>
+      <Steps.Step title="Aflevering" passed />
+      <Steps.Step title="Betaling" current />
+      <Steps.Step title="Bevestiging" />
+    </Steps>
+  </Story>
+</Canvas>
+
+---
+
+## Available props for Steps
+
+| Name         | Type     | Required    | Default value |
+|--------------|----------|-------------|---------------|
+| `dataQA`     | *string* |             |               |
+
+## Available props for a single Step
+
+| Name      | Type      | Required     | Default value |
+|-----------|-----------|--------------|---------------|
+| `title`   | *string*  | <Required /> |               |
+| `index`   | *number*  |              |               |
+| `current` | *boolean* |              |               |
+| `passed`  | *boolean* |              |               |
+
+
+```javascript
+<Steps>
+  <Steps.Step title="Aflevering" passed />
+  <Steps.Step title="Betaling" current />
+  <Steps.Step title="Bevestiging" />
+</Steps>
+```

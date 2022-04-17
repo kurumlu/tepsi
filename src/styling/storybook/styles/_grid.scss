@@ -1,0 +1,35 @@
+.storybook-style-grid {
+  width: 100%;
+  border-left: 1px dashed #ec7731;
+  border-right: 1px dashed #ec7731;
+  margin-bottom: 10px;
+
+  .grid-0, .grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12 {
+    line-height: 30px;
+    min-height: 30px;
+    background: #cbf6ec;
+    position: relative;
+    text-align: center;
+
+    &::before {
+      content: '';
+      left: ($gutter-size/2 - 1px);
+      top: 0;
+      bottom: 0;
+      position: absolute;
+      width: 0;
+      border-left: 1px dashed #ec7731;
+    }
+
+    &::after {
+      content: '';
+      right: ($gutter-size/2 - 1px);
+      top: 0;
+      bottom: 0;
+      position: absolute;
+      width: 0;
+      border-left: 1px dashed #ec7731;
+    }
+  }
+}
+

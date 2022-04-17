@@ -1,0 +1,29 @@
+@mixin font-map(
+  $map,
+  $style: null,
+  $letter-spacing: null,
+  $text-transform: null
+) {
+  $overwrites: ();
+
+  $overwrites: add-to-map-if-not-null($overwrites, style, $style);
+  $overwrites: add-to-map-if-not-null($overwrites, letter-spacing, $letter-spacing);
+  $overwrites: add-to-map-if-not-null($overwrites, text-transform, $text-transform);
+
+  $font-map: map-merge($map, $overwrites);
+
+  $font-family: map-get($font-map, family);
+
+  @if map-has-key($font-map, fallback)
+  and map-get($font-map, fallback) != null
+  and map-get($font-map, fallback) != '' {
+    $font-family: map-get($font-map, family), map-get($font-map, fallback);
+  }
+
+  // Styling
+  font-family: $font-family;
+  font-weight: map-get($font-map, weight);
+  font-style: map-get($font-map, style);
+  text-transform: map-get($font-map, text-transform);
+  letter-spacing: map-get($font-map, letter-spacing);
+}

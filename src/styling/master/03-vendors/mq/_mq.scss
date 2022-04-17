@@ -1,0 +1,11 @@
+/* ==========================================================================
+   #Vendor imported SASS-MQ package (https://github.com/sass-mq/sass-mq)
+   ========================================================================== */
+
+@if ($ENV == "development") {
+  $mq-show-breakpoints: (mobile, mobile-large, tablet-small, tablet, desktop, desktop-large);
+}
+
+$mq-breakpoints: $t2-grid__breakpoints;
+
+@import '~sass-mq';

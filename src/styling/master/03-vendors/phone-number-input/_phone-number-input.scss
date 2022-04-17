@@ -1,0 +1,126 @@
+$PhoneInput--color--focus: get-ui-color(b, light) !default;
+$PhoneInput__a-input__input--padding-left: get-spacing(6) !default;
+$PhoneInputInternationalIconPhone--opacity: 0.8 !default;
+$PhoneInputInternationalIconGlobe--opacity: 0.65 !default;
+$PhoneInputCountry--z-index: get-z-index('default') !default;
+$PhoneInputCountry--top: get-spacing(1.5) !default;
+$PhoneInputCountry--left: get-spacing(1) !default;
+$PhoneInputCountrySelect--z-index: get-z-index('default') !default;
+$PhoneInputCountrySelect--margin-right: #{get-spacing(0.5) + get-spacing(0.25)} !default;
+$PhoneInputCountrySelectArrow--width: get-spacing(0.5) !default;
+$PhoneInputCountrySelectArrow--margin-left: $PhoneInputCountrySelect--margin-right !default;
+$PhoneInputCountrySelectArrow--border-width: get-spacing(min) !default;
+$PhoneInputCountrySelectArrow--opacity: 0.45 !default;
+$PhoneInputCountrySelectArrow--color--focus: $PhoneInput--color--focus !default;
+$PhoneInputCountrySelectArrow--transform: rotate(45deg) !default;
+$PhoneInputCountryFlag--aspect-ratio: 1.5 !default;
+$PhoneInputCountryFlag--height: get-spacing(2) !default;
+$PhoneInputCountryFlag--border-width: get-spacing(min) !default;
+$PhoneInputCountryFlag--border-color: rgba($t2-color__black, .50) !default;
+$PhoneInputCountryFlag--border-color--focus: $PhoneInput--color--focus !default;
+$PhoneInputCountryFlag--background-color--loading: rgba($t2-color__black, .1) !default;
+$PhoneInputCountryIcon--width: get-spacing(3) !default;
+$PhoneInputCountryIcon--border--box-shadow: 0 0 0 $PhoneInputCountryFlag--border-width $PhoneInputCountryFlag--border-color,
+inset 0 0 0 $PhoneInputCountryFlag--border-width $PhoneInputCountryFlag--border-color !default;
+$PhoneInputCountryIcon--border-focus--box-shadow: 0 0 0 $PhoneInputCountryFlag--border-width $PhoneInputCountryFlag--border-color--focus,
+inset 0 0 0 $PhoneInputCountryFlag--border-width $PhoneInputCountryFlag--border-color--focus !default;
+
+.PhoneInput {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.PhoneInput .as-a-input__input {
+  padding-left: $PhoneInput__a-input__input--padding-left;
+}
+
+.PhoneInputInput {
+  flex: 1;
+  min-width: 0;
+}
+
+.PhoneInputCountryIcon {
+  width: $PhoneInputCountryIcon--width;
+  height: $PhoneInputCountryFlag--height;
+}
+
+.PhoneInputCountryIcon--square {
+  width: $PhoneInputCountryFlag--height;
+}
+
+.PhoneInputCountryIcon--border {
+  background-color: $PhoneInputCountryFlag--background-color--loading;
+  box-shadow: $PhoneInputCountryIcon--border--box-shadow;
+}
+
+.PhoneInputCountryIconImg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.PhoneInputInternationalIconPhone {
+  opacity: $PhoneInputInternationalIconPhone--opacity;
+}
+
+.PhoneInputInternationalIconGlobe {
+  opacity: $PhoneInputInternationalIconGlobe--opacity;
+}
+
+.PhoneInputCountry {
+  position: absolute;
+  top: $PhoneInputCountry--top;
+  left: $PhoneInputCountry--left;
+  z-index: $PhoneInputCountry--z-index;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  margin-right: $PhoneInputCountrySelect--margin-right;
+}
+
+.PhoneInputCountrySelect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: $PhoneInputCountrySelect--z-index;
+  border: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.PhoneInputCountrySelect[disabled] {
+  cursor: default;
+}
+
+.PhoneInputCountrySelectArrow {
+  display: block;
+  content: '';
+  width: $PhoneInputCountrySelectArrow--width;
+  height: $PhoneInputCountrySelectArrow--width;
+  margin-left: $PhoneInputCountrySelectArrow--margin-left;
+  border-style: solid;
+  border-color: inherit;
+  border-top-width: 0;
+  border-bottom-width: $PhoneInputCountrySelectArrow--border-width;
+  border-left-width: 0;
+  border-right-width: $PhoneInputCountrySelectArrow--border-width;
+  transform: $PhoneInputCountrySelectArrow--transform;
+  opacity: $PhoneInputCountrySelectArrow--opacity;
+}
+
+.PhoneInputCountrySelect:focus + .PhoneInputCountryIcon + .PhoneInputCountrySelectArrow {
+  opacity: 1;
+  color: $PhoneInputCountrySelectArrow--color--focus;
+}
+
+.PhoneInputCountrySelect:focus + .PhoneInputCountryIcon--border {
+  box-shadow: $PhoneInputCountryIcon--border-focus--box-shadow;
+}
+
+.PhoneInputCountrySelect:focus + .PhoneInputCountryIcon .PhoneInputInternationalIconGlobe {
+  opacity: 1;
+  color: $PhoneInputCountrySelectArrow--color--focus;
+}

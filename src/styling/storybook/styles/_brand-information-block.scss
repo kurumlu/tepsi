@@ -1,0 +1,21 @@
+.as-m-brand-information-block__media-content {
+  @include mq($until: tablet) {
+    iframe {
+      width: 100%;
+    }
+  }
+
+  @include mq($from: tablet) {
+    height: 300px;
+
+    iframe {
+      height: 100%;
+    }
+  }
+}
+
+.as-m-brand-information-block__text-block {
+  p:first-child {
+    margin-top: 0;
+  }
+}

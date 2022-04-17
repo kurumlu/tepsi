@@ -1,0 +1,51 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Design system/Intro" />
+
+# Get started
+
+Welcome all to the Tepsi Design system (WIP).
+Tepsi is a reusable component library that helps SDWorx developers build UIs faster. The goal is to make building durable UIs more productive and satisfying.
+
+# Quick links
+- [Invision](https://projects.invisionapp.com/share/3QT24UAFKDV#/screens)
+- [Confluence](https://<<sdworx>>.atlassian.net/wiki/spaces/PR/overview)
+
+
+# Get started as Developer
+
+### What?
+All components are written in React or JSX, and its stories are written in [Component Story Format](https://medium.com/storybookjs/component-story-format-66f4c32366df). It requires Storybook version 5.2-beta and up.
+
+## Run and develop locally
+Clone the [project](https://bitbucket.org/<<sdworx>>/<<tepsi>>.git) then start Storybook.
+
+`yarn && yarn run storybook`
+
+## Use
+Import components you want into your UI
+
+`import { Button, Badge } from ‘@sd/tepsi;`
+
+and use them like so
+
+```
+  const example = () => (
+    <div>
+      <Button appearance="primary" onClick={() => 0}>Do something</Button>
+      <Badge onClick={this.clear}>Cool</Badge>
+    </div>
+  )
+```
+
+### Browse SDS components in your own Storybook
+Once you add the package, update your .storybook/config.js to import all files ending in .stories.js.
+
+```
+  import { configure } from '@storybook/react';
+  configure(require.context('../src', true, /.stories.js$/), module);
+```
+
+# Resources
+- [Introducing Storybook Design System](https://medium.com/storybookjs/introducing-storybook-design-system-23fd9b1ac3c0)
+- [GitHub repository](https://github.com/storybookjs/design-system)

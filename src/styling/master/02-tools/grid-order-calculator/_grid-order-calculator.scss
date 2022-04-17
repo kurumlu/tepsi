@@ -1,0 +1,22 @@
+@mixin grid-order-calculator($amountOfItemsInRow) {
+  // Row 1
+  &:nth-child(-n + #{ $amountOfItemsInRow}) {
+    order: 1;
+  }
+
+  &:nth-of-type(n + #{(4*$amountOfItemsInRow)+1}) {
+    order: 5;
+  }
+
+  &:nth-of-type(n+#{($amountOfItemsInRow)+1}):nth-of-type(-n+#{(2*$amountOfItemsInRow)}) {
+    order: 2;
+  }
+
+  &:nth-of-type(n+#{(2*$amountOfItemsInRow)+1}):nth-of-type(-n+#{(3*$amountOfItemsInRow)}) {
+    order: 3;
+  }
+
+  &:nth-of-type(n+#{(3*$amountOfItemsInRow)+1}):nth-of-type(-n+#{(4*$amountOfItemsInRow)}) {
+    order: 4;
+  }
+}
