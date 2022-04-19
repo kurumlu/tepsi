@@ -104,18 +104,18 @@ export const Text: FunctionComponent<TextProps> = ({
 
   const getClassName = () =>
     cn(
-      'as-a-text',
+      'sd-a-text',
       {
-        [`as-a-text--${color}`]: color,
-        [`as-a-text--${size}`]: size,
-        [`as-a-text--${type}`]: type,
-        [`as-a-text--${align}`]: align,
-        [`as-a-text--${feature}`]: feature,
-        [`as-a-text--line-clamp-${lineClamp}`]: lineClamp,
+        [`sd-a-text--${color}`]: color,
+        [`sd-a-text--${size}`]: size,
+        [`sd-a-text--${type}`]: type,
+        [`sd-a-text--${align}`]: align,
+        [`sd-a-text--${feature}`]: feature,
+        [`sd-a-text--line-clamp-${lineClamp}`]: lineClamp,
         [GLOSSARY_HIGHLIGHT_CLASS]: withGlossary,
-        'as-a-text--html': html,
-        'as-a-text--clipped': isClipped,
-        'as-a-text--uppercase': isUppercase,
+        'sd-a-text--html': html,
+        'sd-a-text--clipped': isClipped,
+        'sd-a-text--uppercase': isUppercase,
       },
       className
     );

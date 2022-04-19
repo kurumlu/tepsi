@@ -24,7 +24,7 @@ $a-icon--animation-heart-pulse--before--transition-duration: $t2-animation__tran
 $a-icon--animation-spin__before--animation-duration: $t2-animation__animation-duration-long !default;
 
 // Styling for the Icon ATOM
-.as-a-icon {
+.sd-a-icon {
   @include icon-color(currentColor);
   display: block;
   max-height: 100%;
@@ -32,7 +32,7 @@ $a-icon--animation-spin__before--animation-duration: $t2-animation__animation-du
   pointer-events: none;
 }
 
-.as-a-icon__svg {
+.sd-a-icon__svg {
   position: relative;
   display: block;
   width: 100%;
@@ -42,95 +42,95 @@ $a-icon--animation-spin__before--animation-duration: $t2-animation__animation-du
 }
 
 // --color
-.as-a-icon--primary {
+.sd-a-icon--primary {
   @include icon-color($a-icon--primary--color);
 }
 
-.as-a-icon--secondary {
+.sd-a-icon--secondary {
   @include icon-color($a-icon--secondary--color);
 }
 
-.as-a-icon--tertiary {
+.sd-a-icon--tertiary {
   @include icon-color($a-icon--tertiary--color);
 }
 
-.as-a-icon--action {
+.sd-a-icon--action {
   @include icon-color($a-icon--action--color);
 
   @include active-icon-color($a-icon--action--active--color);
 }
 
-.as-a-icon--action-nav {
+.sd-a-icon--action-nav {
   @include icon-color($a-icon--action-nav--color);
 
   @include active-icon-color($a-icon--action-nav--active--color);
 }
 
-.as-a-icon--negative {
+.sd-a-icon--negative {
   @include icon-color($a-icon--negative--color);
 }
 
-.as-a-icon--positive {
+.sd-a-icon--positive {
   @include icon-color($a-icon--positive--color);
 }
 
-.as-a-icon--subtle {
+.sd-a-icon--subtle {
   @include icon-color($a-icon--subtle--color);
 }
 
-.as-a-icon--notice {
+.sd-a-icon--notice {
   @include icon-color($a-icon--notice--color);
 }
 
 
 // --size
-.as-a-icon--extra-minor {
+.sd-a-icon--extra-minor {
  width: $a-icon--extra-minor--font-size;
  height: $a-icon--extra-minor--font-size;
 }
 
-.as-a-icon--minor {
+.sd-a-icon--minor {
  width: $a-icon--minor--font-size;
  height: $a-icon--minor--font-size;
 }
 
-.as-a-icon--medium {
+.sd-a-icon--medium {
  width: $a-icon--medium--font-size;
  height: $a-icon--medium--font-size;
 }
 
-.as-a-icon--major {
+.sd-a-icon--major {
  width: $a-icon--major--font-size;
  height: $a-icon--major--font-size;
 }
 
-.as-a-icon--extra-major {
+.sd-a-icon--extra-major {
  width: $a-icon--extra-major--font-size;
  height: $a-icon--extra-major--font-size;
 }
 
 
 // --animation
-.as-a-icon--animation-bop {
+.sd-a-icon--animation-bop {
   animation: bop $t2-animation__animation-duration-long ease-in-out infinite;
   transform-origin: bottom center;
 }
 
-.as-a-icon--animation-heart-pulse {
+.sd-a-icon--animation-heart-pulse {
   animation: heart-pulse $a-icon--animation-heart-pulse--before--transition-duration linear;
 }
 
 
-.as-a-icon--animation-spin {
+.sd-a-icon--animation-spin {
   animation: rotate $a-icon--animation-spin__before--animation-duration linear infinite;
 }
 
-.as-a-icon--interactive {
+.sd-a-icon--interactive {
   cursor: pointer;
   pointer-events: initial;
 }
 
-.as-a-icon--inline {
+.sd-a-icon--inline {
   display: inline-block;
   vertical-align: middle;
 }

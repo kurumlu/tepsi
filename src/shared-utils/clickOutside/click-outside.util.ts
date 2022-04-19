@@ -3,12 +3,12 @@ import { useEffect, useRef, useCallback } from 'react';
 // Array of selectors clicking inside them
 // Popover will not be closed
 const IGNORE_POPOVER_SELECTORS = [
-  '.as-m-popover',
-  '.as-m-popover--sticky',
-  '.as-a-input-searchbox-wrapper',
+  '.sd-m-popover',
+  '.sd-m-popover--sticky',
+  '.sd-a-input-searchbox-wrapper',
   '.cookie-message',
   '.cookie-message__button',
-  '.as-m-image-zoom__zoom-image',
+  '.sd-m-image-zoom__zoom-image',
 ];
 
 export const useHandleClickOutside = (

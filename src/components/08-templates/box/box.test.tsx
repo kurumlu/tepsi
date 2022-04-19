@@ -14,7 +14,7 @@ describe('<Box />', () => {
   const component: ShallowWrapper<BoxProps> = shallow(<Box>{mockText}</Box>);
 
   it('renders <Box /> component', () => {
-    expect(component.prop('className')).toEqual('as-t-box');
+    expect(component.prop('className')).toEqual('sd-t-box');
     expect(component.text()).toEqual(mockText);
     expect(component).toMatchSnapshot();
   });
@@ -29,7 +29,7 @@ describe('<Box />', () => {
     );
 
     expect(componentWithSpacing.prop('className')).toEqual(
-      'as-t-box margin-left-mobile-1 margin-left-desktop-2'
+      'sd-t-box margin-left-mobile-1 margin-left-desktop-2'
     );
     expect(componentWithSpacing).toMatchSnapshot('with props');
   });
@@ -80,7 +80,7 @@ describe('<Box />', () => {
       <Box hidden>{mockText}</Box>
     );
 
-    expect(component.hasClass('as-t-box--hidden')).toBe(true);
+    expect(component.hasClass('sd-t-box--hidden')).toBe(true);
     expect(component).toMatchSnapshot('with hidden');
   });
 
@@ -89,7 +89,7 @@ describe('<Box />', () => {
       <Box interactive>{mockText}</Box>
     );
 
-    expect(component.hasClass('as-t-box--interactive')).toBe(true);
+    expect(component.hasClass('sd-t-box--interactive')).toBe(true);
   });
 
   it('renders <Box /> with tabIndex prop', () => {

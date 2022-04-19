@@ -59,12 +59,12 @@ export const Heading: FunctionComponent<HeadingProps> = ({
     `${priority}`,
     {
       className: cn(
-        'as-a-heading',
+        'sd-a-heading',
         {
-          [`as-a-heading--${size}`]: size && !type,
-          [`as-a-heading--${type}`]: type,
-          [`as-a-heading--${alignment}`]: alignment,
-          [`as-a-heading--${color}`]: color,
+          [`sd-a-heading--${size}`]: size && !type,
+          [`sd-a-heading--${type}`]: type,
+          [`sd-a-heading--${alignment}`]: alignment,
+          [`sd-a-heading--${color}`]: color,
         },
         className
       ),

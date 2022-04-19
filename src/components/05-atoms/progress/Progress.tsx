@@ -6,9 +6,9 @@ export type ProgressProps = {
 };
 
 export const Progress: FunctionComponent<ProgressProps> = ({ progress }) => (
-  <div className="as-a-progress">
+  <div className="sd-a-progress">
     <div
-      className="as-a-progress__bar"
+      className="sd-a-progress__bar"
       style={{
         width: `${progress > 100 ? 100 : progress < 0 ? 0 : progress}%`,
       }}></div>

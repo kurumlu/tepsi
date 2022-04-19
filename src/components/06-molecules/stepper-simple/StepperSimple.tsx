@@ -18,8 +18,8 @@ export const StepperSimple: FunctionComponent<StepperSimpleProps> = ({
   for (let i = 1; i < size + 1; ++i) {
     listOfSteps.push(
       <div
-        className={cn('as-m-stepper-simple__item', {
-          'as-m-stepper-simple__item--active': activeStep === i,
+        className={cn('sd-m-stepper-simple__item', {
+          'sd-m-stepper-simple__item--active': activeStep === i,
         })}
         key={i}
       />
@@ -27,7 +27,7 @@ export const StepperSimple: FunctionComponent<StepperSimpleProps> = ({
   }
 
   return (
-    <div className="as-m-stepper-simple" data-qa={dataQA}>
+    <div className="sd-m-stepper-simple" data-qa={dataQA}>
       {listOfSteps}
     </div>
   );

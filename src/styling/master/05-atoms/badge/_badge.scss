@@ -24,7 +24,7 @@ $a-badge--l--font-size: $t2-font-size__body-m !default;
 $a-badge--l--line-height: $t2-line-height__m !default;
 
 // Code for Badge ATOM
-.as-a-badge {
+.sd-a-badge {
   box-sizing: border-box;
   display: inline-flex;
   flex-direction: row;
@@ -52,18 +52,18 @@ $a-badge--l--line-height: $t2-line-height__m !default;
 }
 
 // --badge-color
-.as-a-badge--secondary {
+.sd-a-badge--secondary {
   background: $a-badge--secondary--background;
   color: $a-badge--secondary--color;
 }
 
-.as-a-badge--subtle {
+.sd-a-badge--subtle {
   background: $a-badge--subtle--background;
   color: $a-badge--subtle--color;
 }
 
 // --badge-size
-.as-a-badge--l {
+.sd-a-badge--l {
   min-width: $a-badge--l--size;
   min-height: $a-badge--l--size;
   padding: $a-badge--l--padding;
@@ -73,6 +73,6 @@ $a-badge--l--line-height: $t2-line-height__m !default;
 
 
 // Badge inside Heading
-.as-a-heading .as-a-badge {
+.sd-a-heading .sd-a-badge {
   margin-left: get-spacing(1.5);
 }

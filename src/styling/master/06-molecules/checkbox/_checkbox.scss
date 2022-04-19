@@ -4,13 +4,13 @@ $m-checkbox__label--line-height: $t2-line-height__l !default;
 $m-checkbox--form-element--height: get-spacing(4) !default;
 $m-checkbox--form-element--tablet--height: $t2-form-element--height !default;
 
-.as-m-checkbox {
+.sd-m-checkbox {
   position: relative;
   display: inline-flex;
   align-items: flex-start;
 }
 
-.as-m-checkbox--form-element {
+.sd-m-checkbox--form-element {
   height: $m-checkbox--form-element--height;
 
   @include mq($from: tablet) {
@@ -18,25 +18,25 @@ $m-checkbox--form-element--tablet--height: $t2-form-element--height !default;
   }
 }
 
-.as-m-checkbox__input {
+.sd-m-checkbox__input {
   margin-top: get-spacing(0.5);
 }
 
-.as-m-checkbox__label {
+.sd-m-checkbox__label {
   flex-grow: 1;
   padding-left: get-spacing(1);
   line-height: $m-checkbox__label--line-height;
 }
 
-.as-m-checkbox__label--minor {
+.sd-m-checkbox__label--minor {
   font-size: $m-checkbox__label--minor--font-size;
   line-height: $m-checkbox__label--minor--line-height;
 }
 
 // vertically align: center
-.as-m-checkbox--center {
+.sd-m-checkbox--center {
   align-items: center;
 }
-.as-m-checkbox--center .as-m-checkbox__input  {
+.sd-m-checkbox--center .sd-m-checkbox__input  {
   margin: 0;
 }

@@ -102,8 +102,8 @@
   // Set color for disabled modifier
   @if (map_has_key($variant, disabled)) {
     $disabled: map-get($variant, disabled);
-    &.as-a-btn--disabled,
-    &.as-a-btn--disabled:hover {
+    &.sd-a-btn--disabled,
+    &.sd-a-btn--disabled:hover {
       background: map-get($disabled, bg);
       color: map-get($disabled, fg);
     }
@@ -112,7 +112,7 @@
   // Set color for loader pseudo-element
   @if (map_has_key($variant, loader)) {
     $loader: map_get($variant, loader);
-    .as-a-btn__loader {
+    .sd-a-btn__loader {
       color: $loader;
     }
   }

@@ -1,7 +1,7 @@
 $m-light-box-main-pagination--height: 88px !default;
 $m-light-box-main-pagination--marginX: get-spacing(8) !default;
 
-.as-m-light-box-main-pagination {
+.sd-m-light-box-main-pagination {
   height: $m-light-box-main-pagination--height;
   display: flex;
   align-items: center;
@@ -12,9 +12,9 @@ $m-light-box-main-pagination--marginX: get-spacing(8) !default;
   }
 }
 
-.as-m-light-box-main-pagination .as-m-light-box-main-pagination__button--prev {
+.sd-m-light-box-main-pagination .sd-m-light-box-main-pagination__button--prev {
   margin-left: $m-light-box-main-pagination--marginX;
 }
-.as-m-light-box-main-pagination .as-m-light-box-main-pagination__button--next {
+.sd-m-light-box-main-pagination .sd-m-light-box-main-pagination__button--next {
   margin-right: $m-light-box-main-pagination--marginX;
 }

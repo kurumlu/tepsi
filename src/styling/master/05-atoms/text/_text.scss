@@ -38,7 +38,7 @@ $a-text--product-technical-description__ul--padding-left: get-spacing(2) !defaul
 $a-text--product-technical-description__li--margin-bottom: get-spacing(2) !default;
 
 // Code for Text ATOM
-.as-a-text {
+.sd-a-text {
   color: $a-text--color;
   font-size: $a-text--font-size;
   line-height: $a-text--line-height;
@@ -49,28 +49,28 @@ $a-text--product-technical-description__li--margin-bottom: get-spacing(2) !defau
 }
 
 // --size
-.as-a-text--xs {
+.sd-a-text--xs {
   font-size: $a-text--xs--font-size;
   line-height: $a-text--xs--line-height;
 }
 
-.as-a-text--s {
+.sd-a-text--s {
   font-size: $a-text--s--font-size;
   line-height: $a-text--s--line-height;
 }
 
-.as-a-text--l {
+.sd-a-text--l {
   font-size: $a-text--l--font-size;
   line-height: $a-text--l--line-height;
 }
 
-.as-a-text--xl {
+.sd-a-text--xl {
   font-size: $a-text--xl--font-size;
   line-height: $a-text--xl--line-height;
 }
 
 // --type
-.as-a-text--extra-large-content {
+.sd-a-text--extra-large-content {
   font-size: $a-text--s--font-size;
   line-height: $a-text--s--line-height;
 
@@ -85,7 +85,7 @@ $a-text--product-technical-description__li--margin-bottom: get-spacing(2) !defau
   }
 }
 
-.as-a-text--extra-content {
+.sd-a-text--extra-content {
   font-size: $a-text--font-size;
   line-height: $a-text--line-height;
 
@@ -95,7 +95,7 @@ $a-text--product-technical-description__li--margin-bottom: get-spacing(2) !defau
   }
 }
 
-.as-a-text--content {
+.sd-a-text--content {
   font-size: $a-text--s--font-size;
   line-height: $a-text--s--line-height;
 
@@ -105,7 +105,7 @@ $a-text--product-technical-description__li--margin-bottom: get-spacing(2) !defau
   }
 }
 
-.as-a-text--sub-content {
+.sd-a-text--sub-content {
   font-size: $a-text--xs--font-size;
   line-height: $a-text--xs--line-height;
 
@@ -115,7 +115,7 @@ $a-text--product-technical-description__li--margin-bottom: get-spacing(2) !defau
   }
 }
 
-.as-a-text--title {
+.sd-a-text--title {
   font-size: $a-text--l--font-size;
   line-height: $a-text--l--line-height;
 
@@ -125,57 +125,57 @@ $a-text--product-technical-description__li--margin-bottom: get-spacing(2) !defau
   }
 }
 
-.as-a-text--none {
+.sd-a-text--none {
   font-size: inherit;
   line-height: inherit;
 }
 
 // --color
-.as-a-text--subtle {
+.sd-a-text--subtle {
   color: $a-text--subtle--color;
 }
 
-.as-a-text--positive {
+.sd-a-text--positive {
   color: $a-text--positive--color;
 }
 
-.as-a-text--negative {
+.sd-a-text--negative {
   color: $a-text--negative--color;
 }
 
-.as-a-text--discount {
+.sd-a-text--discount {
   color: $a-text--discount--color;
 }
 
-.as-a-text--inherit {
+.sd-a-text--inherit {
   color: inherit;
 }
 
-.as-a-text--info {
+.sd-a-text--info {
   color: $a-text--info--color;
 }
 
-.as-a-text--notice {
+.sd-a-text--notice {
   color: $a-text--notice--color;
 }
 
 // --align
-.as-a-text--center {
+.sd-a-text--center {
   text-align: center;
 }
 
-.as-a-text--right {
+.sd-a-text--right {
   text-align: right;
 }
 
 // --uppercase
-.as-a-text--uppercase {
+.sd-a-text--uppercase {
   text-transform: uppercase;
 }
 
 // emphasized
-strong.as-a-text,
-.as-a-text strong {
+strong.sd-a-text,
+.sd-a-text strong {
   @include font-map(
     $map: $t2-font-map__body-emp,
     $style: inherit,
@@ -185,26 +185,26 @@ strong.as-a-text,
 }
 
 // clipped
-.as-a-text--clipped {
+.sd-a-text--clipped {
   @include text-truncate;
 }
 
 // line-clamp
 @for $i from 0 through 5 {
-  .as-a-text--line-clamp-#{$i} {
+  .sd-a-text--line-clamp-#{$i} {
     @include line-clamp($i);
   }
 }
 
 // html reset elements
-.as-a-text--html p {
+.sd-a-text--html p {
   margin: 0;
 }
 
 
 // --product-technical-features
-.as-a-text--product-technical-features-odd,
-.as-a-text--product-technical-features-even {
+.sd-a-text--product-technical-features-odd,
+.sd-a-text--product-technical-features-even {
   width: 100%;
 
   ul {
@@ -222,27 +222,27 @@ strong.as-a-text,
   }
 }
 
-.as-a-text--product-technical-features-odd {
+.sd-a-text--product-technical-features-odd {
   li:nth-child(odd) {
     background: $a-text--product-technical-features__li--nth-child--background;
   }
 }
 
-.as-a-text--product-technical-features-even {
+.sd-a-text--product-technical-features-even {
   li:nth-child(even) {
     background: $a-text--product-technical-features__li--nth-child--background;
   }
 }
 
 // --product-details
-.as-a-text--product-details {
+.sd-a-text--product-details {
   li:not(:last-child) {
     margin-bottom: $a-text--product-details__li--margin-bottom;
   }
 }
 
 // --product-technical-description
-.as-a-text--product-technical-description {
+.sd-a-text--product-technical-description {
   ul {
     margin: 0;
     padding-left: $a-text--product-technical-description__ul--padding-left;

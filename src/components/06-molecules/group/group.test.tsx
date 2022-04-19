@@ -31,14 +31,14 @@ describe('<Group />', () => {
   it('renders with column prop', () => {
     const component: ShallowWrapper<GroupProps> = shallow(<Group column />);
 
-    expect(component.hasClass('as-m-group--column')).toBe(true);
+    expect(component.hasClass('sd-m-group--column')).toBe(true);
     expect(component).toMatchSnapshot('with column prop');
   });
 
   it('renders with equalSize prop', () => {
     const component: ShallowWrapper<GroupProps> = shallow(<Group equalSize />);
 
-    expect(component.hasClass('as-m-group--equal-size')).toBeTruthy();
+    expect(component.hasClass('sd-m-group--equal-size')).toBeTruthy();
     expect(component).toMatchSnapshot('with inlineUniform prop');
   });
 
@@ -47,7 +47,7 @@ describe('<Group />', () => {
       <Group wrap={GroupWrap.REVERSE} />
     );
 
-    expect(component.hasClass('as-m-group--wrap-wrap-reverse')).toBe(true);
+    expect(component.hasClass('sd-m-group--wrap-wrap-reverse')).toBe(true);
     expect(component).toMatchSnapshot('with wrap prop');
   });
 });

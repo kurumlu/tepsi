@@ -38,23 +38,23 @@ export const alignedStringTemplate = (className, bodySize) => (
 );
 
 export const basicEmphasized = alignedStringTemplate(
-  'as-a-text--emp',
+  'sd-a-text--emp',
   'M Emphasized'
 );
 export const basicSubtle = alignedStringTemplate(
-  'as-a-text--subtle',
+  'sd-a-text--subtle',
   'M Subtle'
 );
 export const basicStrike = alignedStringTemplate(
-  'as-a-text--strike',
+  'sd-a-text--strike',
   'M Strike'
 );
 export const basicPositive = alignedStringTemplate(
-  'as-a-text--positive',
+  'sd-a-text--positive',
   'M Positive'
 );
 export const basicNegative = alignedStringTemplate(
-  'as-a-text--negative',
+  'sd-a-text--negative',
   'M Negative'
 );
 

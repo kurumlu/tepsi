@@ -32,8 +32,8 @@ describe('<Badge />', () => {
     );
   });
 
-  it(`adds classname 'as-a-badge--${BadgeColor.SECONDARY}' if "color" props passed`, () => {
-    expect(component.hasClass(`as-a-badge--${BadgeColor.SECONDARY}`)).toEqual(
+  it(`adds classname 'sd-a-badge--${BadgeColor.SECONDARY}' if "color" props passed`, () => {
+    expect(component.hasClass(`sd-a-badge--${BadgeColor.SECONDARY}`)).toEqual(
       true
     );
   });

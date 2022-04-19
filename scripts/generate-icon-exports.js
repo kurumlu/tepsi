@@ -46,7 +46,7 @@ fs.writeFileSync(
 );
 
 const preamble_template = `<template data-sly-template.icon="\${ @ name, size = 'medium', className = '' }">
-  <span role="img" class="as-a-icon as-a-icon--\${ name } as-a-icon--\${ size } \${ className }">`;
+  <span role="img" class="sd-a-icon sd-a-icon--\${ name } sd-a-icon--\${ size } \${ className }">`;
 const postamble_template = `  </span>
 </template>`;
 
@@ -101,6 +101,6 @@ function generateIconTemplate(fileName, slug) {
 
   return optimizedSvgString.replace(
     '<svg',
-    `<svg focusable="false" aria-hidden="true" class="as-a-icon__svg" data-sly-test="\${ name == '${slug}' }"`
+    `<svg focusable="false" aria-hidden="true" class="sd-a-icon__svg" data-sly-test="\${ name == '${slug}' }"`
   );
 }

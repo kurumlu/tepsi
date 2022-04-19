@@ -12,44 +12,44 @@ $m-range-slider__track--selected--background: get-brand-color($t2-color-map-key_
 
 
 // Code for Range slider MOLECULE
-.as-m-range-slider {
+.sd-m-range-slider {
   width: 100%;
 }
 
-.as-m-range-slider--disabled {
+.sd-m-range-slider--disabled {
   opacity: .5;
 }
 
 // __labels
-.as-m-range-slider__labels {
+.sd-m-range-slider__labels {
   display: flex;
   justify-content: space-between;
 }
 
 // __contain
-.as-m-range-slider__contain {
+.sd-m-range-slider__contain {
   position: relative;
   margin: $m-range-slider__contain--margin;
 }
 
 // __slider
-.as-m-range-slider__slider {
+.sd-m-range-slider__slider {
   width: 100%;
   height: $m-range-slider__slider--size;
   pointer-events: none;
 }
 
-.as-m-range-slider__slider--max {
+.sd-m-range-slider__slider--max {
   position: relative;
 }
 
-.as-m-range-slider__slider--min {
+.sd-m-range-slider__slider--min {
   position: absolute;
   top: 0;
 }
 
 // __tracks
-.as-m-range-slider__tracks {
+.sd-m-range-slider__tracks {
   position: absolute;
   top: 0;
   right: 0;
@@ -60,7 +60,7 @@ $m-range-slider__track--selected--background: get-brand-color($t2-color-map-key_
 }
 
 // __track
-.as-m-range-slider__track {
+.sd-m-range-slider__track {
   position: absolute;
   top: 0;
   right: 0;
@@ -74,7 +74,7 @@ $m-range-slider__track--selected--background: get-brand-color($t2-color-map-key_
   background: $m-range-slider__track--background;
 }
 
-.as-m-range-slider__track--selected {
+.sd-m-range-slider__track--selected {
   margin: auto 0;
   border-radius: 0;
 

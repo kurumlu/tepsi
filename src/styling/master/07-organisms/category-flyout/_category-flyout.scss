@@ -57,7 +57,7 @@ $a-link-main-nav__label--line-height: $t2-line-height__m !default;
 
 
 // Styling for Category-flyout ORGANISM
-.as-o-category-flyout-wrapper {
+.sd-o-category-flyout-wrapper {
   display: none;
   position: fixed;
   z-index: get-z-index(above);
@@ -87,7 +87,7 @@ $a-link-main-nav__label--line-height: $t2-line-height__m !default;
   }
 }
 
-.as-o-category-flyout {
+.sd-o-category-flyout {
   display: flex;
   flex-direction: column;
 
@@ -99,7 +99,7 @@ $a-link-main-nav__label--line-height: $t2-line-height__m !default;
   }
 }
 
-.as-o-category-flyout-title {
+.sd-o-category-flyout-title {
   display: none;
   font-size: $o-category-flyout-title--font-size;
   margin: $o-category-flyout-title--margin-top $o-category-flyout-title--margin-right $o-category-flyout-title--margin-bottom $o-category-flyout-title--margin-left;
@@ -108,19 +108,19 @@ $a-link-main-nav__label--line-height: $t2-line-height__m !default;
   }
 }
 
-.as-o-main-nav__item--state-toggle {
+.sd-o-main-nav__item--state-toggle {
   display: none;
 }
 
-.as-o-main-nav__item--state-toggle:checked ~ .as-o-category-flyout-wrapper {
+.sd-o-main-nav__item--state-toggle:checked ~ .sd-o-category-flyout-wrapper {
   @include mq($until: desktop) {
     left: 0;
     display: block;
   }
 }
 
-.as-a-menu-item--active:not(.as-a-menu-item--disabled) .as-o-category-flyout-wrapper,
-.as-a-menu-item:not(.as-a-menu-item--disabled):hover .as-o-category-flyout-wrapper {
+.sd-a-menu-item--active:not(.sd-a-menu-item--disabled) .sd-o-category-flyout-wrapper,
+.sd-a-menu-item:not(.sd-a-menu-item--disabled):hover .sd-o-category-flyout-wrapper {
   @include mq($from: desktop) {
     display: flex;
     top: 100%;
@@ -128,7 +128,7 @@ $a-link-main-nav__label--line-height: $t2-line-height__m !default;
   }
 }
 
-.as-a-link-main-nav__label {
+.sd-a-link-main-nav__label {
   cursor: pointer;
   display: flex;
   justify-content: space-between;
@@ -145,13 +145,13 @@ $a-link-main-nav__label--line-height: $t2-line-height__m !default;
   }
 }
 
-.as-a-link-main-nav__label:hover {
+.sd-a-link-main-nav__label:hover {
   @include mq($until: desktop) {
     background-color: $a-link-main-nav__label--hover--desktop--background-color;
   }
 }
 
-.as-o-category-flyout-menu {
+.sd-o-category-flyout-menu {
   overflow-y: auto;
   padding-top: $o-category-flyout-menu--padding-top;
 
@@ -164,7 +164,7 @@ $a-link-main-nav__label--line-height: $t2-line-height__m !default;
   }
 }
 
-.as-o-category-flyout-menu__column {
+.sd-o-category-flyout-menu__column {
   @include mq($from: desktop) {
     box-sizing: border-box;
     width: $o-category-flyout-menu__column--desktop--width;
@@ -183,7 +183,7 @@ $a-link-main-nav__label--line-height: $t2-line-height__m !default;
   }
 }
 
-.as-o-category-flyout-menu__column-item {
+.sd-o-category-flyout-menu__column-item {
   width: 100%;
   border-bottom: $o-category-flyout-menu__column-item--border-bottom;
 
@@ -202,7 +202,7 @@ $a-link-main-nav__label--line-height: $t2-line-height__m !default;
   }
 }
 
-.as-o-category-flyout-menu__grid-column {
+.sd-o-category-flyout-menu__grid-column {
   display: none;
 
   @include mq($from: desktop) {
@@ -214,49 +214,49 @@ $a-link-main-nav__label--line-height: $t2-line-height__m !default;
     margin-left: auto;
   }
 }
-.as-o-category-flyout-menu__grid-column--2 {
+.sd-o-category-flyout-menu__grid-column--2 {
   @include mq($from: desktop) {
     max-width: $t2-config__nav-content-full-size-max;
     width: calc(100% / 3);
   }
 }
 
-.as-o-category-flyout-menu__column:first-child {
+.sd-o-category-flyout-menu__column:first-child {
   @include mq($from: desktop) {
     margin-bottom: $o-category-flyout-menu__column--first-child--desktop--margin-bottom;
   }
 }
 
-.as-o-category-flyout-menu__column:last-child {
+.sd-o-category-flyout-menu__column:last-child {
   @include mq($from: desktop) {
     margin-right: 0;
   }
 }
 
-.as-o-category-flyout-menu__mobile-item {
+.sd-o-category-flyout-menu__mobile-item {
   @include mq($until: desktop) {
     margin: $o-category-flyout-menu__mobile-item--mobile--margin;
   }
 }
 
-.as-o-category-flyout-menu__mobile-item:hover > .as-a-link {
+.sd-o-category-flyout-menu__mobile-item:hover > .sd-a-link {
   @include mq($until: desktop) {
     background-color: $o-category-flyout-menu__mobile-item__a-link--mobile--hover--background-color;
   }
 }
 
-.as-o-category-flyout-menu__mobile-item .as-a-link--emp {
+.sd-o-category-flyout-menu__mobile-item .sd-a-link--emp {
   @include mq($until: desktop) {
     color: $o-category-flyout-menu__mobile-item__a-link--emp--mobile--color;
     display: flex;
   }
 }
 
-.as-o-category-flyout-menu > .as-a-menu-item--mobile-only {
+.sd-o-category-flyout-menu > .sd-a-menu-item--mobile-only {
   border-bottom: $o-category-flyout-menu__a-menu-item--mobile-only--border-bottom;
 }
 
-.as-o-category-flyout-links-block {
+.sd-o-category-flyout-links-block {
   display: flex;
   flex-flow: column;
   margin: $o-category-flyout-links-block--margin;
@@ -270,7 +270,7 @@ $a-link-main-nav__label--line-height: $t2-line-height__m !default;
   }
 }
 
-.as-o-category-flyout__menu-wrapper {
+.sd-o-category-flyout__menu-wrapper {
   display: none;
   text-align: left;
   padding: 0;
@@ -303,12 +303,12 @@ $a-link-main-nav__label--line-height: $t2-line-height__m !default;
   }
 }
 
-.as-o-category-flyout__menu {
+.sd-o-category-flyout__menu {
   flex-grow: 1;
   width: 100%;
 }
 
-.as-o-category-flyout__menu-block {
+.sd-o-category-flyout__menu-block {
   list-style: none;
   padding: $o-category-flyout__menu-block--padding;
   width: 100%;
@@ -330,25 +330,25 @@ $a-link-main-nav__label--line-height: $t2-line-height__m !default;
   }
 }
 
-.as-o-category-flyout-menu--state-toggle {
+.sd-o-category-flyout-menu--state-toggle {
   display: none;
 }
 
-.as-o-category-flyout-menu--state-toggle:checked ~ .as-o-category-flyout__menu-wrapper {
+.sd-o-category-flyout-menu--state-toggle:checked ~ .sd-o-category-flyout__menu-wrapper {
   @include mq($until: desktop) {
     left: 0;
     display: flex;
   }
 }
 
-.as-o-category-flyout__menu-block > .as-o-category-flyout-menu__mobile-item {
+.sd-o-category-flyout__menu-block > .sd-o-category-flyout-menu__mobile-item {
   @include mq($until: desktop) {
     border-bottom: $o-category-flyout__menu-block__o-category-flyout-menu__mobile-item--mobile--border-bottom;
   }
 }
 
 // reset on touch devices (PLTR-1051)
-.as-a-menu-item:not(.as-a-menu-item--active):hover .as-o-category-flyout-wrapper {
+.sd-a-menu-item:not(.sd-a-menu-item--active):hover .sd-o-category-flyout-wrapper {
   @include mq($from: desktop) {
     @media (hover: none) {
       display: none;

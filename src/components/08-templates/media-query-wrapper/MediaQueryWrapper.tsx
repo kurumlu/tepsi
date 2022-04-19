@@ -31,20 +31,20 @@ export const MediaQueryWrapper: FunctionComponent<MediaQueryWrapperProps> = ({
 
   return (
     <div
-      className={cn('as-t-media-query-wrapper', {
-        [`as-t-media-query-wrapper--mobile${postfix}`]: isQueryActiveCheck(
+      className={cn('sd-t-media-query-wrapper', {
+        [`sd-t-media-query-wrapper--mobile${postfix}`]: isQueryActiveCheck(
           query,
           MediaQueryWrapperQuery.MOBILE
         ),
-        [`as-t-media-query-wrapper--tablet${postfix}`]: isQueryActiveCheck(
+        [`sd-t-media-query-wrapper--tablet${postfix}`]: isQueryActiveCheck(
           query,
           MediaQueryWrapperQuery.TABLET
         ),
-        [`as-t-media-query-wrapper--tablet-small${postfix}`]: isQueryActiveCheck(
+        [`sd-t-media-query-wrapper--tablet-small${postfix}`]: isQueryActiveCheck(
           query,
           MediaQueryWrapperQuery.TABLET_SMALL
         ),
-        [`as-t-media-query-wrapper--desktop${postfix}`]: isQueryActiveCheck(
+        [`sd-t-media-query-wrapper--desktop${postfix}`]: isQueryActiveCheck(
           query,
           MediaQueryWrapperQuery.DESKTOP
         ),

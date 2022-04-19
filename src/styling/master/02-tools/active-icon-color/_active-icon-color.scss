@@ -3,10 +3,10 @@
  **/
 
 $interactive-class-list:
-  'as-a-btn'
-  'as-a-link'
-  'as-o-menu--state-toggle__backdrop'
-  'as-o-top-bar__menu';
+  'sd-a-btn'
+  'sd-a-link'
+  'sd-o-menu--state-toggle__backdrop'
+  'sd-o-top-bar__menu';
 
 @mixin active-icon-color($color) {
   @each $class in $interactive-class-list {

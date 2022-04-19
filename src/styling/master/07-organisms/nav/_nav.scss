@@ -11,7 +11,7 @@ $o-menu--transition: left $t2-animation__transition-duration-normal !default;
 $o-menu--state-toggle__backdrop--z-index: get-z-index('navBackdrop') !default;
 $o-menu--state-toggle__backdrop--background: $t2-color__gray-10 !default;
 
-.as-o-menu {
+.sd-o-menu {
   position: fixed;
   z-index: $o-menu--z-index;
   width: $o-menu--mobile--width;
@@ -41,18 +41,18 @@ $o-menu--state-toggle__backdrop--background: $t2-color__gray-10 !default;
   }
 }
 
-.as-o-menu-scrollable {
+.sd-o-menu-scrollable {
   @include mq($until: desktop) {
     overflow-y: auto;
   }
 }
 
-.as-o-menu--state-toggle {
+.sd-o-menu--state-toggle {
   position: absolute;
   display: none;
 }
 
-.as-o-menu--state-toggle__backdrop {
+.sd-o-menu--state-toggle__backdrop {
   display: none;
   margin: 0;
   cursor: pointer;
@@ -71,15 +71,15 @@ $o-menu--state-toggle__backdrop--background: $t2-color__gray-10 !default;
   }
 }
 
-.as-o-menu--state-toggle--active~.as-o-menu,
-.as-o-menu--state-toggle:checked~.as-o-menu {
+.sd-o-menu--state-toggle--active~.sd-o-menu,
+.sd-o-menu--state-toggle:checked~.sd-o-menu {
   @include mq($until: desktop) {
     left: 0;
   }
 }
 
-.as-o-menu--state-toggle--active~.as-o-menu--state-toggle__backdrop,
-.as-o-menu--state-toggle:checked~.as-o-menu--state-toggle__backdrop {
+.sd-o-menu--state-toggle--active~.sd-o-menu--state-toggle__backdrop,
+.sd-o-menu--state-toggle:checked~.sd-o-menu--state-toggle__backdrop {
   @include mq($until: desktop) {
     display: block;
     position: fixed;

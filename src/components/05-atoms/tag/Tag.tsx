@@ -28,7 +28,7 @@ export const Tag: FunctionComponent<TagProps> = ({
   className,
 }) => (
   <div
-    className={cn('as-a-tag', { [`as-a-tag--${color}`]: color }, className)}
+    className={cn('sd-a-tag', { [`sd-a-tag--${color}`]: color }, className)}
     data-qa={dataQA}>
     {children}
   </div>

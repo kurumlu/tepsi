@@ -22,7 +22,7 @@ $a-icon--extra-major--font-size: $t2-font-size__icon-xl  !default;
 
 
 // Styling for the Icon ATOM
-i.as-a-icon {
+i.sd-a-icon {
   display: inline;
   color: inherit;
   font-size: inherit;
@@ -33,73 +33,73 @@ i.as-a-icon {
 }
 
 // --color
-i.as-a-icon--primary {
+i.sd-a-icon--primary {
   color: $a-icon--primary--color;
 }
 
-i.as-a-icon--secondary {
+i.sd-a-icon--secondary {
   color: $a-icon--secondary--color;
 }
 
-i.as-a-icon--tertiary {
+i.sd-a-icon--tertiary {
   color: $a-icon--tertiary--color;
 }
 
-i.as-a-icon--action {
+i.sd-a-icon--action {
   color: $a-icon--action--color;
 
   @include active-icon-color($a-icon--action--active--color);
 }
 
-i.as-a-icon--action-nav {
+i.sd-a-icon--action-nav {
   color: $a-icon--action-nav--color;
 
   @include active-icon-color($a-icon--action-nav--active--color);
 }
 
-i.as-a-icon--negative {
+i.sd-a-icon--negative {
   color: $a-icon--negative--color;
 }
 
-i.as-a-icon--positive {
+i.sd-a-icon--positive {
   color: $a-icon--positive--color;
 }
 
-i.as-a-icon--subtle {
+i.sd-a-icon--subtle {
   color: $a-icon--subtle--color;
 }
 
-i.as-a-icon--notice {
+i.sd-a-icon--notice {
   color: $a-icon--notice--color;
 }
 
 
 // --size
-i.as-a-icon--extra-minor {
+i.sd-a-icon--extra-minor {
   @include icon($position: both, $styles: false) {
     font-size: $a-icon--extra-minor--font-size;
   }
 }
 
-i.as-a-icon--minor {
+i.sd-a-icon--minor {
   @include icon($position: both, $styles: false) {
     font-size: $a-icon--minor--font-size;
   }
 }
 
-i.as-a-icon--medium {
+i.sd-a-icon--medium {
   @include icon($position: both, $styles: false) {
     font-size: $a-icon--medium--font-size;
   }
 }
 
-i.as-a-icon--major {
+i.sd-a-icon--major {
   @include icon($position: both, $styles: false) {
     font-size: $a-icon--major--font-size;
   }
 }
 
-i.as-a-icon--extra-major {
+i.sd-a-icon--extra-major {
   @include icon($position: both, $styles: false) {
     font-size: $a-icon--extra-major--font-size;
   }

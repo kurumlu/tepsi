@@ -26,7 +26,7 @@ describe('<ClickPoint />', () => {
       <ClickPoint {...clickPointMock} isActive />
     );
 
-    expect(component.hasClass('as-a-click-point--is-active')).toBeTruthy();
+    expect(component.hasClass('sd-a-click-point--is-active')).toBeTruthy();
   });
 
   it('calls onClick callback by clicking', () => {

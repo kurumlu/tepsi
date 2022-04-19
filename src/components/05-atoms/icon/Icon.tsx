@@ -66,15 +66,15 @@ export function Icon({
     !!dynamicContent || !!onClick || !!onMouseEnter || !!onMouseLeave;
 
   const classes = cn(
-    'as-a-icon',
-    { [`as-a-icon--${name}`]: name },
-    { [`as-a-icon--${color}`]: color },
-    { [`as-a-icon--${size}`]: size },
-    { [`as-a-icon--animation-${animation}`]: animation },
+    'sd-a-icon',
+    { [`sd-a-icon--${name}`]: name },
+    { [`sd-a-icon--${color}`]: color },
+    { [`sd-a-icon--${size}`]: size },
+    { [`sd-a-icon--animation-${animation}`]: animation },
     {
-      [`as-a-icon--interactive`]: isInteractive,
+      [`sd-a-icon--interactive`]: isInteractive,
     },
-    { [`as-a-icon--inline`]: !!inline },
+    { [`sd-a-icon--inline`]: !!inline },
     className
   );
 
@@ -95,7 +95,7 @@ export function Icon({
       <SourceComponent
         focusable="false"
         aria-hidden="true"
-        className="as-a-icon__svg"
+        className="sd-a-icon__svg"
       />
     </span>
   );

@@ -5,7 +5,7 @@ import { GridBlock, GridBlockProps, GridBlockVariant } from './GridBlock';
 describe('<GridBlock />', () => {
   it('renders default GridBlock component', () => {
     const component: ShallowWrapper<GridBlockProps> = shallow(<GridBlock />);
-    expect(component.find('.as-t-grid-block__item')).toHaveLength(1);
+    expect(component.find('.sd-t-grid-block__item')).toHaveLength(1);
     expect(component).toMatchSnapshot('default');
   });
 
@@ -13,7 +13,7 @@ describe('<GridBlock />', () => {
     const component: ShallowWrapper<GridBlockProps> = shallow(
       <GridBlock variant={GridBlockVariant.ROW} />
     );
-    expect(component.find('.as-t-grid-block__item')).toHaveLength(1);
+    expect(component.find('.sd-t-grid-block__item')).toHaveLength(1);
     expect(component).toMatchSnapshot('row');
   });
 
@@ -21,7 +21,7 @@ describe('<GridBlock />', () => {
     const component: ShallowWrapper<GridBlockProps> = shallow(
       <GridBlock variant={GridBlockVariant.COLUMN} />
     );
-    expect(component.find('.as-t-grid-block__item')).toHaveLength(1);
+    expect(component.find('.sd-t-grid-block__item')).toHaveLength(1);
     expect(component).toMatchSnapshot('column');
   });
 
@@ -29,7 +29,7 @@ describe('<GridBlock />', () => {
     const component: ShallowWrapper<GridBlockProps> = shallow(
       <GridBlock variant={GridBlockVariant.ROWS} />
     );
-    expect(component.find('.as-t-grid-block__item')).toHaveLength(2);
+    expect(component.find('.sd-t-grid-block__item')).toHaveLength(2);
     expect(component).toMatchSnapshot('rows');
   });
 
@@ -37,7 +37,7 @@ describe('<GridBlock />', () => {
     const component: ShallowWrapper<GridBlockProps> = shallow(
       <GridBlock variant={GridBlockVariant.COLUMNS} />
     );
-    expect(component.find('.as-t-grid-block__item')).toHaveLength(2);
+    expect(component.find('.sd-t-grid-block__item')).toHaveLength(2);
     expect(component).toMatchSnapshot('columns');
   });
 
@@ -45,7 +45,7 @@ describe('<GridBlock />', () => {
     const component: ShallowWrapper<GridBlockProps> = shallow(
       <GridBlock variant={GridBlockVariant.BLOCKS} />
     );
-    expect(component.find('.as-t-grid-block__item')).toHaveLength(2);
+    expect(component.find('.sd-t-grid-block__item')).toHaveLength(2);
     expect(component).toMatchSnapshot('blocks');
   });
 
@@ -53,7 +53,7 @@ describe('<GridBlock />', () => {
     const component: ShallowWrapper<GridBlockProps> = shallow(
       <GridBlock variant={GridBlockVariant.ROW_PLUS_COLUMNS} />
     );
-    expect(component.find('.as-t-grid-block__item')).toHaveLength(3);
+    expect(component.find('.sd-t-grid-block__item')).toHaveLength(3);
     expect(component).toMatchSnapshot('row + columns');
   });
 
@@ -61,7 +61,7 @@ describe('<GridBlock />', () => {
     const component: ShallowWrapper<GridBlockProps> = shallow(
       <GridBlock variant={GridBlockVariant.ROWS_PLUS_COLUMN} />
     );
-    expect(component.find('.as-t-grid-block__item')).toHaveLength(3);
+    expect(component.find('.sd-t-grid-block__item')).toHaveLength(3);
     expect(component).toMatchSnapshot('rows + column');
   });
 
@@ -69,7 +69,7 @@ describe('<GridBlock />', () => {
     const component: ShallowWrapper<GridBlockProps> = shallow(
       <GridBlock variant={GridBlockVariant.COLUMN_PLUS_ROWS} />
     );
-    expect(component.find('.as-t-grid-block__item')).toHaveLength(3);
+    expect(component.find('.sd-t-grid-block__item')).toHaveLength(3);
     expect(component).toMatchSnapshot('column + rows');
   });
 
@@ -77,7 +77,7 @@ describe('<GridBlock />', () => {
     const component: ShallowWrapper<GridBlockProps> = shallow(
       <GridBlock variant={GridBlockVariant.COLUMNS_PLUS_ROW} />
     );
-    expect(component.find('.as-t-grid-block__item')).toHaveLength(3);
+    expect(component.find('.sd-t-grid-block__item')).toHaveLength(3);
     expect(component).toMatchSnapshot('columns + row');
   });
 });

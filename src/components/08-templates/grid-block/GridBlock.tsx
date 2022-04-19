@@ -45,13 +45,13 @@ export const GridBlock: FunctionComponent<GridBlockProps> = ({
 
   return (
     <div
-      className={cn('as-t-grid-block', {
-        [`as-t-grid-block--${variant}`]: variant,
+      className={cn('sd-t-grid-block', {
+        [`sd-t-grid-block--${variant}`]: variant,
       })}>
-      <div className="as-t-grid-block__inner">
+      <div className="sd-t-grid-block__inner">
         {[...Array(gridItemAmount)].map((_, index) => (
-          <div className="as-t-grid-block__item" key={index}>
-            <div className="as-t-grid-block__item-content-placeholder"></div>
+          <div className="sd-t-grid-block__item" key={index}>
+            <div className="sd-t-grid-block__item-content-placeholder"></div>
           </div>
         ))}
       </div>

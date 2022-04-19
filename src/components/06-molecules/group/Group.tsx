@@ -71,18 +71,18 @@ export const Group: FunctionComponent<GroupProps> = ({
     data-qa={dataQA}
     data-analytics-bannerid={dataAnalyticsBannerid}
     className={cn(
-      'as-m-group',
+      'sd-m-group',
       {
-        [`as-m-group--${gutter}`]: gutterX || gutterY ? null : gutter,
-        [`as-m-group--x-${gutterX}`]: gutterX,
-        [`as-m-group--y-${gutterY}`]: gutterY,
-        'as-m-group--inline': inline,
-        'as-m-group--equal-size': equalSize,
-        [`as-m-group--align-${align}`]: align,
-        [`as-m-group--valign-${valign}`]: valign,
-        [`as-m-group--wrap-${wrap}`]: wrap,
-        'as-m-group--column': column,
-        'as-m-group--full-height': fullHeight,
+        [`sd-m-group--${gutter}`]: gutterX || gutterY ? null : gutter,
+        [`sd-m-group--x-${gutterX}`]: gutterX,
+        [`sd-m-group--y-${gutterY}`]: gutterY,
+        'sd-m-group--inline': inline,
+        'sd-m-group--equal-size': equalSize,
+        [`sd-m-group--align-${align}`]: align,
+        [`sd-m-group--valign-${valign}`]: valign,
+        [`sd-m-group--wrap-${wrap}`]: wrap,
+        'sd-m-group--column': column,
+        'sd-m-group--full-height': fullHeight,
       },
       className
     )}>

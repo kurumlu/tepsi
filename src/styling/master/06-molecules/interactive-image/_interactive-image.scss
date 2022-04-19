@@ -1,16 +1,16 @@
 $m-interactive-image__cta--margin: get-spacing(1) !default;
 
-.as-m-interactive-image {
+.sd-m-interactive-image {
   position: relative;
   overflow: hidden;
 }
 
-.as-m-interactive-image__img {
+.sd-m-interactive-image__img {
   width: 100%;
   user-select: none;
 }
 
-.as-m-interactive-image__map {
+.sd-m-interactive-image__map {
   position: absolute;
   top: 0;
   left: 0;
@@ -21,7 +21,7 @@ $m-interactive-image__cta--margin: get-spacing(1) !default;
   pointer-events: none;
 }
 
-.as-m-interactive-image__cta {
+.sd-m-interactive-image__cta {
   position: absolute;
   right: $m-interactive-image__cta--margin;
   bottom: $m-interactive-image__cta--margin;
@@ -35,7 +35,7 @@ $m-interactive-image__cta--margin: get-spacing(1) !default;
   pointer-events: none;
 }
 
-.as-m-interactive-image__cta > * {
+.sd-m-interactive-image__cta > * {
   margin: $m-interactive-image__cta--margin;
   pointer-events: all;
 }

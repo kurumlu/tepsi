@@ -39,8 +39,8 @@
 // Use to wrap link selectors
 // selectors that are textual elements that links should blend with
 @mixin link-text-blend-selector {
-  .as-a-text,
-  .as-a-heading {
+  .sd-a-text,
+  .sd-a-heading {
     @content;
   }
 }

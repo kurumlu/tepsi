@@ -1,5 +1,5 @@
 // Styling for Top-bar ORGANISM
-.as-o-top-bar__logo > * {
+.sd-o-top-bar__logo > * {
   @include mq($from: desktop) {
     margin-bottom: 6px;
   }

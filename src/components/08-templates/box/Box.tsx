@@ -106,7 +106,7 @@ export const getCssProperties = (
     }
   }
   if (theme) {
-    classNames.push(`as-t-box-${state}-${theme}`);
+    classNames.push(`sd-t-box-${state}-${theme}`);
   }
 
   return classNames.join(' ');
@@ -155,14 +155,14 @@ export const Box: FunctionComponent<BoxProps> = ({
 }) => (
   <div
     className={cn(
-      'as-t-box',
+      'sd-t-box',
       {
-        [`as-t-box--opacity-${dotToUnderscore(opacity)}`]: opacity,
-        [`as-t-box--mobile-bleed`]: mobileBleed,
-        'as-t-box--tablet-bleed': tabletBleed,
-        'as-t-box--with-shadow': withShadow,
-        'as-t-box--hidden': hidden,
-        'as-t-box--interactive': interactive,
+        [`sd-t-box--opacity-${dotToUnderscore(opacity)}`]: opacity,
+        [`sd-t-box--mobile-bleed`]: mobileBleed,
+        'sd-t-box--tablet-bleed': tabletBleed,
+        'sd-t-box--with-shadow': withShadow,
+        'sd-t-box--hidden': hidden,
+        'sd-t-box--interactive': interactive,
       },
       getCssProperties(mobile, 'mobile-'),
       getCssProperties(tablet, 'tablet-'),

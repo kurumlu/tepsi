@@ -7,63 +7,63 @@ $m-group--xl--margin: get-spacing(2)   !default;
 
 
 // Code for Group MOLECULE
-.as-m-group {
+.sd-m-group {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
 // --align
-.as-m-group--align-left {
+.sd-m-group--align-left {
   justify-content: flex-start;
 }
 
-.as-m-group--align-center {
+.sd-m-group--align-center {
   justify-content: center;
 }
 
-.as-m-group--align-right {
+.sd-m-group--align-right {
   justify-content: flex-end;
 }
 
-.as-m-group--align-space-around {
+.sd-m-group--align-space-around {
   justify-content: space-around;
 }
 
-.as-m-group--align-space-between {
+.sd-m-group--align-space-between {
   justify-content: space-between;
 }
 
-.as-m-group--valign-center {
+.sd-m-group--valign-center {
   align-items: center;
 }
 
-.as-m-group--valign-top {
+.sd-m-group--valign-top {
   align-items: flex-start;
 }
 
-.as-m-group--valign-bottom {
+.sd-m-group--valign-bottom {
   align-items: flex-end;
 }
 
-.as-m-group--valign-baseline {
+.sd-m-group--valign-baseline {
   align-items: baseline;
 }
 
-.as-m-group--inline {
+.sd-m-group--inline {
   flex-wrap: nowrap;
 }
 
-.as-m-group--equal-size > * {
+.sd-m-group--equal-size > * {
   flex: 1;
 }
 
-.as-m-group--full-height {
+.sd-m-group--full-height {
   height: 100%;
 }
 
 // --column
-.as-m-group--column {
+.sd-m-group--column {
   flex-direction: column;
   flex-wrap: nowrap;
 }
@@ -79,7 +79,7 @@ $m-group-gutter-map: (
 
 // Generate code for Group gutters
 @each $size, $gutter in $m-group-gutter-map {
-  .as-m-group--#{$size} {
+  .sd-m-group--#{$size} {
     margin: -1 * $gutter;
 
     > * {
@@ -87,7 +87,7 @@ $m-group-gutter-map: (
     }
   }
 
-  .as-m-group--x-#{$size} {
+  .sd-m-group--x-#{$size} {
     margin-left: -1 * $gutter;
     margin-right: -1 * $gutter;
 
@@ -97,7 +97,7 @@ $m-group-gutter-map: (
     }
   }
 
-  .as-m-group--y-#{$size} {
+  .sd-m-group--y-#{$size} {
     margin-top: -1 * $gutter;
     margin-bottom: -1 * $gutter;
 
@@ -109,17 +109,17 @@ $m-group-gutter-map: (
 }
 
 // https://css-tricks.com/flexbox-truncated-text/
-.as-m-group--inline .as-t-box {
+.sd-m-group--inline .sd-t-box {
   min-width: 0;
 }
 
 // --wrap
-.as-m-group--wrap-wrap {
+.sd-m-group--wrap-wrap {
   flex-wrap: wrap;
 }
-.as-m-group--wrap-nowrap {
+.sd-m-group--wrap-nowrap {
   flex-wrap: nowrap;
 }
-.as-m-group--wrap-wrap-reverse {
+.sd-m-group--wrap-wrap-reverse {
   flex-wrap: wrap-reverse;
 }

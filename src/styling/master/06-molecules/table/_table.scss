@@ -22,7 +22,7 @@ $m-table--fixed-first-column--background-color: $t2-color__white !default;
 $m-table--fixed-first-column--pseudo-el--width: get-spacing(1) !default;
 $m-table--fixed-first-column--pseudo-el--background: linear-gradient(90deg, rgba($t2-color__black, 0.04) 0%, rgba($t2-color__black, 0) 100%) !default;
 
-.as-m-table {
+.sd-m-table {
   width: 100%;
   border: 0;
   border-collapse: collapse;
@@ -39,23 +39,23 @@ $m-table--fixed-first-column--pseudo-el--background: linear-gradient(90deg, rgba
   }
 }
 
-.as-m-table--wrap-text {
+.sd-m-table--wrap-text {
   th, td {
     white-space: normal;
   }
 }
 
-.as-m-table--striped thead tr {
+.sd-m-table--striped thead tr {
   background-color: $m-table--striped--primary--background-color;
 }
 
-.as-m-table--with-hover {
+.sd-m-table--with-hover {
   tbody tr:hover {
     background: $m-table__tr--hover--background-color;
   } 
 }
 
-.as-m-table--striped {
+.sd-m-table--striped {
   tbody tr:nth-of-type(odd) {
     background-color: $m-table--striped--primary--background-color;
   }
@@ -73,7 +73,7 @@ $m-table--fixed-first-column--pseudo-el--background: linear-gradient(90deg, rgba
   }
 }
 
-.as-m-table--fixed {
+.sd-m-table--fixed {
   table-layout: fixed;
 
   th,
@@ -84,14 +84,14 @@ $m-table--fixed-first-column--pseudo-el--background: linear-gradient(90deg, rgba
   }
 }
 
-.as-m-table-responsive {
+.sd-m-table-responsive {
   display: block;
   width: 100%;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
 
-.as-m-table--stock-availability {
+.sd-m-table--stock-availability {
   th,
   td {
     height: $m-table--stock-availability__cell--height;
@@ -100,41 +100,41 @@ $m-table--fixed-first-column--pseudo-el--background: linear-gradient(90deg, rgba
   }
 }
 
-.as-m-table__row--highlighted {
+.sd-m-table__row--highlighted {
   background: $m-table__tr--hover--background-color;
 }
 
-.as-m-table--align-left th,
-.as-m-table--align-left td {
+.sd-m-table--align-left th,
+.sd-m-table--align-left td {
   text-align: left;
 }
 
-.as-m-table--align-center th,
-.as-m-table--align-center td {
+.sd-m-table--align-center th,
+.sd-m-table--align-center td {
   text-align: center;
 }
 
-.as-m-table--align-right th,
-.as-m-table--align-right td {
+.sd-m-table--align-right th,
+.sd-m-table--align-right td {
   text-align: right;
 }
 
-.as-m-table--vertical-align-top th,
-.as-m-table--vertical-align-top td {
+.sd-m-table--vertical-align-top th,
+.sd-m-table--vertical-align-top td {
   vertical-align: top;
 }
 
-.as-m-table--vertical-align-middle th,
-.as-m-table--vertical-align-middle td {
+.sd-m-table--vertical-align-middle th,
+.sd-m-table--vertical-align-middle td {
   vertical-align: middle;
 }
 
-.as-m-table--vertical-align-bottom th,
-.as-m-table--vertical-align-bottom td {
+.sd-m-table--vertical-align-bottom th,
+.sd-m-table--vertical-align-bottom td {
   vertical-align: bottom;
 }
 
-.as-m-table--mobile-friendly {
+.sd-m-table--mobile-friendly {
   th,
   td {
     width: auto;
@@ -196,28 +196,28 @@ $m-table--fixed-first-column--pseudo-el--background: linear-gradient(90deg, rgba
   }
 }
 
-.as-m-table--first-column--align-left {
+.sd-m-table--first-column--align-left {
   th:first-child,
   td:first-child {
     text-align: left;
   }
 }
 
-.as-m-table--first-column--align-center {
+.sd-m-table--first-column--align-center {
   th:first-child,
   td:first-child {
     text-align: center;
   }
 }
 
-.as-m-table--first-column--align-right {
+.sd-m-table--first-column--align-right {
   th:first-child,
   td:first-child {
     text-align: right;
   }
 }
 
-.as-m-table-responsive--hide-scroll {
+.sd-m-table-responsive--hide-scroll {
   -ms-overflow-style: none;
   scrollbar-width: none;
   -webkit-overflow-scrolling: touch;
@@ -227,7 +227,7 @@ $m-table--fixed-first-column--pseudo-el--background: linear-gradient(90deg, rgba
   }
 }
 
-.as-m-table.as-m-table--fixed-first-column {
+.sd-m-table.sd-m-table--fixed-first-column {
   th,
   td {
     padding: 0;
@@ -241,7 +241,7 @@ $m-table--fixed-first-column--pseudo-el--background: linear-gradient(90deg, rgba
   }
 }
 
-.as-m-table-responsive--scrolled .as-m-table--fixed-first-column {
+.sd-m-table-responsive--scrolled .sd-m-table--fixed-first-column {
   thead tr th:first-child,
   tbody tr td:first-child {
     &::after {
@@ -262,7 +262,7 @@ $m-table--fixed-first-column--pseudo-el--background: linear-gradient(90deg, rgba
   }
 }
 
-.as-m-table--fixed-first-column.as-m-table--striped {
+.sd-m-table--fixed-first-column.sd-m-table--striped {
   thead tr th:first-child,
   tbody tr td:first-child {
     background-color: $m-table--striped--primary--background-color;

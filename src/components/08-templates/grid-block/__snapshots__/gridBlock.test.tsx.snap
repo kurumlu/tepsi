@@ -2,25 +2,25 @@
 
 exports[`<GridBlock /> renders blocks GridBlock component: blocks 1`] = `
 <div
-  className="as-t-grid-block as-t-grid-block--blocks"
+  className="sd-t-grid-block sd-t-grid-block--blocks"
 >
   <div
-    className="as-t-grid-block__inner"
+    className="sd-t-grid-block__inner"
   >
     <div
-      className="as-t-grid-block__item"
+      className="sd-t-grid-block__item"
       key="0"
     >
       <div
-        className="as-t-grid-block__item-content-placeholder"
+        className="sd-t-grid-block__item-content-placeholder"
       />
     </div>
     <div
-      className="as-t-grid-block__item"
+      className="sd-t-grid-block__item"
       key="1"
     >
       <div
-        className="as-t-grid-block__item-content-placeholder"
+        className="sd-t-grid-block__item-content-placeholder"
       />
     </div>
   </div>
@@ -29,33 +29,33 @@ exports[`<GridBlock /> renders blocks GridBlock component: blocks 1`] = `
 
 exports[`<GridBlock /> renders column + rows GridBlock component: column + rows 1`] = `
 <div
-  className="as-t-grid-block as-t-grid-block--col-rows"
+  className="sd-t-grid-block sd-t-grid-block--col-rows"
 >
   <div
-    className="as-t-grid-block__inner"
+    className="sd-t-grid-block__inner"
   >
     <div
-      className="as-t-grid-block__item"
+      className="sd-t-grid-block__item"
       key="0"
     >
       <div
-        className="as-t-grid-block__item-content-placeholder"
+        className="sd-t-grid-block__item-content-placeholder"
       />
     </div>
     <div
-      className="as-t-grid-block__item"
+      className="sd-t-grid-block__item"
       key="1"
     >
       <div
-        className="as-t-grid-block__item-content-placeholder"
+        className="sd-t-grid-block__item-content-placeholder"
       />
     </div>
     <div
-      className="as-t-grid-block__item"
+      className="sd-t-grid-block__item"
       key="2"
     >
       <div
-        className="as-t-grid-block__item-content-placeholder"
+        className="sd-t-grid-block__item-content-placeholder"
       />
     </div>
   </div>
@@ -64,17 +64,17 @@ exports[`<GridBlock /> renders column + rows GridBlock component: column + rows 
 
 exports[`<GridBlock /> renders column GridBlock component: column 1`] = `
 <div
-  className="as-t-grid-block as-t-grid-block--col"
+  className="sd-t-grid-block sd-t-grid-block--col"
 >
   <div
-    className="as-t-grid-block__inner"
+    className="sd-t-grid-block__inner"
   >
     <div
-      className="as-t-grid-block__item"
+      className="sd-t-grid-block__item"
       key="0"
     >
       <div
-        className="as-t-grid-block__item-content-placeholder"
+        className="sd-t-grid-block__item-content-placeholder"
       />
     </div>
   </div>
@@ -83,33 +83,33 @@ exports[`<GridBlock /> renders column GridBlock component: column 1`] = `
 
 exports[`<GridBlock /> renders columns + row GridBlock component: columns + row 1`] = `
 <div
-  className="as-t-grid-block as-t-grid-block--cols-row"
+  className="sd-t-grid-block sd-t-grid-block--cols-row"
 >
   <div
-    className="as-t-grid-block__inner"
+    className="sd-t-grid-block__inner"
   >
     <div
-      className="as-t-grid-block__item"
+      className="sd-t-grid-block__item"
       key="0"
     >
       <div
-        className="as-t-grid-block__item-content-placeholder"
+        className="sd-t-grid-block__item-content-placeholder"
       />
     </div>
     <div
-      className="as-t-grid-block__item"
+      className="sd-t-grid-block__item"
       key="1"
     >
       <div
-        className="as-t-grid-block__item-content-placeholder"
+        className="sd-t-grid-block__item-content-placeholder"
       />
     </div>
     <div
-      className="as-t-grid-block__item"
+      className="sd-t-grid-block__item"
       key="2"
     >
       <div
-        className="as-t-grid-block__item-content-placeholder"
+        className="sd-t-grid-block__item-content-placeholder"
       />
     </div>
   </div>
@@ -118,25 +118,25 @@ exports[`<GridBlock /> renders columns + row GridBlock component: columns + row 
 
 exports[`<GridBlock /> renders columns GridBlock component: columns 1`] = `
 <div
-  className="as-t-grid-block as-t-grid-block--cols"
+  className="sd-t-grid-block sd-t-grid-block--cols"
 >
   <div
-    className="as-t-grid-block__inner"
+    className="sd-t-grid-block__inner"
   >
     <div
-      className="as-t-grid-block__item"
+      className="sd-t-grid-block__item"
       key="0"
     >
       <div
-        className="as-t-grid-block__item-content-placeholder"
+        className="sd-t-grid-block__item-content-placeholder"
       />
     </div>
     <div
-      className="as-t-grid-block__item"
+      className="sd-t-grid-block__item"
       key="1"
     >
       <div
-        className="as-t-grid-block__item-content-placeholder"
+        className="sd-t-grid-block__item-content-placeholder"
       />
     </div>
   </div>
@@ -145,17 +145,17 @@ exports[`<GridBlock /> renders columns GridBlock component: columns 1`] = `
 
 exports[`<GridBlock /> renders default GridBlock component: default 1`] = `
 <div
-  className="as-t-grid-block"
+  className="sd-t-grid-block"
 >
   <div
-    className="as-t-grid-block__inner"
+    className="sd-t-grid-block__inner"
   >
     <div
-      className="as-t-grid-block__item"
+      className="sd-t-grid-block__item"
       key="0"
     >
       <div
-        className="as-t-grid-block__item-content-placeholder"
+        className="sd-t-grid-block__item-content-placeholder"
       />
     </div>
   </div>
@@ -164,33 +164,33 @@ exports[`<GridBlock /> renders default GridBlock component: default 1`] = `
 
 exports[`<GridBlock /> renders row + columns GridBlock component: row + columns 1`] = `
 <div
-  className="as-t-grid-block as-t-grid-block--row-cols"
+  className="sd-t-grid-block sd-t-grid-block--row-cols"
 >
   <div
-    className="as-t-grid-block__inner"
+    className="sd-t-grid-block__inner"
   >
     <div
-      className="as-t-grid-block__item"
+      className="sd-t-grid-block__item"
       key="0"
     >
       <div
-        className="as-t-grid-block__item-content-placeholder"
+        className="sd-t-grid-block__item-content-placeholder"
       />
     </div>
     <div
-      className="as-t-grid-block__item"
+      className="sd-t-grid-block__item"
       key="1"
     >
       <div
-        className="as-t-grid-block__item-content-placeholder"
+        className="sd-t-grid-block__item-content-placeholder"
       />
     </div>
     <div
-      className="as-t-grid-block__item"
+      className="sd-t-grid-block__item"
       key="2"
     >
       <div
-        className="as-t-grid-block__item-content-placeholder"
+        className="sd-t-grid-block__item-content-placeholder"
       />
     </div>
   </div>
@@ -199,17 +199,17 @@ exports[`<GridBlock /> renders row + columns GridBlock component: row + columns 
 
 exports[`<GridBlock /> renders row GridBlock component: row 1`] = `
 <div
-  className="as-t-grid-block as-t-grid-block--row"
+  className="sd-t-grid-block sd-t-grid-block--row"
 >
   <div
-    className="as-t-grid-block__inner"
+    className="sd-t-grid-block__inner"
   >
     <div
-      className="as-t-grid-block__item"
+      className="sd-t-grid-block__item"
       key="0"
     >
       <div
-        className="as-t-grid-block__item-content-placeholder"
+        className="sd-t-grid-block__item-content-placeholder"
       />
     </div>
   </div>
@@ -218,33 +218,33 @@ exports[`<GridBlock /> renders row GridBlock component: row 1`] = `
 
 exports[`<GridBlock /> renders rows + column GridBlock component: rows + column 1`] = `
 <div
-  className="as-t-grid-block as-t-grid-block--rows-col"
+  className="sd-t-grid-block sd-t-grid-block--rows-col"
 >
   <div
-    className="as-t-grid-block__inner"
+    className="sd-t-grid-block__inner"
   >
     <div
-      className="as-t-grid-block__item"
+      className="sd-t-grid-block__item"
       key="0"
     >
       <div
-        className="as-t-grid-block__item-content-placeholder"
+        className="sd-t-grid-block__item-content-placeholder"
       />
     </div>
     <div
-      className="as-t-grid-block__item"
+      className="sd-t-grid-block__item"
       key="1"
     >
       <div
-        className="as-t-grid-block__item-content-placeholder"
+        className="sd-t-grid-block__item-content-placeholder"
       />
     </div>
     <div
-      className="as-t-grid-block__item"
+      className="sd-t-grid-block__item"
       key="2"
     >
       <div
-        className="as-t-grid-block__item-content-placeholder"
+        className="sd-t-grid-block__item-content-placeholder"
       />
     </div>
   </div>
@@ -253,25 +253,25 @@ exports[`<GridBlock /> renders rows + column GridBlock component: rows + column 
 
 exports[`<GridBlock /> renders rows GridBlock component: rows 1`] = `
 <div
-  className="as-t-grid-block as-t-grid-block--rows"
+  className="sd-t-grid-block sd-t-grid-block--rows"
 >
   <div
-    className="as-t-grid-block__inner"
+    className="sd-t-grid-block__inner"
   >
     <div
-      className="as-t-grid-block__item"
+      className="sd-t-grid-block__item"
       key="0"
     >
       <div
-        className="as-t-grid-block__item-content-placeholder"
+        className="sd-t-grid-block__item-content-placeholder"
       />
     </div>
     <div
-      className="as-t-grid-block__item"
+      className="sd-t-grid-block__item"
       key="1"
     >
       <div
-        className="as-t-grid-block__item-content-placeholder"
+        className="sd-t-grid-block__item-content-placeholder"
       />
     </div>
   </div>

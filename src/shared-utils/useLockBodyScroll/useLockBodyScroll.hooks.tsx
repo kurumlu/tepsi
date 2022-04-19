@@ -29,13 +29,13 @@ const _lockBodyScroll = () => {
   const scrollbarSize = getScrollbarSize();
   const lockScrollID = Math.random().toString().slice(2, 8);
   const bodyWrapper = document.getElementById('body-wrapper');
-  const stickyBar = document.querySelector('.as-t-sticky-bar') as HTMLElement;
+  const stickyBar = document.querySelector('.sd-t-sticky-bar') as HTMLElement;
   const zEWidget = document.querySelector('.zEWidget-launcher') as HTMLElement;
   const comparePopup = document.querySelector(
-    '.as-m-compare-popup'
+    '.sd-m-compare-popup'
   ) as HTMLElement;
   const previewItemPDPSticky = document.querySelector(
-    '.as-t-pdp-layout--preview-item-sticky .as-t-pdp-layout__item--preview'
+    '.sd-t-pdp-layout--preview-item-sticky .sd-t-pdp-layout__item--preview'
   ) as HTMLElement;
   const shouldLockScroll = lockState.lockScrollIDs.size === 0;
   lockState.lockScrollIDs.add(lockScrollID);

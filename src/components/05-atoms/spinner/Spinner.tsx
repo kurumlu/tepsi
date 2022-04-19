@@ -15,11 +15,11 @@ export const Spinner: FunctionComponent<SpinnerProps> = ({
   size = SpinnerSize.LARGE,
 }) => (
   <svg
-    className={cn('as-a-spinner', `as-a-spinner--${size}`)}
+    className={cn('sd-a-spinner', `sd-a-spinner--${size}`)}
     viewBox="0 0 40 40"
     xmlns="http://www.w3.org/2000/svg">
     <circle
-      className="as-a-spinner__ring"
+      className="sd-a-spinner__ring"
       fill="none"
       strokeLinecap="round"
       strokeWidth="3"

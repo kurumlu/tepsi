@@ -24,17 +24,17 @@ $m-step__content--font-map: $t2-font-map__heading !default;
 $m-step__content--font-size: $t2-font-size__body-l !default;
 
 
-.as-m-steps {
+.sd-m-steps {
   position: relative;
 }
 
-.as-m-steps__content {
+.sd-m-steps__content {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.as-m-steps::before {
+.sd-m-steps::before {
   position: absolute;
   content: '';
   width: 100%;
@@ -44,7 +44,7 @@ $m-step__content--font-size: $t2-font-size__body-l !default;
   @include align-to-center;
 }
 
-.as-m-step__number {
+.sd-m-step__number {
   background: $m-step__number--background;
   color: $m-step__number--color;
   border-radius: $m-step__number--border-radius;
@@ -64,25 +64,25 @@ $m-step__content--font-size: $t2-font-size__body-l !default;
   }
 }
 
-.as-m-step--active .as-m-step__number {
+.sd-m-step--active .sd-m-step__number {
   background: $m-step__number--active--background;
   border-color: $m-step__number--active--border-color;
 }
 
-.as-m-step--passed .as-m-step__number {
+.sd-m-step--passed .sd-m-step__number {
   background: $m-step__number--passed--background;
   border-color: $m-step__number--passed--border-color;
   color: $m-step__number--passed--color;
 }
 
-.as-m-step {
+.sd-m-step {
   display: flex;
   align-items: center;
   background-color: $m-step--background-color;
   position: relative;
 }
 
-.as-m-step:not(:last-child) {
+.sd-m-step:not(:last-child) {
   padding-right: $m-step--mobile--padding;
 
   @include mq($from: tablet) {
@@ -90,7 +90,7 @@ $m-step__content--font-size: $t2-font-size__body-l !default;
   }
 }
 
-.as-m-step:not(:first-child) {
+.sd-m-step:not(:first-child) {
   padding-left: $m-step--mobile--padding;
 
   @include mq($from: tablet) {
@@ -98,7 +98,7 @@ $m-step__content--font-size: $t2-font-size__body-l !default;
   }
 }
 
-.as-m-step__content {
+.sd-m-step__content {
   font-size: $m-step__content--font-size;
   color: $m-step__content--color;
   line-height: 1;

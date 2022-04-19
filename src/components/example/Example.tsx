@@ -50,22 +50,22 @@ export const Example: FunctionComponent<ExampleProps> = ({
   return (
     <div
       id={id}
-      className={cn('as-x-example', {
-        [`as-x-example--color-${color}`]: color,
-        'as-x-example--disabled': isDisabled,
-        [`as-x-example--size-${size}`]: size,
+      className={cn('sd-x-example', {
+        [`sd-x-example--color-${color}`]: color,
+        'sd-x-example--disabled': isDisabled,
+        [`sd-x-example--size-${size}`]: size,
       })}
       onClick={!!onClick && handleClick}
       data-qa={dataQA}>
       {!!header && (
-        <div className="as-x-example__header">
+        <div className="sd-x-example__header">
           <Heading>{header.title}</Heading>
           {!!header.subtitle && (
             <Heading priority={HeadingPriority.H3}>{header.subtitle}</Heading>
           )}
         </div>
       )}
-      <div className="as-x-example__content">{children}</div>
+      <div className="sd-x-example__content">{children}</div>
     </div>
   );
 };

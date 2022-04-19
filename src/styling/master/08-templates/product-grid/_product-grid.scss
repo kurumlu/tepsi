@@ -6,7 +6,7 @@ $t-product-grid--vertical-gutter--small: get-spacing(4) !default;
 $t-product-grid--vertical-gutter--medium: get-spacing(5) !default;
 $t-product-grid--vertical-gutter--large: get-spacing(5) !default;
 
-.as-t-product-grid {
+.sd-t-product-grid {
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
@@ -20,7 +20,7 @@ $t-product-grid--vertical-gutter--large: get-spacing(5) !default;
   }
 }
 
-.as-t-product-grid__item {
+.sd-t-product-grid__item {
   width: calc(100% / 2 - #{$t-product-grid--gutter--small});
   margin: #{$t-product-grid--vertical-gutter--small / 2} #{$t-product-grid--gutter--small / 2};
 
@@ -48,7 +48,7 @@ $t-product-grid--vertical-gutter--large: get-spacing(5) !default;
   }
 }
 
-.as-t-product-grid__item--desktop-narrow {
+.sd-t-product-grid__item--desktop-narrow {
   @include mq($from: desktop) {
     width: calc(100% / 5 - #{$t-product-grid--gutter--large});
     margin: #{$t-product-grid--vertical-gutter--large / 2} #{$t-product-grid--gutter--large / 2};
@@ -60,7 +60,7 @@ $t-product-grid--vertical-gutter--large: get-spacing(5) !default;
   }
 }
 
-.as-t-product-grid__item--extended {
+.sd-t-product-grid__item--extended {
   @include mq($from: tablet, $until: desktop) {
     width: calc(#{percentage(2/3)} - #{$t-product-grid--gutter--medium});
   }
@@ -74,20 +74,20 @@ $t-product-grid--vertical-gutter--large: get-spacing(5) !default;
   }
 }
 
-.as-t-product-grid__item--mobile-fullwidth {
+.sd-t-product-grid__item--mobile-fullwidth {
   @include mq($until: tablet) {
     width: 100%;
     margin: #{$t-product-grid--vertical-gutter--small / 2} 0;
   }
 }
 
-.as-t-product-grid__banner {
+.sd-t-product-grid__banner {
   width: 100%;
   display: block;
 }
 
 @for $i from 0 through 4 {
-  .as-t-product-grid__banner--row-#{$i} {
+  .sd-t-product-grid__banner--row-#{$i} {
     order: $i;
   }
 }

@@ -2,10 +2,10 @@
 
 exports[`<Progress /> should render with default props: default 1`] = `
 <div
-  className="as-a-progress"
+  className="sd-a-progress"
 >
   <div
-    className="as-a-progress__bar"
+    className="sd-a-progress__bar"
     style={
       Object {
         "width": "25%",

@@ -33,6 +33,6 @@ describe('<Step />', () => {
     const component: ShallowWrapper<StepProps> = shallow(
       <Steps.Step title="title" passed />
     );
-    expect(component.hasClass('as-m-step--passed')).toBeTruthy();
+    expect(component.hasClass('sd-m-step--passed')).toBeTruthy();
   });
 });

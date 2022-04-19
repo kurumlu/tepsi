@@ -6,7 +6,7 @@ import {
 } from './Group';
 
 export const mockGroupProps: GroupProps = {
-  className: 'as-m-grout-test',
+  className: 'sd-m-grout-test',
   valign: GroupVerticalAlign.CENTER,
   align: GroupAlign.CENTER,
   gutter: GroupGutter.MEDIUM,

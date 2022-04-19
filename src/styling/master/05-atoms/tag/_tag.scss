@@ -51,7 +51,7 @@ $a-tag--sustainable--color: $t2-color__white !default;
 
 
 // Code for Tag ATOM
-.as-a-tag {
+.sd-a-tag {
   @include font-map($a-tag--font-map);
   box-sizing: border-box;
   display: inline-block;
@@ -64,52 +64,52 @@ $a-tag--sustainable--color: $t2-color__white !default;
 }
 
 // --tag-color
-.as-a-tag--primary {
+.sd-a-tag--primary {
   color: $a-tag--primary--color;
   background: $a-tag--primary--background;
 }
 
-.as-a-tag--secondary {
+.sd-a-tag--secondary {
   color: $a-tag--secondary--color;
   background: $a-tag--secondary--background;
 }
 
-.as-a-tag--tertiary {
+.sd-a-tag--tertiary {
   color: $a-tag--tertiary--color;
   background: $a-tag--tertiary--background;
 }
 
-.as-a-tag--quaternary {
+.sd-a-tag--quaternary {
   color: $a-tag--quaternary--color;
   background: $a-tag--quaternary--background;
 }
 
-.as-a-tag--quinary {
+.sd-a-tag--quinary {
   color: $a-tag--quinary--color;
   background: $a-tag--quinary--background;
 }
 
-.as-a-tag--senary {
+.sd-a-tag--senary {
   color: $a-tag--senary--color;
   background: $a-tag--senary--background;
 }
 
-.as-a-tag--septenary {
+.sd-a-tag--septenary {
   color: $a-tag--septenary--color;
   background: $a-tag--septenary--background;
 }
 
-.as-a-tag--general {
+.sd-a-tag--general {
   color: $a-tag--general--color;
   background: $a-tag--general--background;
 }
 
-.as-a-tag--discount {
+.sd-a-tag--discount {
   color: $a-tag--discount--color;
   background: $a-tag--discount--background;
 }
 
-.as-a-tag--sustainable {
+.sd-a-tag--sustainable {
   color: $a-tag--sustainable--color;
   background: $a-tag--sustainable--background;
 }

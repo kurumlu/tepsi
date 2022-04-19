@@ -2,22 +2,22 @@
 
 exports[`<StepperSimple /> renders <StepperSimple /> component: default 1`] = `
 <div
-  className="as-m-stepper-simple"
+  className="sd-m-stepper-simple"
 >
   <div
-    className="as-m-stepper-simple__item as-m-stepper-simple__item--active"
+    className="sd-m-stepper-simple__item sd-m-stepper-simple__item--active"
     key="1"
   />
   <div
-    className="as-m-stepper-simple__item"
+    className="sd-m-stepper-simple__item"
     key="2"
   />
   <div
-    className="as-m-stepper-simple__item"
+    className="sd-m-stepper-simple__item"
     key="3"
   />
   <div
-    className="as-m-stepper-simple__item"
+    className="sd-m-stepper-simple__item"
     key="4"
   />
 </div>

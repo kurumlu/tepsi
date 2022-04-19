@@ -19,43 +19,43 @@ $a-heading--xs--line-height: $t2-line-height__l !default;
 $a-heading--xxs--font-size: $t2-font-size__heading-xxs !default;
 $a-heading--xxs--line-height: $t2-line-height__s !default;
 
-.as-a-heading {
+.sd-a-heading {
   color: $a-heading--color;
   margin: 0;
   @include font-map($a-heading--font-map);
 }
 
-.heading .as-a-heading {
+.heading .sd-a-heading {
   color: inherit;
   @include font-map($a-heading--font-map);
 }
 
-.as-a-heading--xl {
+.sd-a-heading--xl {
   font-size: $a-heading--xl--font-size;
   line-height: $a-heading--xl--line-height;
 }
 
-.as-a-heading--l {
+.sd-a-heading--l {
   font-size: $a-heading--l--font-size;
   line-height: $a-heading--l--line-height;
 }
 
-.as-a-heading--m {
+.sd-a-heading--m {
   font-size: $a-heading--m--font-size;
   line-height: $a-heading--m--line-height;
 }
 
-.as-a-heading--s {
+.sd-a-heading--s {
   font-size: $a-heading--s--font-size;
   line-height: $a-heading--s--line-height;
 }
 
-.as-a-heading--xs {
+.sd-a-heading--xs {
   font-size: $a-heading--xs--font-size;
   line-height: $a-heading--xs--line-height;
 }
 
-.as-a-heading--extra-title {
+.sd-a-heading--extra-title {
   font-size: $a-heading--m--font-size;
   line-height: $a-heading--m--line-height;
 
@@ -70,7 +70,7 @@ $a-heading--xxs--line-height: $t2-line-height__s !default;
   }
 }
 
-.as-a-heading--title {
+.sd-a-heading--title {
   font-size: $a-heading--s--font-size;
   line-height: $a-heading--s--line-height;
 
@@ -85,7 +85,7 @@ $a-heading--xxs--line-height: $t2-line-height__s !default;
   }
 }
 
-.as-a-heading--subtitle {
+.sd-a-heading--subtitle {
   font-size: $a-heading--xs--font-size;
   line-height: $a-heading--xs--line-height;
 
@@ -95,7 +95,7 @@ $a-heading--xxs--line-height: $t2-line-height__s !default;
   }
 }
 
-.as-a-heading--small-title {
+.sd-a-heading--small-title {
   font-size: $a-heading--xs--font-size;
   line-height: $a-heading--xs--line-height;
 
@@ -110,7 +110,7 @@ $a-heading--xxs--line-height: $t2-line-height__s !default;
   }
 }
 
-.as-a-heading--extra-small-title {
+.sd-a-heading--extra-small-title {
   font-size: $a-heading--xxs--font-size;
   line-height: $a-heading--xxs--line-height;
 
@@ -120,14 +120,14 @@ $a-heading--xxs--line-height: $t2-line-height__s !default;
   }
 }
 
-.as-a-heading--center {
+.sd-a-heading--center {
   text-align: center;
 }
 
-.as-a-heading--right {
+.sd-a-heading--right {
   text-align: right;
 }
 
-.as-a-heading--inherit {
+.sd-a-heading--inherit {
   color: inherit;
 }

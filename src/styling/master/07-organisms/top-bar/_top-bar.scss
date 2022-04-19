@@ -65,7 +65,7 @@ $o-top-bar__links__a-menu-item--menu-top-bar--a-icon--mobile--font-size: $t2-fon
 
 
 /* Styling for Top bar ORGANISM */
-.as-o-top-bar-wrapper {
+.sd-o-top-bar-wrapper {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -73,7 +73,7 @@ $o-top-bar__links__a-menu-item--menu-top-bar--a-icon--mobile--font-size: $t2-fon
   color: $o-top-bar-wrapper--color;
 }
 
-.as-o-top-bar {
+.sd-o-top-bar {
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
@@ -92,7 +92,7 @@ $o-top-bar__links__a-menu-item--menu-top-bar--a-icon--mobile--font-size: $t2-fon
   }
 }
 
-.as-o-top-bar__menu {
+.sd-o-top-bar__menu {
   position: absolute;
   display: flex;
   height: $o-top-bar__menu--height;
@@ -107,13 +107,13 @@ $o-top-bar__links__a-menu-item--menu-top-bar--a-icon--mobile--font-size: $t2-fon
   }
 }
 
-.as-o-top-bar__menu:hover {
+.sd-o-top-bar__menu:hover {
   @include mq($until: desktop) {
     background: $o-top-bar__menu--hover--mobile--background;
   }
 }
 
-.as-o-top-bar__block {
+.sd-o-top-bar__block {
   white-space: nowrap;
 
   @include mq($from: desktop) {
@@ -121,7 +121,7 @@ $o-top-bar__links__a-menu-item--menu-top-bar--a-icon--mobile--font-size: $t2-fon
   }
 }
 
-.as-o-top-bar__store-info {
+.sd-o-top-bar__store-info {
   display: none;
 
   @include mq($from: desktop) {
@@ -137,16 +137,16 @@ $o-top-bar__links__a-menu-item--menu-top-bar--a-icon--mobile--font-size: $t2-fon
   }
 }
 
-.as-o-top-bar__store-name:first-child {
+.sd-o-top-bar__store-name:first-child {
   margin-left: $o-top-bar__store-name--margin-left;
 }
 
-.as-o-top-bar__store-name.hide {
+.sd-o-top-bar__store-name.hide {
   display: none;
 }
 
 // __logo
-.as-o-top-bar__logo {
+.sd-o-top-bar__logo {
   width: auto;
   text-align: center;
   display: flex;
@@ -172,7 +172,7 @@ $o-top-bar__links__a-menu-item--menu-top-bar--a-icon--mobile--font-size: $t2-fon
   }
 }
 
-.as-o-top-bar__logo > * {
+.sd-o-top-bar__logo > * {
   width: $o-top-bar__logo__children--width;
 
   @include mq($from: tablet-small) {
@@ -185,7 +185,7 @@ $o-top-bar__links__a-menu-item--menu-top-bar--a-icon--mobile--font-size: $t2-fon
 }
 
 /*
-.as-o-top-bar__logo:first-child {
+.sd-o-top-bar__logo:first-child {
   margin-left: $o-top-bar__logo--first-child--margin-left;
 
   @include mq($from: tablet) {
@@ -197,14 +197,14 @@ $o-top-bar__links__a-menu-item--menu-top-bar--a-icon--mobile--font-size: $t2-fon
   }
 }
 
-.as-o-top-bar__logo:nth-child(2) {
+.sd-o-top-bar__logo:nth-child(2) {
   @include mq($from: desktop) {
     margin-left: $o-top-bar__logo--desktop--margin-left;
   }
 }
 */
 
-.as-o-top-bar__logo--checkout {
+.sd-o-top-bar__logo--checkout {
   padding: 0;
   display: flex;
   justify-content: flex-start;
@@ -214,7 +214,7 @@ $o-top-bar__links__a-menu-item--menu-top-bar--a-icon--mobile--font-size: $t2-fon
   }
 }
 
-.as-o-top-bar__search {
+.sd-o-top-bar__search {
   @include mq($until: desktop) {
     left: 0;
     right: 0;
@@ -233,7 +233,7 @@ $o-top-bar__links__a-menu-item--menu-top-bar--a-icon--mobile--font-size: $t2-fon
   }
 }
 
-.as-o-top-bar__links {
+.sd-o-top-bar__links {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -256,7 +256,7 @@ $o-top-bar__links__a-menu-item--menu-top-bar--a-icon--mobile--font-size: $t2-fon
   }
 }
 
-.as-o-top-bar__links > .as-a-menu-item--menu-top-bar {
+.sd-o-top-bar__links > .sd-a-menu-item--menu-top-bar {
   margin-right: 0;
 
   @include mq($from: desktop) {
@@ -270,21 +270,21 @@ $o-top-bar__links__a-menu-item--menu-top-bar--a-icon--mobile--font-size: $t2-fon
   }
 }
 
-.as-o-top-bar__links > .as-m-top-bar-nav-link__item {
+.sd-o-top-bar__links > .sd-m-top-bar-nav-link__item {
   @include mq($from: desktop) {
     margin-right: $m-top-bar-nav-link__item--desktop--first-item--margin-right;
 
-    &+.as-m-top-bar-nav-link__item {
+    &+.sd-m-top-bar-nav-link__item {
       margin-right: $m-top-bar-nav-link__item--desktop--margin-right;
     }
 
-    &+.as-m-top-bar-nav-link__item:last-child {
+    &+.sd-m-top-bar-nav-link__item:last-child {
       margin-right: $m-top-bar-nav-link__item--desktop--last-item--margin-right;
     }
   }
 }
 
-.as-o-top-bar__links > .as-m-top-bar-nav-link__item .as-a-btn--icon-button {
+.sd-o-top-bar__links > .sd-m-top-bar-nav-link__item .sd-a-btn--icon-button {
   @include mq($until: desktop) {
     padding: $m-top-bar-nav-link__item__a-btn--icon-button--tablet--padding;
   }

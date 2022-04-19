@@ -2,7 +2,7 @@
 
 exports[`<Group /> renders with children 1`] = `
 <div
-  className="as-m-group as-m-group--xs as-m-group--align-left"
+  className="sd-m-group sd-m-group--xs sd-m-group--align-left"
 >
   <div>
     Children
@@ -12,25 +12,25 @@ exports[`<Group /> renders with children 1`] = `
 
 exports[`<Group /> renders with column prop: with column prop 1`] = `
 <div
-  className="as-m-group as-m-group--xs as-m-group--align-left as-m-group--column"
+  className="sd-m-group sd-m-group--xs sd-m-group--align-left sd-m-group--column"
 />
 `;
 
 exports[`<Group /> renders with default props 1`] = `
 <div
-  className="as-m-group as-m-group--xs as-m-group--align-left"
+  className="sd-m-group sd-m-group--xs sd-m-group--align-left"
 />
 `;
 
 exports[`<Group /> renders with equalSize prop: with inlineUniform prop 1`] = `
 <div
-  className="as-m-group as-m-group--xs as-m-group--equal-size as-m-group--align-left"
+  className="sd-m-group sd-m-group--xs sd-m-group--equal-size sd-m-group--align-left"
 />
 `;
 
 exports[`<Group /> renders with props 1`] = `
 <div
-  className="as-m-group as-m-group--m as-m-group--inline as-m-group--align-center as-m-group--valign-center as-m-group--full-height as-m-grout-test"
+  className="sd-m-group sd-m-group--m sd-m-group--inline sd-m-group--align-center sd-m-group--valign-center sd-m-group--full-height sd-m-grout-test"
   data-analytics-bannerid="dataAnalyticsBannerid"
   data-qa="dataQA"
 />
@@ -38,6 +38,6 @@ exports[`<Group /> renders with props 1`] = `
 
 exports[`<Group /> renders with wrap prop: with wrap prop 1`] = `
 <div
-  className="as-m-group as-m-group--xs as-m-group--align-left as-m-group--wrap-wrap-reverse"
+  className="sd-m-group sd-m-group--xs sd-m-group--align-left sd-m-group--wrap-wrap-reverse"
 />
 `;

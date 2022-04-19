@@ -109,15 +109,15 @@ export const getPopoverPosition = (
   const transparentButtonOffset = (() => {
     const anchorClassList = anchorEl.classList;
 
-    if (anchorClassList.contains('as-a-btn--icon-button')) {
+    if (anchorClassList.contains('sd-a-btn--icon-button')) {
       return extraOffsetIconButton;
     }
-    if (anchorClassList.contains('as-a-btn--button-as-link')) {
+    if (anchorClassList.contains('sd-a-btn--button-sd-link')) {
       return extraOffsetLinkButton;
     }
     if (
-      anchorClassList.contains('as-a-btn--transparent') ||
-      anchorClassList.contains('as-a-btn--subtle')
+      anchorClassList.contains('sd-a-btn--transparent') ||
+      anchorClassList.contains('sd-a-btn--subtle')
     ) {
       return extraOffsetTransparentButton;
     }

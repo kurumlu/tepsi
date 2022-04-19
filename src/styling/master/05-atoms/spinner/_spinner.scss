@@ -7,22 +7,22 @@ $a-spinner--small: get-spacing(3) !default;
 $a-spinner--duration: $t2-animation__animation-duration-normal !default;
 $a-spinner--offset: 140 !default;
 
-.as-a-spinner {
+.sd-a-spinner {
   display: inline-block;
   animation: spinner-rotator $a-spinner--duration linear infinite;
 }
 
-.as-a-spinner--large {
+.sd-a-spinner--large {
   width: $a-spinner--large;
   height: $a-spinner--large;
 }
 
-.as-a-spinner--small {
+.sd-a-spinner--small {
   width: $a-spinner--small;
   height: $a-spinner--small;
 }
 
-.as-a-spinner__ring {
+.sd-a-spinner__ring {
   stroke: $a-spinner--color;
   stroke-dasharray: $a-spinner--offset;
   stroke-dashoffset: 0;

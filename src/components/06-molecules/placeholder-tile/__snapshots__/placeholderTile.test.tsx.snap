@@ -2,7 +2,7 @@
 
 exports[`<PlaceholderTile /> renders <PlaceholderTile /> component 1`] = `
 <div
-  className="as-m-product-tile"
+  className="sd-m-product-tile"
 >
   <svg
     preserveAspectRatio="none"

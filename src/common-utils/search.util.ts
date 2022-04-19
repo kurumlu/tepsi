@@ -1,7 +1,7 @@
 export const highlightSearchText = (
   searchTerm: string,
   searchValue: string,
-  searchTermClassName = 'as-m-search-result-item__search-value'
+  searchTermClassName = 'sd-m-search-result-item__search-value'
 ): string => {
   const searchValueRegEx = new RegExp(
     searchValue.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&'),

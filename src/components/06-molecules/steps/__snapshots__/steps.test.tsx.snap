@@ -2,15 +2,15 @@
 
 exports[`<Step /> renders <Step /> component: one step 1`] = `
 <div
-  className="as-m-step"
+  className="sd-m-step"
 >
   <div
-    className="as-m-step__number"
+    className="sd-m-step__number"
   >
     NaN
   </div>
   <div
-    className="as-m-step__content"
+    className="sd-m-step__content"
   >
     title
   </div>
@@ -19,10 +19,10 @@ exports[`<Step /> renders <Step /> component: one step 1`] = `
 
 exports[`<Steps /> renders <Steps /> component with 3 Steps: with 3 steps 1`] = `
 <div
-  className="as-m-steps"
+  className="sd-m-steps"
 >
   <div
-    className="as-m-steps__content"
+    className="sd-m-steps__content"
   >
     <Step
       index={0}

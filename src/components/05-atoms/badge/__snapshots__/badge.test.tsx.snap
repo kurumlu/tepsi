@@ -2,7 +2,7 @@
 
 exports[`<Badge /> has default max value is 99 1`] = `
 <div
-  className="as-a-badge"
+  className="sd-a-badge"
 >
   99+
 </div>
@@ -10,7 +10,7 @@ exports[`<Badge /> has default max value is 99 1`] = `
 
 exports[`<Badge /> renders <Badge /> component 1`] = `
 <div
-  className="as-a-badge as-a-badge--secondary as-a-badge--l"
+  className="sd-a-badge sd-a-badge--secondary sd-a-badge--l"
 >
   5
 </div>
@@ -18,7 +18,7 @@ exports[`<Badge /> renders <Badge /> component 1`] = `
 
 exports[`<Badge /> shows max 88+ in case count is higher then max value 1`] = `
 <div
-  className="as-a-badge as-a-badge--secondary as-a-badge--l"
+  className="sd-a-badge sd-a-badge--secondary sd-a-badge--l"
 >
   88+
 </div>

@@ -25,12 +25,12 @@ type StepsComposition = {
 
 const Step: StepsComposition['Step'] = ({ current, passed, index, title }) => (
   <div
-    className={cn('as-m-step', {
-      'as-m-step--active': current,
-      'as-m-step--passed': passed,
+    className={cn('sd-m-step', {
+      'sd-m-step--active': current,
+      'sd-m-step--passed': passed,
     })}>
-    <div className="as-m-step__number">{index + 1}</div>
-    <div className="as-m-step__content">{title}</div>
+    <div className="sd-m-step__number">{index + 1}</div>
+    <div className="sd-m-step__content">{title}</div>
   </div>
 );
 
@@ -44,8 +44,8 @@ export const Steps: FunctionComponent<StepsProps> & StepsComposition = ({
   }
 
   return (
-    <div className="as-m-steps" data-qa={dataQA}>
-      <div className="as-m-steps__content">
+    <div className="sd-m-steps" data-qa={dataQA}>
+      <div className="sd-m-steps__content">
         {filteredChildren.map(
           (child: ReactNode, index: number) =>
             isValidElement(child) &&

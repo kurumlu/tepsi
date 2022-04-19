@@ -2,12 +2,12 @@
 
 exports[`renders <Spinner /> has specific class dependant on size: small 1`] = `
 <svg
-  className="as-a-spinner as-a-spinner--small"
+  className="sd-a-spinner sd-a-spinner--small"
   viewBox="0 0 40 40"
   xmlns="http://www.w3.org/2000/svg"
 >
   <circle
-    className="as-a-spinner__ring"
+    className="sd-a-spinner__ring"
     cx="20"
     cy="20"
     fill="none"
@@ -20,12 +20,12 @@ exports[`renders <Spinner /> has specific class dependant on size: small 1`] = `
 
 exports[`renders <Spinner /> renders <Spinner /> component: default 1`] = `
 <svg
-  className="as-a-spinner as-a-spinner--large"
+  className="sd-a-spinner sd-a-spinner--large"
   viewBox="0 0 40 40"
   xmlns="http://www.w3.org/2000/svg"
 >
   <circle
-    className="as-a-spinner__ring"
+    className="sd-a-spinner__ring"
     cx="20"
     cy="20"
     fill="none"

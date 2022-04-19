@@ -36,7 +36,7 @@
 }
 
 @mixin icon-color($foreground) {
-  .as-a-icon__svg {
+  .sd-a-icon__svg {
     fill: $foreground;
   }
 }

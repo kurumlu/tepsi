@@ -31,10 +31,10 @@ export const Badge: FunctionComponent<BadgeProps> = ({
 }) => (
   <div
     className={cn(
-      'as-a-badge',
+      'sd-a-badge',
       {
-        [`as-a-badge--${color}`]: color,
-        [`as-a-badge--${size}`]: size,
+        [`sd-a-badge--${color}`]: color,
+        [`sd-a-badge--${size}`]: size,
       },
       className
     )}

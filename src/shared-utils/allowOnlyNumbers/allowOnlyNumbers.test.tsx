@@ -10,7 +10,7 @@ describe('allowOnlyNumbers', () => {
     const wrapper = mount(
       <Input id="test" onKeyDown={allowOnlyNumbers} name="test" />
     );
-    wrapper.find('.as-a-input__input').simulate('keydown', mockNotPreventEvent);
+    wrapper.find('.sd-a-input__input').simulate('keydown', mockNotPreventEvent);
     waitForComponent(wrapper);
 
     expect(mockNotPreventEvent.preventDefault).not.toHaveBeenCalled();
@@ -20,7 +20,7 @@ describe('allowOnlyNumbers', () => {
     const wrapper = mount(
       <Input id="test" onKeyDown={allowOnlyNumbers} name="test" />
     );
-    wrapper.find('.as-a-input__input').simulate('keydown', mockPreventEvent);
+    wrapper.find('.sd-a-input__input').simulate('keydown', mockPreventEvent);
     waitForComponent(wrapper);
 
     expect(mockPreventEvent.preventDefault).toHaveBeenCalled();

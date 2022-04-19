@@ -13,13 +13,13 @@ describe('<StepperSimple />', () => {
   });
 
   it('renders 4 stepper items', () => {
-    expect(component.find('.as-m-stepper-simple__item')).toHaveLength(4);
+    expect(component.find('.sd-m-stepper-simple__item')).toHaveLength(4);
   });
 
   it('adds active className for the first item if no prop "activeStep" provided', () => {
     expect(
-      component.find('.as-m-stepper-simple__item').first().prop('className')
-    ).toMatch(/as-m-stepper-simple__item--active/i);
+      component.find('.sd-m-stepper-simple__item').first().prop('className')
+    ).toMatch(/sd-m-stepper-simple__item--active/i);
   });
 
   it('adds active className for the last item if "activeStep" equals size', () => {
@@ -29,9 +29,9 @@ describe('<StepperSimple />', () => {
 
     expect(
       componentWithLastActiveStep
-        .find('.as-m-stepper-simple__item')
+        .find('.sd-m-stepper-simple__item')
         .last()
         .prop('className')
-    ).toMatch(/as-m-stepper-simple__item--active/i);
+    ).toMatch(/sd-m-stepper-simple__item--active/i);
   });
 });

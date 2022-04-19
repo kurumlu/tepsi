@@ -68,7 +68,7 @@ describe('<Heading />', () => {
     );
 
     expect(component).toMatchSnapshot();
-    expect(component.hasClass('as-a-heading--xl')).toBeTruthy();
+    expect(component.hasClass('sd-a-heading--xl')).toBeTruthy();
   });
 
   it('Size L', () => {
@@ -77,7 +77,7 @@ describe('<Heading />', () => {
     );
 
     expect(component).toMatchSnapshot();
-    expect(component.hasClass('as-a-heading--l')).toBeTruthy();
+    expect(component.hasClass('sd-a-heading--l')).toBeTruthy();
   });
 
   it('Size M', () => {
@@ -86,7 +86,7 @@ describe('<Heading />', () => {
     );
 
     expect(component).toMatchSnapshot();
-    expect(component.hasClass('as-a-heading--m')).toBeTruthy();
+    expect(component.hasClass('sd-a-heading--m')).toBeTruthy();
   });
 
   it('Size S', () => {
@@ -95,7 +95,7 @@ describe('<Heading />', () => {
     );
 
     expect(component).toMatchSnapshot();
-    expect(component.hasClass('as-a-heading--s')).toBeTruthy();
+    expect(component.hasClass('sd-a-heading--s')).toBeTruthy();
   });
 
   it('Size XS', () => {
@@ -104,7 +104,7 @@ describe('<Heading />', () => {
     );
 
     expect(component).toMatchSnapshot();
-    expect(component.hasClass('as-a-heading--xs')).toBeTruthy();
+    expect(component.hasClass('sd-a-heading--xs')).toBeTruthy();
   });
 
   it('Alignment Left', () => {
@@ -121,7 +121,7 @@ describe('<Heading />', () => {
     );
 
     expect(component).toMatchSnapshot();
-    expect(component.hasClass('as-a-heading--center')).toBeTruthy();
+    expect(component.hasClass('sd-a-heading--center')).toBeTruthy();
   });
 
   it('Alignment Right', () => {
@@ -130,7 +130,7 @@ describe('<Heading />', () => {
     );
 
     expect(component).toMatchSnapshot();
-    expect(component.hasClass('as-a-heading--right')).toBeTruthy();
+    expect(component.hasClass('sd-a-heading--right')).toBeTruthy();
   });
 
   it('Component accepts extra class', () => {

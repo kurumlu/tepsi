@@ -2,12 +2,12 @@
 
 exports[`<Icon /> renders with default props 1`] = `
 <span
-  className="as-a-icon as-a-icon--heart as-a-icon--medium"
+  className="sd-a-icon sd-a-icon--heart sd-a-icon--medium"
   role="img"
 >
   <svg
     aria-hidden="true"
-    className="as-a-icon__svg"
+    className="sd-a-icon__svg"
     focusable="false"
   />
 </span>
@@ -15,12 +15,12 @@ exports[`<Icon /> renders with default props 1`] = `
 
 exports[`<Icon /> renders with props 1`] = `
 <span
-  className="as-a-icon as-a-icon--menu as-a-icon--positive as-a-icon--major as-a-icon-test"
+  className="sd-a-icon sd-a-icon--menu sd-a-icon--positive sd-a-icon--major sd-a-icon-test"
   role="img"
 >
   <svg
     aria-hidden="true"
-    className="as-a-icon__svg"
+    className="sd-a-icon__svg"
     focusable="false"
   />
 </span>

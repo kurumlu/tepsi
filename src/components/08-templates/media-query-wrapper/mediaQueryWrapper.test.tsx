@@ -13,7 +13,7 @@ describe('<MediaQueryWrapper />', () => {
       <MediaQueryWrapper>Content</MediaQueryWrapper>
     );
     expect(component.prop('className')).toEqual(
-      'as-t-media-query-wrapper as-t-media-query-wrapper--mobile-block'
+      'sd-t-media-query-wrapper sd-t-media-query-wrapper--mobile-block'
     );
     expect(component).toMatchSnapshot('Default props');
   });
@@ -25,7 +25,7 @@ describe('<MediaQueryWrapper />', () => {
       </MediaQueryWrapper>
     );
     expect(component.prop('className')).toEqual(
-      'as-t-media-query-wrapper as-t-media-query-wrapper--desktop-block'
+      'sd-t-media-query-wrapper sd-t-media-query-wrapper--desktop-block'
     );
     expect(component).toMatchSnapshot('desktop query prop');
   });
@@ -37,7 +37,7 @@ describe('<MediaQueryWrapper />', () => {
       </MediaQueryWrapper>
     );
     expect(component.prop('className')).toEqual(
-      'as-t-media-query-wrapper as-t-media-query-wrapper--tablet-flex'
+      'sd-t-media-query-wrapper sd-t-media-query-wrapper--tablet-flex'
     );
     expect(component).toMatchSnapshot('tablet query prop and flex');
   });
@@ -53,7 +53,7 @@ describe('<MediaQueryWrapper />', () => {
       </MediaQueryWrapper>
     );
     expect(component.prop('className')).toEqual(
-      'as-t-media-query-wrapper as-t-media-query-wrapper--mobile-block as-t-media-query-wrapper--tablet-small-block'
+      'sd-t-media-query-wrapper sd-t-media-query-wrapper--mobile-block sd-t-media-query-wrapper--tablet-small-block'
     );
     expect(component).toMatchSnapshot('complex query prop');
   });

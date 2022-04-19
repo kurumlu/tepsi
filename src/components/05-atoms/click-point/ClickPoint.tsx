@@ -20,15 +20,15 @@ export const ClickPoint: FunctionComponent<ClickPointProps> = ({
   isActive,
 }) => (
   <svg
-    className={cn('as-a-click-point', {
-      'as-a-click-point--is-active': isActive,
+    className={cn('sd-a-click-point', {
+      'sd-a-click-point--is-active': isActive,
     })}
     x={x}
     y={y}
     onClick={onClick}
     tabIndex={0}>
     <circle
-      className="as-a-click-point__circle"
+      className="sd-a-click-point__circle"
       cx="0"
       cy="0"
       r={CLICK_POINT_RADIUS}

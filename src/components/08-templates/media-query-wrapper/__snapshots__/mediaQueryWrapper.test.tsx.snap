@@ -2,7 +2,7 @@
 
 exports[`<MediaQueryWrapper /> renders <MediaQueryWrapper /> with complex query prop: complex query prop 1`] = `
 <div
-  className="as-t-media-query-wrapper as-t-media-query-wrapper--mobile-block as-t-media-query-wrapper--tablet-small-block"
+  className="sd-t-media-query-wrapper sd-t-media-query-wrapper--mobile-block sd-t-media-query-wrapper--tablet-small-block"
 >
   Content
 </div>
@@ -10,7 +10,7 @@ exports[`<MediaQueryWrapper /> renders <MediaQueryWrapper /> with complex query 
 
 exports[`<MediaQueryWrapper /> renders <MediaQueryWrapper /> with default props: Default props 1`] = `
 <div
-  className="as-t-media-query-wrapper as-t-media-query-wrapper--mobile-block"
+  className="sd-t-media-query-wrapper sd-t-media-query-wrapper--mobile-block"
 >
   Content
 </div>
@@ -18,7 +18,7 @@ exports[`<MediaQueryWrapper /> renders <MediaQueryWrapper /> with default props:
 
 exports[`<MediaQueryWrapper /> renders <MediaQueryWrapper /> with desktop query prop: desktop query prop 1`] = `
 <div
-  className="as-t-media-query-wrapper as-t-media-query-wrapper--desktop-block"
+  className="sd-t-media-query-wrapper sd-t-media-query-wrapper--desktop-block"
 >
   Content
 </div>
@@ -26,7 +26,7 @@ exports[`<MediaQueryWrapper /> renders <MediaQueryWrapper /> with desktop query 
 
 exports[`<MediaQueryWrapper /> renders <MediaQueryWrapper /> with tablet query prop and flex: tablet query prop and flex 1`] = `
 <div
-  className="as-t-media-query-wrapper as-t-media-query-wrapper--tablet-flex"
+  className="sd-t-media-query-wrapper sd-t-media-query-wrapper--tablet-flex"
 >
   Content
 </div>

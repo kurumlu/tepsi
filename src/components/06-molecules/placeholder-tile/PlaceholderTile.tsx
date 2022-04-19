@@ -2,7 +2,7 @@ import * as React from 'react';
 import { FunctionComponent } from 'react';
 
 export const PlaceholderTile: FunctionComponent = () => (
-  <div className="as-m-product-tile">
+  <div className="sd-m-product-tile">
     <svg
       style={{ width: '100%', height: 'auto' }}
       preserveAspectRatio="none"

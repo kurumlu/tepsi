@@ -17,7 +17,7 @@ describe('renders <Tag />', () => {
     );
     expect(TagWithSecondColor).toMatchSnapshot('color');
     expect(
-      TagWithSecondColor.hasClass(`as-a-tag--${TagColor.SECONDARY}`)
+      TagWithSecondColor.hasClass(`sd-a-tag--${TagColor.SECONDARY}`)
     ).toBeTruthy();
   });
 

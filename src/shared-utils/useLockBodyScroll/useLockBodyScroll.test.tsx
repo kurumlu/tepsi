@@ -41,9 +41,9 @@ describe('lockBodyScroll', () => {
     const zEWidget = document.createElement('div');
     const comparePopup = document.createElement('div');
     bodyWrapper.id = 'body-wrapper';
-    stickyBar.className = 'as-t-sticky-bar';
+    stickyBar.className = 'sd-t-sticky-bar';
     zEWidget.className = 'zEWidget-launcher';
-    comparePopup.className = 'as-m-compare-popup';
+    comparePopup.className = 'sd-m-compare-popup';
 
     document.body.append(bodyWrapper, stickyBar, zEWidget, comparePopup);
 

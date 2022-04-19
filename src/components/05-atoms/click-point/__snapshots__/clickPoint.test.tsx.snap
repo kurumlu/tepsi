@@ -2,14 +2,14 @@
 
 exports[`<ClickPoint /> renders with default props: default props 1`] = `
 <svg
-  className="as-a-click-point"
+  className="sd-a-click-point"
   onClick={[MockFunction]}
   tabIndex={0}
   x="50%"
   y="50%"
 >
   <circle
-    className="as-a-click-point__circle"
+    className="sd-a-click-point__circle"
     cx="0"
     cy="0"
     r={16}
@@ -34,14 +34,14 @@ exports[`<ClickPoint /> renders with default props: default props 1`] = `
 
 exports[`<ClickPoint /> renders with props: with props 1`] = `
 <svg
-  className="as-a-click-point"
+  className="sd-a-click-point"
   onClick={[Function]}
   tabIndex={0}
   x="25%"
   y="40%"
 >
   <circle
-    className="as-a-click-point__circle"
+    className="sd-a-click-point__circle"
     cx="0"
     cy="0"
     r={16}

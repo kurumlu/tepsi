@@ -2,7 +2,7 @@
 
 exports[`renders <Tag /> has data-qa attr: data-qa 1`] = `
 <div
-  className="as-a-tag"
+  className="sd-a-tag"
   data-qa="123"
 >
   -30%
@@ -11,7 +11,7 @@ exports[`renders <Tag /> has data-qa attr: data-qa 1`] = `
 
 exports[`renders <Tag /> has specific class depends on color: color 1`] = `
 <div
-  className="as-a-tag as-a-tag--secondary"
+  className="sd-a-tag sd-a-tag--secondary"
 >
   -30%
 </div>
@@ -20,7 +20,7 @@ exports[`renders <Tag /> has specific class depends on color: color 1`] = `
 exports[`renders <Tag /> renders <Tag /> component with children: children 1`] = `
 <Tag>
   <div
-    className="as-a-tag"
+    className="sd-a-tag"
   >
     <MockChildren>
       <Icon
@@ -28,12 +28,12 @@ exports[`renders <Tag /> renders <Tag /> component with children: children 1`] =
         size="medium"
       >
         <span
-          className="as-a-icon as-a-icon--female as-a-icon--medium"
+          className="sd-a-icon sd-a-icon--female sd-a-icon--medium"
           role="img"
         >
           <svg
             aria-hidden="true"
-            className="as-a-icon__svg"
+            className="sd-a-icon__svg"
             focusable="false"
           />
         </span>
@@ -45,7 +45,7 @@ exports[`renders <Tag /> renders <Tag /> component with children: children 1`] =
 
 exports[`renders <Tag /> renders <Tag /> component: default 1`] = `
 <div
-  className="as-a-tag"
+  className="sd-a-tag"
 >
   -30%
 </div>

@@ -10,7 +10,7 @@ $a-click-point--hover--background-color: $t2-color__white !default;
 
 
 // Code for Click-point ATOM
-.as-a-click-point {
+.sd-a-click-point {
   color: $a-click-point--color;
   fill: currentColor;
   stroke: currentColor;
@@ -25,11 +25,11 @@ $a-click-point--hover--background-color: $t2-color__white !default;
 }
 
 // Overwrite BS from old project
-.as-a-click-point:not(:root) {
+.sd-a-click-point:not(:root) {
   overflow: visible;
 }
 
-.as-a-click-point__circle {
+.sd-a-click-point__circle {
   fill: $a-click-point--background-color;
   transition:
     fill $a-click-point--transition-duration,
@@ -37,20 +37,20 @@ $a-click-point--hover--background-color: $t2-color__white !default;
 }
 
 // interactions
-.as-a-click-point--is-active,
-.as-a-click-point:focus-visible,
-.as-a-click-point:hover {
+.sd-a-click-point--is-active,
+.sd-a-click-point:focus-visible,
+.sd-a-click-point:hover {
   fill: $a-click-point--hover--color;
 }
 
-.as-a-click-point--is-active .as-a-click-point__circle,
-.as-a-click-point:focus-visible .as-a-click-point__circle,
-.as-a-click-point:hover .as-a-click-point__circle {
+.sd-a-click-point--is-active .sd-a-click-point__circle,
+.sd-a-click-point:focus-visible .sd-a-click-point__circle,
+.sd-a-click-point:hover .sd-a-click-point__circle {
   fill: $a-click-point--hover--background-color;
   stroke: $a-click-point--hover--background-color;
 }
 
-.as-a-click-point:active .as-a-click-point__circle {
+.sd-a-click-point:active .sd-a-click-point__circle {
   @include mq($from: desktop) {
     transform: scale(.85);
   }

@@ -8,7 +8,7 @@ $o-main-nav--desktop--background-color: $t2-color__menu-background !default;
 $o-main-nav--desktop--max-width: $t2-config__page-max-width !default;
 
 // FIXME: not ABEM
-.as-o-main-nav-wrapper {
+.sd-o-main-nav-wrapper {
   background-color: $o-main-nav-wrapper--background-color;
 
   @include mq($from: desktop) {
@@ -21,7 +21,7 @@ $o-main-nav--desktop--max-width: $t2-config__page-max-width !default;
   }
 }
 
-.as-o-main-nav {
+.sd-o-main-nav {
   padding-top: $o-main-nav--padding-top;
   padding-left: 0;
   text-decoration: none;

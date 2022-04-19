@@ -13,4 +13,4 @@ export const MockChildren: FunctionComponent = () => (
 );
 
 export const mockHtml =
-  "<div class='as-a-text--test-classname'>Some <strong>HTML</strong> text";
+  "<div class='sd-a-text--test-classname'>Some <strong>HTML</strong> text";

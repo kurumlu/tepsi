@@ -1,7 +1,7 @@
 // Styling for Top-bar ORGANISM
 $o-top-bar__logo--desktop--margin-bottom: 6px;
 
-.as-o-top-bar__logo > * {
+.sd-o-top-bar__logo > * {
   @include mq($from: desktop) {
     margin-bottom: $o-top-bar__logo--desktop--margin-bottom;
   }

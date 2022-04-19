@@ -16,7 +16,7 @@ describe('renders <Spinner />', () => {
     );
     expect(SmallSpinner).toMatchSnapshot('small');
     expect(
-      SmallSpinner.hasClass(`as-a-spinner--${SpinnerSize.SMALL}`)
+      SmallSpinner.hasClass(`sd-a-spinner--${SpinnerSize.SMALL}`)
     ).toBeTruthy();
   });
 });

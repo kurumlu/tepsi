@@ -16,7 +16,7 @@ describe('<Progress />', () => {
       <Progress progress={110} />
     );
 
-    expect(wrapper.find('.as-a-progress__bar').props().style.width).toBe(
+    expect(wrapper.find('.sd-a-progress__bar').props().style.width).toBe(
       '100%'
     );
   });
@@ -26,6 +26,6 @@ describe('<Progress />', () => {
       <Progress progress={-10} />
     );
 
-    expect(wrapper.find('.as-a-progress__bar').props().style.width).toBe('0%');
+    expect(wrapper.find('.sd-a-progress__bar').props().style.width).toBe('0%');
   });
 });
