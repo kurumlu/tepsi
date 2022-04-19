@@ -157,10 +157,10 @@
   "dependencies": {
     "@n8tb1t/use-scroll-position": "1.0.43",
     "downshift": "6.1.7",
-    "i18next": "^21.6.16",
-    "lazysizes": "^5.3.2",
+    "i18next": "21.5.4",
+    "lazysizes": "5.3.2",
     "react-datepicker": "3.8.0",
-    "react-i18next": "^11.16.6",
+    "react-i18next": "11.14.3",
     "react-phone-number-input": "3.1.20",
     "react-quick-pinch-zoom-ssr": "3.0.0",
     "react-text-mask": "5.4.3",
