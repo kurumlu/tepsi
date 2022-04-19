@@ -418,7 +418,7 @@ pipeline {
                         }
                     }
                     withCredentials([string(credentialsId: 'vedaccio_registry', variable: 'NPM_TOKEN')]) {
-                        sh("echo \"@as:registry=http://mgmt-verdaccio.intranet.foxandcat.eu:4873/\" > .npmrc")
+                        sh("echo \"@sd:registry=http://mgmt-verdaccio.intranet.foxandcat.eu:4873/\" > .npmrc")
                         sh("echo \"//mgmt-verdaccio.intranet.foxandcat.eu:4873/:_authToken=\"${NPM_TOKEN}\"\" >> .npmrc")
                     }
                     echo "[INFO] ### Install app dependencies"

@@ -1,6 +1,6 @@
 # Tepsi Design System
 
-> Tepsi is a collection of design resources, reusable components and guidelines for creating SD Worx websites.
+Tepsi is a collection of design resources, reusable components and a guideline for creating SD Worx websites.
 
 ## Quick links
 
@@ -17,7 +17,7 @@ yarn storybook
 ### Installing package
 
 ```sh
-yarn config set @as:registry http://mgmt-verdaccio.intranet.foxandcat.eu:4873
+yarn config set @sd:registry http://mgmt-verdaccio.intranet.foxandcat.eu:4873
 yarn add @sd/tepsi
 ```
 
@@ -32,7 +32,7 @@ yarn publish:local
 
 #### Inside integration project:
 
-For product-lister-react:
+For the local projects ( sdworxme / sdworx coorporate):
 ```sh
 yarn tepsi_local
 ```
