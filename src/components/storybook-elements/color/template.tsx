@@ -77,6 +77,54 @@ export const UiColorsBasicRed: FunctionComponent = () => (
   </div>
 );
 
+export const UiColorsBasicDanger: FunctionComponent = () => (
+  <div className="storybook-style-color-tile">
+    <div className="storybook-style-color-tile__item storybook-style-color-tile__item--color-danger"></div>
+    <div className="storybook-style-color-tile__item storybook-style-color-tile__item--small storybook-style-color-tile__item--color-danger-light-80"></div>
+    <div className="storybook-style-color-tile__item storybook-style-color-tile__item--small storybook-style-color-tile__item--color-danger-light-60"></div>
+    <div className="storybook-style-color-tile__item storybook-style-color-tile__item--small storybook-style-color-tile__item--color-danger-light-40"></div>
+    <div className="storybook-style-color-tile__item storybook-style-color-tile__item--small storybook-style-color-tile__item--color-danger-light-20"></div>
+    <div className="storybook-style-color-tile__item storybook-style-color-tile__item--small storybook-style-color-tile__item--color-danger-dark-140"></div>
+    <div className="storybook-style-color-tile__item storybook-style-color-tile__item--small storybook-style-color-tile__item--color-danger-dark-120"></div>
+  </div>
+);
+
+export const UiColorsBasicWarning: FunctionComponent = () => (
+  <div className="storybook-style-color-tile">
+    <div className="storybook-style-color-tile__item storybook-style-color-tile__item--color-warning"></div>
+    <div className="storybook-style-color-tile__item storybook-style-color-tile__item--small storybook-style-color-tile__item--color-warning-light-80"></div>
+    <div className="storybook-style-color-tile__item storybook-style-color-tile__item--small storybook-style-color-tile__item--color-warning-light-60"></div>
+    <div className="storybook-style-color-tile__item storybook-style-color-tile__item--small storybook-style-color-tile__item--color-warning-light-40"></div>
+    <div className="storybook-style-color-tile__item storybook-style-color-tile__item--small storybook-style-color-tile__item--color-warning-light-20"></div>
+    <div className="storybook-style-color-tile__item storybook-style-color-tile__item--small storybook-style-color-tile__item--color-warning-dark-140"></div>
+    <div className="storybook-style-color-tile__item storybook-style-color-tile__item--small storybook-style-color-tile__item--color-warning-dark-120"></div>
+  </div>
+);
+
+export const UiColorsBasicSuccess: FunctionComponent = () => (
+  <div className="storybook-style-color-tile">
+    <div className="storybook-style-color-tile__item storybook-style-color-tile__item--color-success"></div>
+    <div className="storybook-style-color-tile__item storybook-style-color-tile__item--small storybook-style-color-tile__item--color-success-light-80"></div>
+    <div className="storybook-style-color-tile__item storybook-style-color-tile__item--small storybook-style-color-tile__item--color-success-light-60"></div>
+    <div className="storybook-style-color-tile__item storybook-style-color-tile__item--small storybook-style-color-tile__item--color-success-light-40"></div>
+    <div className="storybook-style-color-tile__item storybook-style-color-tile__item--small storybook-style-color-tile__item--color-success-light-20"></div>
+    <div className="storybook-style-color-tile__item storybook-style-color-tile__item--small storybook-style-color-tile__item--color-success-dark-140"></div>
+    <div className="storybook-style-color-tile__item storybook-style-color-tile__item--small storybook-style-color-tile__item--color-success-dark-120"></div>
+  </div>
+);
+
+export const UiColorsBasicInfo: FunctionComponent = () => (
+  <div className="storybook-style-color-tile">
+    <div className="storybook-style-color-tile__item storybook-style-color-tile__item--color-info"></div>
+    <div className="storybook-style-color-tile__item storybook-style-color-tile__item--small storybook-style-color-tile__item--color-info-light-80"></div>
+    <div className="storybook-style-color-tile__item storybook-style-color-tile__item--small storybook-style-color-tile__item--color-info-light-60"></div>
+    <div className="storybook-style-color-tile__item storybook-style-color-tile__item--small storybook-style-color-tile__item--color-info-light-40"></div>
+    <div className="storybook-style-color-tile__item storybook-style-color-tile__item--small storybook-style-color-tile__item--color-info-light-20"></div>
+    <div className="storybook-style-color-tile__item storybook-style-color-tile__item--small storybook-style-color-tile__item--color-info-dark-140"></div>
+    <div className="storybook-style-color-tile__item storybook-style-color-tile__item--small storybook-style-color-tile__item--color-info-dark-120"></div>
+  </div>
+);
+
 export const UiColorsBasicBlue: FunctionComponent = () => (
   <div className="storybook-style-color-tile">
     <div className="storybook-style-color-tile__item storybook-style-color-tile__item--color-blue"></div>

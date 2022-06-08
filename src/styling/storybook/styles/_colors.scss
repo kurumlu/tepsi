@@ -1,5 +1,5 @@
 .storybook-style-color-tile {
-  width: 150px;
+  width: 300px;
   display: block;
   margin-bottom: 1rem;
 }
@@ -10,8 +10,8 @@
 }
 
 .storybook-style-color-tile__item {
-  width: 150px;
-  height: 150px;
+  width: 300px;
+  height: 300px;
   display: inline-block;
   position: relative;
 }
@@ -216,6 +216,203 @@
   background: $t1-color__green-dark;
   &::before {
     content: "#{$t1-color__green-dark}"
+  }
+}
+
+.storybook-style-color-tile__item--color-danger-dark-140 {
+  background: $t1-color__danger-140;
+  &::before {
+    content: "#{$t1-color__danger-140}"
+  }
+}
+
+.storybook-style-color-tile__item--color-danger-dark-120 {
+  background: $t1-color__danger-120;
+  &::before {
+    content: "#{$t1-color__danger-120}"
+  }
+}
+
+.storybook-style-color-tile__item--color-danger {
+  background: $t1-color__danger;
+  &::before {
+    content: "#{$t1-color__danger}"
+  }
+}
+
+.storybook-style-color-tile__item--color-danger-light-80 {
+  background: $t1-color__danger-80;
+  &::before {
+    content: "#{$t1-color__danger-80}"
+  }
+}
+
+.storybook-style-color-tile__item--color-danger-light-60 {
+  background: $t1-color__danger-60;
+  &::before {
+    content: "#{$t1-color__danger-60}"
+  }
+}
+
+.storybook-style-color-tile__item--color-danger-light-40 {
+  background: $t1-color__danger-40;
+  &::before {
+    content: "#{$t1-color__danger-40}"
+  }
+}
+
+.storybook-style-color-tile__item--color-danger-light-20 {
+  background: $t1-color__danger-20;
+  &::before {
+    content: "#{$t1-color__danger-20}"
+  }
+}
+
+.storybook-style-color-tile__item--color-warning-dark-140 {
+  background: $t1-color__warning-140;
+  &::before {
+    content: "#{$t1-color__warning-140}"
+  }
+}
+
+.storybook-style-color-tile__item--color-warning-dark-120 {
+  background: $t1-color__warning-120;
+  &::before {
+    content: "#{$t1-color__warning-120}"
+  }
+}
+
+.storybook-style-color-tile__item--color-warning {
+  background: $t1-color__warning;
+  &::before {
+    content: "#{$t1-color__warning}"
+  }
+}
+
+.storybook-style-color-tile__item--color-warning-light-80 {
+  background: $t1-color__warning-80;
+  &::before {
+    content: "#{$t1-color__warning-80}"
+  }
+}
+
+.storybook-style-color-tile__item--color-warning-light-60 {
+  background: $t1-color__warning-60;
+  &::before {
+    content: "#{$t1-color__warning-60}"
+  }
+}
+
+.storybook-style-color-tile__item--color-warning-light-40 {
+  background: $t1-color__warning-40;
+  &::before {
+    content: "#{$t1-color__warning-40}"
+  }
+}
+
+.storybook-style-color-tile__item--color-warning-light-20 {
+  background: $t1-color__warning-20;
+  &::before {
+    content: "#{$t1-color__warning-20}"
+  }
+}
+
+
+.storybook-style-color-tile__item--color-success-dark-140 {
+  background: $t1-color__success-140;
+  &::before {
+    content: "#{$t1-color__success-140}"
+  }
+}
+
+.storybook-style-color-tile__item--color-success-dark-120 {
+  background: $t1-color__success-120;
+  &::before {
+    content: "#{$t1-color__success-120}"
+  }
+}
+
+.storybook-style-color-tile__item--color-success {
+  background: $t1-color__success;
+  &::before {
+    content: "#{$t1-color__success}"
+  }
+}
+
+.storybook-style-color-tile__item--color-success-light-80 {
+  background: $t1-color__success-80;
+  &::before {
+    content: "#{$t1-color__success-80}"
+  }
+}
+
+.storybook-style-color-tile__item--color-success-light-60 {
+  background: $t1-color__success-60;
+  &::before {
+    content: "#{$t1-color__success-60}"
+  }
+}
+
+.storybook-style-color-tile__item--color-success-light-40 {
+  background: $t1-color__success-40;
+  &::before {
+    content: "#{$t1-color__success-40}"
+  }
+}
+
+.storybook-style-color-tile__item--color-success-light-20 {
+  background: $t1-color__success-20;
+  &::before {
+    content: "#{$t1-color__success-20}"
+  }
+}
+
+.storybook-style-color-tile__item--color-info-dark-140 {
+  background: $t1-color__info-140;
+  &::before {
+    content: "#{$t1-color__info-140}"
+  }
+}
+
+.storybook-style-color-tile__item--color-info-dark-120 {
+  background: $t1-color__info-120;
+  &::before {
+    content: "#{$t1-color__info-120}"
+  }
+}
+
+.storybook-style-color-tile__item--color-info {
+  background: $t1-color__info;
+  &::before {
+    content: "#{$t1-color__info}"
+  }
+}
+
+.storybook-style-color-tile__item--color-info-light-80 {
+  background: $t1-color__info-80;
+  &::before {
+    content: "#{$t1-color__info-80}"
+  }
+}
+
+.storybook-style-color-tile__item--color-info-light-60 {
+  background: $t1-color__info-60;
+  &::before {
+    content: "#{$t1-color__info-60}"
+  }
+}
+
+.storybook-style-color-tile__item--color-info-light-40 {
+  background: $t1-color__info-40;
+  &::before {
+    content: "#{$t1-color__info-40}"
+  }
+}
+
+.storybook-style-color-tile__item--color-info-light-20 {
+  background: $t1-color__info-20;
+  &::before {
+    content: "#{$t1-color__info-20}"
   }
 }
 

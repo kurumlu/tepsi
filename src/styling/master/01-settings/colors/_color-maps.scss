@@ -64,11 +64,50 @@ $t2-color-map__brand: (
  * SCSS maps for the UI colors
  * Do not change or overwrite on brand level!
  */
+ $t2-color-map__danger: (
+  regular: $t1-color__danger,
+  light-80:   $t1-color__danger-80,
+  light-60:   $t1-color__danger-60,
+  light-40:   $t1-color__danger-40,
+  light-20:   $t1-color__danger-20,
+  dark-120:    $t1-color__danger-120,
+  dark-140:    $t1-color__danger-120
+); 
+
+$t2-color-map__warning: (
+  regular: $t1-color__warning,
+  light-80:   $t1-color__warning-80,
+  light-60:   $t1-color__warning-60,
+  light-40:   $t1-color__warning-40,
+  light-20:   $t1-color__warning-20,
+  dark-120:    $t1-color__warning-120,
+  dark-140:    $t1-color__warning-120
+); 
+
+$t2-color-map__success: (
+  regular: $t1-color__success,
+  light-80:   $t1-color__success-80,
+  light-60:   $t1-color__success-60,
+  light-40:   $t1-color__success-40,
+  light-20:   $t1-color__success-20,
+  dark-120:    $t1-color__success-120,
+  dark-140:    $t1-color__success-120
+); 
+
+$t2-color-map__info: (
+  regular: $t1-color__info,
+  light-80:   $t1-color__info-80,
+  light-60:   $t1-color__info-60,
+  light-40:   $t1-color__info-40,
+  light-20:   $t1-color__info-20,
+  dark-120:    $t1-color__info-120,
+  dark-140:    $t1-color__info-120
+); 
 
 $t2-color-map__red: (
   regular: $t1-color__red,
   light:   $t1-color__red-light,
-  dark:    $t1-color__red-dark
+  dark:    $t1-color__red-dark,
 );
 
 $t2-color-map__green: (

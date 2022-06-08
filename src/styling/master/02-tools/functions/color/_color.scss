@@ -10,12 +10,13 @@
 }
 
 
-/* ------ get a Red, Green, Blue or Orange UI color ------
+/* ------ get a Red, Green, Blue or Orange -- Danger UI color ------
  * $key:   r, g, b or o
+ * $key:   danger
  * $shade: regular, light or dark
+ * $shade: regular, light-80,light-60,light-40,light-30,dark-120 r drak-140
  */
 @function get-ui-color($key: r, $shade: regular) {
   $map: map_get($t2-color-map__ui, $key);
   @return map-get($map, $shade);
 }
-
