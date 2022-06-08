@@ -1,4 +1,5 @@
 .sd-button {
+  @include font-map($t2-font-map__body);
   background-color: get-brand-color(primary);
   color: $t2-color__white;
   padding: get-spacing(1) get-spacing(2);

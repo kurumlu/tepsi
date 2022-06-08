@@ -1,0 +1,31 @@
+/* ==========================================================================
+   #TYPOGRAPHY-VARIABLES
+   ========================================================================== */
+
+// Font-maps
+$t1-font-map__main: (
+  family: 'Roboto',
+  fallback: sans-serif,
+  weight: normal,
+  style: normal,
+  letter-spacing: normal,
+  text-transform: none
+);
+
+$t1-font-map__second: (
+  family: 'Roboto',
+  fallback: sans-serif,
+  weight: bold,
+  style: normal,
+  letter-spacing: normal,
+  text-transform: none
+);
+
+$t1-font-map__third: (
+  family: 'DM Serif Text',
+  fallback: serif,
+  weight: normal,
+  style: normal,
+  letter-spacing: normal,
+  text-transform: none
+);

@@ -1,0 +1,24 @@
+/* ==========================================================================
+   #COLOR-VARIABLES
+   ========================================================================== */
+
+/* -------- Context --------
+ * These variables can be reused for common occurrences.
+ * Make sure to use tier 1 color variables for these!
+ */
+
+// -- Action
+$t2-color-map-key__action:          tertiary;
+$t2-color-map-key__action-alt:      primary;
+$t2-color-map-key__action-checkout: primary;
+$t2-color-map-key__action-web:      primary;
+$t2-color-map-key__action-nav:      tertiary;
+
+// -- Feel
+$t2-color__discount: $t1-color__quaternary;
+
+// -- Menu
+$t2-color__menu-background: $t1-color__tertiary;
+
+// -- Video Overlay
+$t2-color__video_overlay-accent: #F39000;

@@ -12,8 +12,18 @@ export const contexts = [
         props: { brand: Brands.SDWorx },
       },
       {
+        name: 'SD Worx - countries',
+        props: { brand: Brands.SDWorxCountries },
+        default: true,
+      },
+      {
         name: 'SD Worx - sme',
         props: { brand: Brands.SDWorxSME },
+        default: true,
+      },
+      {
+        name: 'SD Worx - lms',
+        props: { brand: Brands.SDWorxLMS },
         default: true,
       },
       {

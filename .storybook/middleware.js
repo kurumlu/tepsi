@@ -6,6 +6,8 @@ const FASCIAS_MAP = {
   sdworx: 0,
   sdworxsme: 1,
   staffingsolutions: 2,
+  sdworxcountries: 3,
+  sdworxlms: 4,
 };
 
 const STYLES_PATH = './node_modules/.cache/storybook/public/';
