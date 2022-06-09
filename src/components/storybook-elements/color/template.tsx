@@ -61,22 +61,6 @@ export const UiColorsBasicGray: FunctionComponent = () => (
   </div>
 );
 
-export const UiColorsBasicGreen: FunctionComponent = () => (
-  <div className="storybook-style-color-tile">
-    <div className="storybook-style-color-tile__item storybook-style-color-tile__item--color-green"></div>
-    <div className="storybook-style-color-tile__item storybook-style-color-tile__item--small storybook-style-color-tile__item--color-green-light"></div>
-    <div className="storybook-style-color-tile__item storybook-style-color-tile__item--small storybook-style-color-tile__item--color-green-dark"></div>
-  </div>
-);
-
-export const UiColorsBasicRed: FunctionComponent = () => (
-  <div className="storybook-style-color-tile">
-    <div className="storybook-style-color-tile__item storybook-style-color-tile__item--color-red"></div>
-    <div className="storybook-style-color-tile__item storybook-style-color-tile__item--small storybook-style-color-tile__item--color-red-light"></div>
-    <div className="storybook-style-color-tile__item storybook-style-color-tile__item--small storybook-style-color-tile__item--color-red-dark"></div>
-  </div>
-);
-
 export const UiColorsBasicDanger: FunctionComponent = () => (
   <div className="storybook-style-color-tile">
     <div className="storybook-style-color-tile__item storybook-style-color-tile__item--color-danger"></div>
@@ -122,13 +106,5 @@ export const UiColorsBasicInfo: FunctionComponent = () => (
     <div className="storybook-style-color-tile__item storybook-style-color-tile__item--small storybook-style-color-tile__item--color-info-light-20"></div>
     <div className="storybook-style-color-tile__item storybook-style-color-tile__item--small storybook-style-color-tile__item--color-info-dark-140"></div>
     <div className="storybook-style-color-tile__item storybook-style-color-tile__item--small storybook-style-color-tile__item--color-info-dark-120"></div>
-  </div>
-);
-
-export const UiColorsBasicBlue: FunctionComponent = () => (
-  <div className="storybook-style-color-tile">
-    <div className="storybook-style-color-tile__item storybook-style-color-tile__item--color-blue"></div>
-    <div className="storybook-style-color-tile__item storybook-style-color-tile__item--small storybook-style-color-tile__item--color-blue-light"></div>
-    <div className="storybook-style-color-tile__item storybook-style-color-tile__item--small storybook-style-color-tile__item--color-blue-dark"></div>
   </div>
 );

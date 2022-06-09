@@ -23,7 +23,7 @@ $a-text--positive--color: $t2-color__positive !default;
 $a-text--negative--color: $t2-color__negative !default;
 $a-text--discount--color: $t2-color__discount !default;
 $a-text--info--color: $t2-color__data !default;
-$a-text--notice--color: get-ui-color(o, light) !default;
+$a-text--notice--color: get-ui-color(warning, light-40) !default;
 
 // --product-technical-features section
 $a-text--product-technical-features--padding: get-spacing(1.5) 0 get-spacing(1.5) get-spacing(3) !default;

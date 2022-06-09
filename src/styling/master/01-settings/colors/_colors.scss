@@ -99,12 +99,12 @@ $t2-color__foreground: $t1-color__gray-100  !default;
 $t2-color__divider: rgba($t1-color__gray-30, .5)  !default;
 
 // -- Feel
-$t2-color__discount: $t1-color__red         !default;
-$t2-color__info:     $t1-color__blue        !default;
-$t2-color__negative: $t1-color__red         !default;
-$t2-color__positive: $t1-color__green-dark  !default;
+$t2-color__discount: $t1-color__danger         !default;
+$t2-color__info:     $t1-color__info        !default;
+$t2-color__negative: $t1-color__danger         !default;
+$t2-color__positive: $t1-color__success-140  !default;
 $t2-color__subtle:   $t1-color__gray-50   !default;
-$t2-color__data:     $t1-color__blue-dark   !default;
+$t2-color__data:     $t1-color__info-140   !default;
 
 // -- Form
 $t2-color__form-background:  $t1-color__white             !default;
@@ -116,8 +116,8 @@ $t2-color__form-disabled-background: $t1-color__gray-10  !default;
 
 $t2-color__form-hover-border:   $t1-color__gray-50         !default;
 $t2-color__form-focus-border:   $t1-color__gray-100  !default;
-$t2-color__form-error-border:   $t1-color__red               !default;
-$t2-color__form-success-border: $t1-color__green-dark        !default;
+$t2-color__form-error-border:   $t1-color__danger               !default;
+$t2-color__form-success-border: $t1-color__success-140       !default;
 
 
 // -- Menu
