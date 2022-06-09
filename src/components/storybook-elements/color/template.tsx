@@ -49,15 +49,31 @@ export const BrandColorSenary: FunctionComponent = () => (
   </div>
 );
 
+export const TextColorsBasicGray: FunctionComponent = () => (
+  <div className="storybook-style-color-tile">
+    <div className="storybook-style-color-tile__item storybook-style-color-tile__item--color-text"></div>
+    <div className="storybook-style-color-tile__item storybook-style-color-tile__item--small storybook-style-color-tile__item--color-text-white"></div>
+    <div className="storybook-style-color-tile__item storybook-style-color-tile__item--small storybook-style-color-tile__item--color-text-gray-5"></div>
+    <div className="storybook-style-color-tile__item storybook-style-color-tile__item--small storybook-style-color-tile__item--color-text-gray-10"></div>
+    <div className="storybook-style-color-tile__item storybook-style-color-tile__item--small storybook-style-color-tile__item--color-text-gray-20"></div>
+    <div className="storybook-style-color-tile__item storybook-style-color-tile__item--small storybook-style-color-tile__item--color-text-gray-40"></div>
+    <div className="storybook-style-color-tile__item storybook-style-color-tile__item--small storybook-style-color-tile__item--color-text-gray-60"></div>
+    <div className="storybook-style-color-tile__item storybook-style-color-tile__item--small storybook-style-color-tile__item--color-text-gray-80"></div>
+    <div className="storybook-style-color-tile__item storybook-style-color-tile__item--small storybook-style-color-tile__item--color-text-gray-100"></div>
+  </div>
+);
+
 export const UiColorsBasicGray: FunctionComponent = () => (
-  <div className="storybook-style-color-tile storybook-style-color-tile--row">
-    <div className="storybook-style-color-tile__item storybook-style-color-tile__item--small storybook-style-color-tile__item--color-white"></div>
-    <div className="storybook-style-color-tile__item storybook-style-color-tile__item--small storybook-style-color-tile__item--color-gray-light"></div>
-    <div className="storybook-style-color-tile__item storybook-style-color-tile__item--small storybook-style-color-tile__item--color-gray-soft"></div>
-    <div className="storybook-style-color-tile__item storybook-style-color-tile__item--small storybook-style-color-tile__item--color-gray-hard"></div>
-    <div className="storybook-style-color-tile__item storybook-style-color-tile__item--small storybook-style-color-tile__item--color-gray-dark"></div>
-    <div className="storybook-style-color-tile__item storybook-style-color-tile__item--small storybook-style-color-tile__item--color-gray-strong-dark"></div>
-    <div className="storybook-style-color-tile__item storybook-style-color-tile__item--small storybook-style-color-tile__item--color-black"></div>
+  <div className="storybook-style-color-tile">
+    <div className="storybook-style-color-tile__item storybook-style-color-tile__item--color-ui"></div>
+    <div className="storybook-style-color-tile__item storybook-style-color-tile__item--small storybook-style-color-tile__item--color-ui-white"></div>
+    <div className="storybook-style-color-tile__item storybook-style-color-tile__item--small storybook-style-color-tile__item--color-ui-gray-5"></div>
+    <div className="storybook-style-color-tile__item storybook-style-color-tile__item--small storybook-style-color-tile__item--color-ui-gray-10"></div>
+    <div className="storybook-style-color-tile__item storybook-style-color-tile__item--small storybook-style-color-tile__item--color-ui-gray-20"></div>
+    <div className="storybook-style-color-tile__item storybook-style-color-tile__item--small storybook-style-color-tile__item--color-ui-gray-40"></div>
+    <div className="storybook-style-color-tile__item storybook-style-color-tile__item--small storybook-style-color-tile__item--color-ui-gray-60"></div>
+    <div className="storybook-style-color-tile__item storybook-style-color-tile__item--small storybook-style-color-tile__item--color-ui-gray-80"></div>
+    <div className="storybook-style-color-tile__item storybook-style-color-tile__item--small storybook-style-color-tile__item--color-ui-gray-100"></div>
   </div>
 );
 

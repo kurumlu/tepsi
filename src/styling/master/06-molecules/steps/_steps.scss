@@ -1,25 +1,25 @@
-$m-steps--before--background: $t2-color__gray-30 !default;
+$m-steps--before--background: $t2-ui-color__gray-40 !default;
 $m-steps--before--height: get-spacing(min) !default;
 
-$m-step__number--background: $t2-color__gray-30 !default;
-$m-step__number--passed--background: $t2-color__white !default;
+$m-step__number--background: $t2-ui-color__gray-40 !default;
+$m-step__number--passed--background: $t2-ui-color__white !default;
 $m-step__number--active--background: get-brand-color($t2-color-map-key__action-checkout) !default;
 $m-step__number--border: thin solid $m-step__number--background !default;
 $m-step__number--active--border-color: $m-step__number--active--background !default;
 $m-step__number--passed--border-color: $m-step__number--active--background !default;
 $m-step__number--font-map: $t2-font-map__body-emp !default;
-$m-step__number--color: $t2-color__white !default;
+$m-step__number--color: $t2-ui-color__white !default;
 $m-step__number--passed--color: get-brand-color($t2-color-map-key__action-checkout) !default;
 $m-step__number--border-radius: $t2-border-radius__round !default;
 $m-step__number--font-size: $t2-font-size__body-m !default;
 $m-step__number--margin-right: get-spacing(1.5) !default;
 $m-step__number--size: get-spacing(4) !default;
 
-$m-step--background-color: $t2-color__white !default;
+$m-step--background-color: $t2-ui-color__white !default;
 $m-step--padding: get-spacing(2) !default;
 $m-step--mobile--padding: get-spacing(0.5) !default;
 
-$m-step__content--color: $t2-color__gray-100 !default;
+$m-step__content--color: $t2-ui-color__gray-100 !default;
 $m-step__content--font-map: $t2-font-map__heading !default;
 $m-step__content--font-size: $t2-font-size__body-l !default;
 

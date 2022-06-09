@@ -5,14 +5,14 @@ $t-box--tablet-bleed--marginX: -(get-spacing(3)) !default;
 $t-box--with-shadow--box-shadow: 0 get-spacing(0.5) get-spacing(2) $t2-color__fade-dark-15 !default;
 
 $box-themes: (
-  'primary': $t2-color__gray-10,
+  'primary': $t2-ui-color__gray-10,
   'secondary': rgba(get-ui-color(success), 0.1),
   'secondary-light': rgba(get-ui-color(success, light-40), .15),
   'tertiary': rgba(get-ui-color(info), 0.1),
   'tertiary-light': rgba(get-ui-color(info, regular), .05),
   'quaternary': rgba(get-ui-color(danger, light-40), .15),
   'external': $t-box--background-color,
-  'white': $t2-color__white,
+  'white': $t2-ui-color__white,
   'notice': rgba($t2-color__notice, 0.1),
   'none': $t-box--background-color,
 ) !default;

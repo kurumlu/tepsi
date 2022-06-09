@@ -3,7 +3,7 @@ $o-top-bar--max-width: $t2-config__page-max-width !default;
 $o-top-bar--height: get-spacing(8) !default;
 $o-top-bar--desktop--height: 88px !default;
 $o-top-bar--desktop--paddingX: $t2-config__page-padding-desktop !default;
-$o-top-bar--background-color: $t2-color__gray-10 !default;
+$o-top-bar--background-color: $t2-ui-color__gray-10 !default;
 
 // --position
 $o-top-bar--position--z-index: get-z-index('topBar') !default;
@@ -26,7 +26,7 @@ $o-top-bar__store-name--max-width: 180px;
 $o-top-bar__logo--margin-left: get-spacing(2) !default;
 $o-top-bar__logo--z-index: get-z-index('topBarItem') !default;
 $o-top-bar__logo--height: get-spacing(8) !default;
-$o-top-bar__logo--background: $t2-color__gray-10 !default;
+$o-top-bar__logo--background: $t2-ui-color__gray-10 !default;
 $o-top-bar__logo--padding-left: get-spacing(7) !default;
 $o-top-bar__logo--padding-right: 152px !default;
 
@@ -37,8 +37,8 @@ $o-top-bar__logo__children--tablet-small--width: null !default; // No master tab
 $o-top-bar__logo__children--desktop--width: null !default; // No master desktop overwrite
 
 // -wrapper // FIXME: use correct ABEM name
-$o-top-bar-wrapper--background-color: $t2-color__gray-10 !default;
-$o-top-bar-wrapper--color: $t2-color__gray-80 !default;
+$o-top-bar-wrapper--background-color: $t2-ui-color__gray-10 !default;
+$o-top-bar-wrapper--color: $t2-ui-color__gray-80 !default;
 
 // __links
 $o-top-bar__links--paddingX: get-spacing(1) !default;
@@ -47,7 +47,7 @@ $o-top-bar__links--tablet--margin-right: get-spacing(3) !default;
 $o-top-bar__links--tablet--paddingX: get-spacing(2) !default;
 
 $o-top-bar__links--mobile--z-index: get-z-index('topBarItem') !default;
-$o-top-bar__links--mobile--background: $t2-color__gray-10 !default;
+$o-top-bar__links--mobile--background: $t2-ui-color__gray-10 !default;
 
 // __search
 $o-top-bar__search--z-index: get-z-index('topBarItem') !default;

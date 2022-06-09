@@ -13,7 +13,7 @@ $tippy-tooltip--glossary-light-theme--box-shadow: 0 get-spacing(2) get-spacing(3
 $tippy-tooltip--glossary-light-theme--font-size: $t2-font-size__body-s !default;
 $tippy-tooltip--glossary-light-theme--line-height: $t2-line-height__s !default;
 $tippy-tooltip--glossary-light-theme--tablet--padding: get-spacing(3) get-spacing(4) get-spacing(4) !default;
-$tippy-tooltip--glossary-light-theme__tippy-arrow--border-color: $t2-color__white !default;
+$tippy-tooltip--glossary-light-theme__tippy-arrow--border-color: $t2-ui-color__white !default;
 
 $tippy-tooltip--glossary-light-theme__tippy-content__title--margin-bottom: get-spacing(1) !default;
 $tippy-tooltip--glossary-light-theme__tippy-content__title--margin-right: get-spacing(3) !default;
@@ -58,7 +58,7 @@ $tippy-tooltip--glossary-light-theme__tippy-content__close--tablet--right: get-s
   $arrow-positions: ('top', 'bottom', 'left', 'right');
   @each $position in $arrow-positions {
     &[data-placement^='#{$position}'] .tippy-arrow {
-      border-#{$position}-color: $t2-color__white;
+      border-#{$position}-color: $t2-ui-color__white;
     }
   }
 
@@ -89,7 +89,7 @@ $tippy-tooltip--glossary-light-theme__tippy-content__close--tablet--right: get-s
     right: get-spacing(2);
 
     background: transparent;
-    color: $t2-color__gray-50;
+    color: $t2-ui-color__gray-60;
 
     font-size: $t2-font-size__icon-xs;
     line-height: 1;

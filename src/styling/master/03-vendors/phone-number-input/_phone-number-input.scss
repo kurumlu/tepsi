@@ -16,9 +16,9 @@ $PhoneInputCountrySelectArrow--transform: rotate(45deg) !default;
 $PhoneInputCountryFlag--aspect-ratio: 1.5 !default;
 $PhoneInputCountryFlag--height: get-spacing(2) !default;
 $PhoneInputCountryFlag--border-width: get-spacing(min) !default;
-$PhoneInputCountryFlag--border-color: rgba($t2-color__black, .50) !default;
+$PhoneInputCountryFlag--border-color: rgba($t2-ui-color__black, .50) !default;
 $PhoneInputCountryFlag--border-color--focus: $PhoneInput--color--focus !default;
-$PhoneInputCountryFlag--background-color--loading: rgba($t2-color__black, .1) !default;
+$PhoneInputCountryFlag--background-color--loading: rgba($t2-ui-color__black, .1) !default;
 $PhoneInputCountryIcon--width: get-spacing(3) !default;
 $PhoneInputCountryIcon--border--box-shadow: 0 0 0 $PhoneInputCountryFlag--border-width $PhoneInputCountryFlag--border-color,
 inset 0 0 0 $PhoneInputCountryFlag--border-width $PhoneInputCountryFlag--border-color !default;

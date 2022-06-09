@@ -18,32 +18,37 @@ $t2-color__sustainable: #638769;
 // -- Notice
 $t2-color__notice: #BF7300;
 
-// -- Video Overlay
-$t2-color__video_overlay-neutral: $t1-color__white !default;
-$t2-color__video_overlay-contrast: #939393 !default;
-$t2-color__video_overlay-high-contrast: #424242 !default;
-$t2-color__video_overlay-accent: #00FF00 !default;
-$t2-color__video_overlay-neutral-accent: #DDE1E1 !default;
-
-/* -------- Grayscale UI colors --------
+/* -------- Grayscale UI colors for text  --------
  * Grayscale tier 1 colors mapped directly to tier 2.
  * Make sure to use tier 1 color variables for these!
  * These are the same for all fascias, so no !default flag.
  */
 
-$t2-color__white:          $t1-color__white;
-$t2-color__gray-10:        $t1-color__gray-10;
-$t2-color__gray-20:        $t1-color__gray-20;
-$t2-color__gray-30:        $t1-color__gray-30;
-$t2-color__gray-40:        $t1-color__gray-40;
-$t2-color__gray-50:        $t1-color__gray-50;
-$t2-color__gray-60:        $t1-color__gray-60;
-$t2-color__gray-70:        $t1-color__gray-70;
-$t2-color__gray-80:        $t1-color__gray-80;
-$t2-color__gray-90:        $t1-color__gray-90;
-$t2-color__gray-100:       $t1-color__gray-100;
-$t2-color__black:          $t1-color__black;
+ $t2-text-color__white:     $t1-text-color__white;
+ $t2-text-color__gray-5:    $t1-text-color__gray-5;
+ $t2-text-color__gray-10:   $t1-text-color__gray-10;
+ $t2-text-color__gray-20:   $t1-text-color__gray-20;
+ $t2-text-color__gray-40:   $t1-text-color__gray-40;
+ $t2-text-color__gray-60:   $t1-text-color__gray-60;
+ $t2-text-color__gray-80:   $t1-text-color__gray-80;
+ $t2-text-color__gray-100:  $t1-text-color__gray-100;
+ $t2-text-color__black:     $t1-text-color__black;
 
+ /* -------- Grayscale UI colors for ui elements  --------
+ * Grayscale tier 1 colors mapped directly to tier 2.
+ * Make sure to use tier 1 color variables for these!
+ * These are the same for all fascias, so no !default flag.
+ */
+
+ $t2-ui-color__white:     $t1-ui-color__white;
+ $t2-ui-color__gray-5:    $t1-ui-color__gray-5;
+ $t2-ui-color__gray-10:   $t1-ui-color__gray-10;
+ $t2-ui-color__gray-20:   $t1-ui-color__gray-20;
+ $t2-ui-color__gray-40:   $t1-ui-color__gray-40;
+ $t2-ui-color__gray-60:   $t1-ui-color__gray-60;
+ $t2-ui-color__gray-80:   $t1-ui-color__gray-80;
+ $t2-ui-color__gray-100:  $t1-ui-color__gray-100;
+ $t2-ui-color__black:     $t1-ui-color__black;
 
 /* -------- Fades --------
  * Colors with an alpha channel.
@@ -53,24 +58,24 @@ $t2-color__black:          $t1-color__black;
  */
 
 // -- Dark fades
-$t2-color__fade-dark-02: rgba($t1-color__gray-100, .02);
-$t2-color__fade-dark-05: rgba($t1-color__gray-100, .05);
-$t2-color__fade-dark-10: rgba($t1-color__gray-100, .10);
-$t2-color__fade-dark-15: rgba($t1-color__gray-100, .15);
-$t2-color__fade-dark-30: rgba($t1-color__gray-100, .30);
-$t2-color__fade-dark-50: rgba($t1-color__gray-100, .50);
-$t2-color__fade-dark-70: rgba($t1-color__gray-100, .70);
+$t2-color__fade-dark-02: rgba($t1-ui-color__gray-100, .02);
+$t2-color__fade-dark-05: rgba($t1-ui-color__gray-100, .05);
+$t2-color__fade-dark-10: rgba($t1-ui-color__gray-100, .10);
+$t2-color__fade-dark-15: rgba($t1-ui-color__gray-100, .15);
+$t2-color__fade-dark-30: rgba($t1-ui-color__gray-100, .30);
+$t2-color__fade-dark-50: rgba($t1-ui-color__gray-100, .50);
+$t2-color__fade-dark-70: rgba($t1-ui-color__gray-100, .70);
 
 // -- Light fades
-$t2-color__fade-light-30: rgba($t1-color__white, .30);
-$t2-color__fade-light-50: rgba($t1-color__white, .50);
-$t2-color__fade-light-70: rgba($t1-color__white, .70);
+$t2-color__fade-light-30: rgba($t1-ui-color__white, .30);
+$t2-color__fade-light-50: rgba($t1-ui-color__white, .50);
+$t2-color__fade-light-70: rgba($t1-ui-color__white, .70);
 
 // -- Black fades
-$t2-color__fade-black-15: rgba($t1-color__black, .15);
+$t2-color__fade-black-15: rgba($t1-ui-color__black, .15);
 
 // -- Gray Light fades
-$t2-color__fade-gray-light-70: rgba($t1-color__gray-10, 0.70);
+$t2-color__fade-gray-light-70: rgba($t1-ui-color__gray-10, 0.70);
 
 // --Secondary fades
 $t2-color__fade-secondary-04: rgba($t1-color__secondary, .04);
@@ -87,37 +92,37 @@ $t2-color-map-key__action-checkout: primary    !default; // Hint: Checkout flow
 $t2-color-map-key__action-web:      secondary  !default; // Hint: Wishlist, add to basket
 $t2-color-map-key__action-nav:      secondary  !default; // Hint: Navigation icons
 
-$t2-color__link:          $t1-color__gray-100  !default;
-$t2-color__link-disabled: $t1-color__gray-30         !default;
-$t2-color__link-hover-bg: rgba($t1-color__black, .1)   !default;
+$t2-color__link:          $t1-text-color__gray-100  !default;
+$t2-color__link-disabled: $t1-text-color__gray-40         !default;
+$t2-color__link-hover-bg: rgba($t1-text-color__black, .1)   !default;
 
 // -- Contrast
-$t2-color__background: $t1-color__white             !default;
-$t2-color__foreground: $t1-color__gray-100  !default;
+$t2-color__background: $t1-ui-color__white             !default;
+$t2-color__foreground: $t1-ui-color__gray-100  !default;
 
 // -- Divider
-$t2-color__divider: rgba($t1-color__gray-30, .5)  !default;
+$t2-color__divider: rgba($t1-ui-color__gray-40, .5)  !default;
 
 // -- Feel
-$t2-color__discount: $t1-color__danger         !default;
+$t2-color__discount: $t1-ui-color__danger      !default;
 $t2-color__info:     $t1-color__info        !default;
-$t2-color__negative: $t1-color__danger         !default;
-$t2-color__positive: $t1-color__success-140  !default;
-$t2-color__subtle:   $t1-color__gray-50   !default;
-$t2-color__data:     $t1-color__info-140   !default;
+$t2-color__negative: $t1-color__danger      !default;
+$t2-color__positive: $t1-color__success !default;
+$t2-color__subtle:   $t1-ui-color__gray-60     !default;
+$t2-color__data:     $t1-color__info    !default;
 
 // -- Form
-$t2-color__form-background:  $t1-color__white             !default;
-$t2-color__form-foreground:  $t1-color__gray-100  !default;
-$t2-color__form-placeholder: $t1-color__gray-50         !default;
-$t2-color__form-border:      $t1-color__gray-30         !default;
+$t2-color__form-background:  $t1-ui-color__white     !default;
+$t2-color__form-foreground:  $t1-ui-color__gray-100  !default;
+$t2-color__form-placeholder: $t1-ui-color__gray-60   !default;
+$t2-color__form-border:      $t1-ui-color__gray-40   !default;
 
-$t2-color__form-disabled-background: $t1-color__gray-10  !default;
+$t2-color__form-disabled-background: $t1-ui-color__gray-10  !default;
 
-$t2-color__form-hover-border:   $t1-color__gray-50         !default;
-$t2-color__form-focus-border:   $t1-color__gray-100  !default;
+$t2-color__form-hover-border:   $t1-ui-color__gray-60         !default;
+$t2-color__form-focus-border:   $t1-ui-color__gray-100  !default;
 $t2-color__form-error-border:   $t1-color__danger               !default;
-$t2-color__form-success-border: $t1-color__success-140       !default;
+$t2-color__form-success-border: $t1-color__success       !default;
 
 
 // -- Menu

@@ -28,7 +28,7 @@ $a-text--notice--color: get-ui-color(warning, light-40) !default;
 // --product-technical-features section
 $a-text--product-technical-features--padding: get-spacing(1.5) 0 get-spacing(1.5) get-spacing(3) !default;
 $a-text--product-technical-features--mobile--padding: get-spacing(1.5) get-spacing(2) !default;
-$a-text--product-technical-features__li--nth-child--background: $t2-color__gray-10 !default;
+$a-text--product-technical-features__li--nth-child--background: $t2-ui-color__gray-10 !default;
 
 // --product-details
 $a-text--product-details__li--margin-bottom: get-spacing(1) !default;

@@ -2,20 +2,20 @@
 
 
 // Temporary styles because we don't have any layouts. Part of styles was copied from the prod datepicker.
-$react-datepicker--border: thin solid $t2-color__gray-30 !default;
+$react-datepicker--border: thin solid $t2-ui_color__gray-40 !default;
 
-$react-datepicker__header--border-bottom: thin solid $t2-color__gray-30 !default;
-$react-datepicker__header--background-color: $t2-color__white !default;
+$react-datepicker__header--border-bottom: thin solid $t2-ui_color__gray-40 !default;
+$react-datepicker__header--background-color: $t2-ui-color__white !default;
 $react-datepicker__header__dropdown--margin: get-spacing(1) 0 get-spacing(.5) !default;
 
-$react-datepicker__day--outside-month--color: $t2-color__gray-30 !default;
+$react-datepicker__day--outside-month--color: $t2-ui-color__gray-40 !default;
 $react-datepicker__month--margin: get-spacing(.5) !default;
 $react-datepicker__day-name--color: get-brand-color() !default;
-$react-datepicker__day--keyboard-selected--color: $t2-color__white !default;
+$react-datepicker__day--keyboard-selected--color: $t2-ui-color__white !default;
 $react-datepicker__day--keyboard-selected--background: get-ui-color(info, light-40) !default;
-$react-datepicker-popper__react-datepicker__triangle--before-border-bottom-color: $t2-color__gray-30 !default;
-$react-datepicker-popper__react-datepicker__triangle--border-bottom-color: $t2-color__white !default;
-$react-datepicker__select--border-color: $t2-color__gray-30 !default;
+$react-datepicker-popper__react-datepicker__triangle--before-border-bottom-color: $t2-ui-color__gray-40 !default;
+$react-datepicker-popper__react-datepicker__triangle--border-bottom-color: $t2-ui-color__white !default;
+$react-datepicker__select--border-color: $t2-ui-color__gray-40 !default;
 $react-datepicker__day-size: get-spacing(4) !default;
 
 $react-datepicker__navigation--text-indent: get-spacing(2.5) !default;
@@ -26,7 +26,7 @@ $react-datepicker__navigation--before--width: get-spacing(2) !default;
 $react-datepicker__navigation--before--font-size: $t2-font-size__icon-l !default;
 $react-datepicker__navigation--before--line-height: 1em !default;
 $react-datepicker__navigation--before--top: get-spacing(.25) !default;
-$react-datepicker__navigation--before--color: $t2-color__gray-50 !default;
+$react-datepicker__navigation--before--color: $t2-ui-color__gray-60 !default;
 $react-datepicker__navigation--next--before: get-spacing(3) !default;
 $react-datepicker__navigation--previous--before: -#{get-spacing(3)} !default;
 

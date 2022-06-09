@@ -5,11 +5,11 @@ $o-menu--mobile--width: 100vw !default;
 $o-menu--z-index: get-z-index('nav') !default;
 $o-menu--state-toggle__backdrop--mobile--width: 56px !default;
 $o-menu--state-toggle__backdrop--mobile--height: get-spacing(8) !default;
-$o-menu--state-toggle--mobile--background: $t2-color__gray-30 !default;
+$o-menu--state-toggle--mobile--background: $t2-ui-color__gray-40 !default;
 $o-menu--state-toggle--mobile--opacity: 0.1 !default;
 $o-menu--transition: left $t2-animation__transition-duration-normal !default;
 $o-menu--state-toggle__backdrop--z-index: get-z-index('navBackdrop') !default;
-$o-menu--state-toggle__backdrop--background: $t2-color__gray-10 !default;
+$o-menu--state-toggle__backdrop--background: $t2-ui-color__gray-10 !default;
 
 .sd-o-menu {
   position: fixed;

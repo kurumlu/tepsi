@@ -10,7 +10,7 @@ $o-category-flyout--tablet--max-width: 525px !default;
 $o-category-flyout-wrapper--desktop--box-shadow: 0 get-spacing(2) get-spacing(2) 0 rgba(0,0,0,0.1) !default;
 $o-category-flyout-wrapper--desktop--top: -9999px !default;
 $o-category-flyout-wrapper--max-width: 525px !default;
-$o-category-flyout-wrapper--background-color: $t2-color__white !default;
+$o-category-flyout-wrapper--background-color: $t2-ui-color__white !default;
 $o-category-flyout-wrapper--animation: top-fade-in .1s ease-in-out .1s normal backwards !default;
 
 $o-category-flyout-title--font-size: $t2-font-size__body-l !default;
@@ -42,7 +42,7 @@ $o-category-flyout__menu-block--desktop__children--margin-bottom: get-spacing(1.
 $o-category-flyout__menu-block--margin-bottom: get-spacing(1.5) !default;
 $o-category-flyout__menu-block__o-category-flyout-menu__mobile-item--mobile--border-bottom: thin solid $t2-color__divider !default;
 
-$o-category-flyout-menu__mobile-item__a-link--mobile--hover--background-color: $t2-color__gray-10 !default;
+$o-category-flyout-menu__mobile-item__a-link--mobile--hover--background-color: $t2-ui-color__gray-10 !default;
 $o-category-flyout-menu__mobile-item__a-link--emp--mobile--color: $t2-color__foreground !default;
 
 $o-category-flyout-links-block--margin: get-spacing(3) 0 !default;
@@ -52,7 +52,7 @@ $a-link-main-nav__label--padding: get-spacing(2) !default;
 $a-link-main-nav__label--margin: 0 -#{get-spacing(2)} !default;
 $a-link-main-nav__label--font-size: $t2-font-size__body-m !default;
 $a-link-main-nav__label--font-map: $t2-font-map__body !default;
-$a-link-main-nav__label--hover--desktop--background-color: $t2-color__gray-10 !default;
+$a-link-main-nav__label--hover--desktop--background-color: $t2-ui-color__gray-10 !default;
 $a-link-main-nav__label--line-height: $t2-line-height__m !default;
 
 
