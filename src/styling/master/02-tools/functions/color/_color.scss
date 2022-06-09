@@ -1,14 +1,13 @@
 /* Color functions */
 
 /* ------ get a Brand color ------
- * $key:   primary, secondary, tertiary, quaternary, quinary or senary
- * $shade: regular, light or dark
+ * $key:   primary, secondary, tertiary, quaternary
+ * $shade: regular, light-60, light-40, light-20, dark-140 or dark-120
  */
 @function get-brand-color($key: primary, $shade: regular) {
   $map: map_get($t2-color-map__brand, $key);
   @return map-get($map, $shade);
 }
-
 
 /* ------ get a Danger, Success, Warning or Info -- UI color ------
  * $key:   danger, info, warning or success

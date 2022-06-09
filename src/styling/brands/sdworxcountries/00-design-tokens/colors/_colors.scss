@@ -2,26 +2,33 @@
    #COLOR-VARIABLES
    ========================================================================== */
 // Primary brand color defined as a design token.
-$t1-color__primary:          #D26C00;
-$t1-color__primary-light:    #F88E1E;
-$t1-color__primary-dark:     #9E5201;
+$t1-color__primary:           #E94E0F;
+$t1-color__primary-light-60:  #EE7A4B;
+$t1-color__primary-light-40:  #F3A687;
+$t1-color__primary-light-20:  #F9D2C3;
+$t1-color__primary-dark-140:  #982D01;
+$t1-color__primary-dark-120:  #CC3D03;
 
 // Secondary/alternative brand color defined as a design token.
-$t1-color__secondary:        #94A1A6;
-$t1-color__secondary-light:  #E0E2E4;
-$t1-color__secondary-dark:   #3C4345;
+$t1-color__secondary:        #870B58;
+$t1-color__secondary-light-60:  #A54881;
+$t1-color__secondary-light-40:  #C385AB;
+$t1-color__secondary-light-20:  #E1C2D5;
+$t1-color__secondary-dark-140:   #520234;
+$t1-color__secondary-dark-120:   #740048;
 
 // Tertiary/alternative alternative brand color defined as a design token.
-$t1-color__tertiary:         #5F696B;
-$t1-color__tertiary-light:   #859396;
-$t1-color__tertiary-dark:    #343A3C;
+$t1-color__tertiary:         #E4003A;
+$t1-color__tertiary-light-60:   #EA3F6B;
+$t1-color__tertiary-light-40:   #F17F9C;
+$t1-color__tertiary-light-20:   #F8BFCD;
+$t1-color__tertiary-dark-140:    #8C0024;
+$t1-color__tertiary-dark-120:    #BF0031;
 
 // Quaternary/alternative alternative brand color defined as a design token.
-$t1-color__quaternary:       #B41E09;
-$t1-color__quaternary-light: #F2270A;
-$t1-color__quaternary-dark:  #7B1406;
-
-// Quinary/alternative alternative brand color defined as a design token.
-$t1-color__quinary:          #70B765;
-$t1-color__quinary-light:    #A1EA94;
-$t1-color__quinary-dark:     #408739;
+$t1-color__quaternary:       #F8AD07;
+$t1-color__quaternary-light-60: #F9C145;
+$t1-color__quaternary-light-40: #FBD683;
+$t1-color__quaternary-light-20: #FDEAC1;
+$t1-color__quaternary-dark-140:  #E97A14;
+$t1-color__quaternary-dark-120:  #F29100;

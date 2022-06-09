@@ -8,57 +8,48 @@
  */
 
 $t2-color-map__primary: (
-  regular: $t1-color__primary,
-  light:   $t1-color__primary-light,
-  dark:    $t1-color__primary-dark
+  regular:  $t1-color__primary,
+  light-60: $t1-color__primary-light-60,
+  light-40: $t1-color__primary-light-40,
+  light-20: $t1-color__primary-light-20,
+  dark-140: $t1-color__primary-dark-140,
+  dark-120: $t1-color__primary-dark-120
 );
 
 $t2-color-map__secondary: (
-  regular: $t1-color__secondary,
-  light:   $t1-color__secondary-light,
-  dark:    $t1-color__secondary-dark
+  regular:  $t1-color__secondary,
+  light-60: $t1-color__secondary-light-60,
+  light-40: $t1-color__secondary-light-40,
+  light-20: $t1-color__secondary-light-20,
+  dark-140:  $t1-color__secondary-dark-140,
+  dark-120:  $t1-color__secondary-dark-120
 );
 
 $t2-color-map__tertiary: (
-  regular: $t1-color__tertiary,
-  light:   $t1-color__tertiary-light,
-  dark:    $t1-color__tertiary-dark
+  regular:  $t1-color__tertiary,
+  light-60: $t1-color__tertiary-light-60,
+  light-40: $t1-color__tertiary-light-40,
+  light-20: $t1-color__tertiary-light-20,
+  dark-140: $t1-color__tertiary-dark-140,
+  dark-120: $t1-color__tertiary-dark-120
 );
 
 $t2-color-map__quaternary: (
-  regular: $t1-color__quaternary,
-  light:   $t1-color__quaternary-light,
-  dark:    $t1-color__quaternary-dark
+  regular:  $t1-color__quaternary,
+  light-60: $t1-color__quaternary-light-60,
+  light-40: $t1-color__quaternary-light-40,
+  light-20: $t1-color__quaternary-light-20,
+  dark-140: $t1-color__quaternary-dark-140,
+  dark-120: $t1-color__quaternary-dark-120
 );
 
-$t2-color-map__quinary: (
-  regular: $t1-color__quinary,
-  light:   $t1-color__quinary-light,
-  dark:    $t1-color__quinary-dark
-);
-
-$t2-color-map__senary: (
-  regular: $t1-color__senary,
-  light:   $t1-color__senary-light,
-  dark:    $t1-color__senary-dark
-);
-
-$t2-color-map__septenary: (
-  regular: $t1-color__septenary,
-  light:   $t1-color__septenary-light,
-  dark:    $t1-color__septenary-dark
-);
 
 $t2-color-map__brand: (
   primary:    $t2-color-map__primary,
   secondary:  $t2-color-map__secondary,
   tertiary:   $t2-color-map__tertiary,
   quaternary: $t2-color-map__quaternary,
-  quinary:    $t2-color-map__quinary,
-  senary:     $t2-color-map__senary,
-  septenary:  $t2-color-map__septenary
 );
-
 
 /* ------------ UI color maps ------------
  * SCSS maps for the UI colors

@@ -1,33 +1,35 @@
 /* ==========================================================================
    #COLOR-VARIABLES
    ========================================================================== */
-
 // Primary brand color defined as a design token.
-$t1-color__primary:          #4C8E0A; 
-$t1-color__primary-light:    #7EBF43; 
-$t1-color__primary-dark:     #156000; 
+$t1-color__primary:         #E4003A;
+$t1-color__primary-light-60:   #EA3F6B;
+$t1-color__primary-light-40:   #F17F9C;
+$t1-color__primary-light-20:   #F8BFCD;
+$t1-color__primary-dark-140:    #8C0024;
+$t1-color__primary-dark-120:    #BF0031;
 
 // Secondary/alternative brand color defined as a design token.
-$t1-color__secondary:        #5781B5;
-$t1-color__secondary-light:  #89B0E7;
-$t1-color__secondary-dark:   #225585;
+$t1-color__secondary:        #870B58;
+$t1-color__secondary-light-60:  #A54881;
+$t1-color__secondary-light-40:  #C385AB;
+$t1-color__secondary-light-20:  #E1C2D5;
+$t1-color__secondary-dark-140:   #520234;
+$t1-color__secondary-dark-120:   #740048;
 
 // Tertiary/alternative alternative brand color defined as a design token.
-$t1-color__tertiary:         #FDBE04;
-$t1-color__tertiary-light:   #FFB743;
-$t1-color__tertiary-dark:    #C58E00;
+$t1-color__tertiary:           #E94E0F;
+$t1-color__tertiary-light-60:  #EE7A4B;
+$t1-color__tertiary-light-40:  #F3A687;
+$t1-color__tertiary-light-20:  #F9D2C3;
+$t1-color__tertiary-dark-140:  #982D01;
+$t1-color__tertiary-dark-120:  #CC3D03;
 
 // Quaternary/alternative alternative brand color defined as a design token.
-$t1-color__quaternary:       #F18700;  
-$t1-color__quaternary-light: #FFB743; 
-$t1-color__quaternary-dark:  #B85900; 
+$t1-color__quaternary:       #F8AD07;
+$t1-color__quaternary-light-60: #F9C145;
+$t1-color__quaternary-light-40: #FBD683;
+$t1-color__quaternary-light-20: #FDEAC1;
+$t1-color__quaternary-dark-140:  #E97A14;
+$t1-color__quaternary-dark-120:  #F29100;
 
-// Quinary/alternative alternative brand color defined as a design token.
-$t1-color__quinary:          #51B0CB;
-$t1-color__quinary-light:    #87E2FE;
-$t1-color__quinary-dark:     #01809A;
-
-// Senary/alternative alternative brand color defined as a design token.
-$t1-color__senary:           #C52637;
-$t1-color__senary-light:     #FE5E61;
-$t1-color__senary-dark:      #8D0012;

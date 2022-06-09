@@ -3,6 +3,9 @@
   display: block;
   margin-bottom: 1rem;
 }
+.storybook-style-color-brand-tile {
+  width: 225px;
+}
 .storybook-style-color-tile--row {
   width: 100%;
   display: flex;
@@ -14,6 +17,11 @@
   height: 300px;
   display: inline-block;
   position: relative;
+}
+
+.storybook-style-color-brand-tile__item {
+  width: 225px;
+  height: 225px;
 }
 
 .storybook-style-color-tile__item::before{
@@ -41,16 +49,34 @@
     content: "#{$t1-color__primary}"
   }
 }
-.storybook-style-color-tile__item--color-primary-light {
-  background: $t1-color__primary-light;
+.storybook-style-color-tile__item--color-primary-light-60 {
+  background: $t1-color__primary-light-60;
   &::before {
-    content: "#{$t1-color__primary-light}"
+    content: "#{$t1-color__primary-light-60}"
   }
 }
-.storybook-style-color-tile__item--color-primary-dark {
-  background: $t1-color__primary-dark;
+.storybook-style-color-tile__item--color-primary-light-40 {
+  background: $t1-color__primary-light-40;
   &::before {
-    content: "#{$t1-color__primary-dark}"
+    content: "#{$t1-color__primary-light-40}"
+  }
+}
+.storybook-style-color-tile__item--color-primary-light-20 {
+  background: $t1-color__primary-light-20;
+  &::before {
+    content: "#{$t1-color__primary-light-20}"
+  }
+}
+.storybook-style-color-tile__item--color-primary-dark-120 {
+  background: $t1-color__primary-dark-120;
+  &::before {
+    content: "#{$t1-color__primary-dark-120}"
+  }
+}
+.storybook-style-color-tile__item--color-primary-dark-140 {
+  background: $t1-color__primary-dark-140;
+  &::before {
+    content: "#{$t1-color__primary-dark-140}"
   }
 }
 
@@ -60,16 +86,34 @@
     content: "#{$t1-color__secondary}"
   }
 }
-.storybook-style-color-tile__item--color-secondary-light {
-  background: $t1-color__secondary-light;
+.storybook-style-color-tile__item--color-secondary-light-60 {
+  background: $t1-color__secondary-light-60;
   &::before {
-    content: "#{$t1-color__secondary-light}"
+    content: "#{$t1-color__secondary-light-60}"
   }
 }
-.storybook-style-color-tile__item--color-secondary-dark {
-  background: $t1-color__secondary-dark;
+.storybook-style-color-tile__item--color-secondary-light-40 {
+  background: $t1-color__secondary-light-40;
   &::before {
-    content: "#{$t1-color__secondary-dark}"
+    content: "#{$t1-color__secondary-light-40}"
+  }
+}
+.storybook-style-color-tile__item--color-secondary-light-20 {
+  background: $t1-color__secondary-light-20;
+  &::before {
+    content: "#{$t1-color__secondary-light-20}"
+  }
+}
+.storybook-style-color-tile__item--color-secondary-dark-140 {
+  background: $t1-color__secondary-dark-140;
+  &::before {
+    content: "#{$t1-color__secondary-dark-140}"
+  }
+}
+.storybook-style-color-tile__item--color-secondary-dark-120 {
+  background: $t1-color__secondary-dark-120;
+  &::before {
+    content: "#{$t1-color__secondary-dark-120}"
   }
 }
 
@@ -79,73 +123,70 @@
     content: "#{$t1-color__tertiary}"
   }
 }
-.storybook-style-color-tile__item--color-tertiary-light {
-  background: $t1-color__tertiary-light;
+.storybook-style-color-tile__item--color-tertiary-light-60 {
+  background: $t1-color__tertiary-light-60;
   &::before {
-    content: "#{$t1-color__tertiary-light}"
+    content: "#{$t1-color__tertiary-light-60}"
   }
 }
-.storybook-style-color-tile__item--color-tertiary-dark {
-  background: $t1-color__tertiary-dark;
+.storybook-style-color-tile__item--color-tertiary-light-40 {
+  background: $t1-color__tertiary-light-40;
   &::before {
-    content: "#{$t1-color__tertiary-dark}"
+    content: "#{$t1-color__tertiary-light-40}"
   }
 }
-
+.storybook-style-color-tile__item--color-tertiary-light-20 {
+  background: $t1-color__tertiary-light-20;
+  &::before {
+    content: "#{$t1-color__tertiary-light-20}"
+  }
+}
+.storybook-style-color-tile__item--color-tertiary-dark-140 {
+  background: $t1-color__tertiary-dark-140;
+  &::before {
+    content: "#{$t1-color__tertiary-dark-140}"
+  }
+}
+.storybook-style-color-tile__item--color-tertiary-dark-120 {
+  background: $t1-color__tertiary-dark-120;
+  &::before {
+    content: "#{$t1-color__tertiary-dark-120}"
+  }
+}
 .storybook-style-color-tile__item--color-quaternary {
   background: $t1-color__quaternary;
   &::before {
     content: "#{$t1-color__quaternary}"
   }
 }
-.storybook-style-color-tile__item--color-quaternary-light {
-  background: $t1-color__quaternary-light;
+.storybook-style-color-tile__item--color-quaternary-light-60 {
+  background: $t1-color__quaternary-light-60;
   &::before {
-    content: "#{$t1-color__quaternary-light}"
+    content: "#{$t1-color__quaternary-light-60}"
   }
 }
-.storybook-style-color-tile__item--color-quaternary-dark {
-  background: $t1-color__quaternary-dark;
+.storybook-style-color-tile__item--color-quaternary-light-40 {
+  background: $t1-color__quaternary-light-40;
   &::before {
-    content: "#{$t1-color__quaternary-dark}"
+    content: "#{$t1-color__quaternary-light-40}"
   }
 }
-
-.storybook-style-color-tile__item--color-quinary {
-  background: $t1-color__quinary;
+.storybook-style-color-tile__item--color-quaternary-light-20 {
+  background: $t1-color__quaternary-light-20;
   &::before {
-    content: "#{$t1-color__quinary}"
+    content: "#{$t1-color__quaternary-light-20}"
   }
 }
-.storybook-style-color-tile__item--color-quinary-light {
-  background: $t1-color__quinary-light;
+.storybook-style-color-tile__item--color-quaternary-dark-140 {
+  background: $t1-color__quaternary-dark-140;
   &::before {
-    content: "#{$t1-color__quinary-light}"
+    content: "#{$t1-color__quaternary-dark-140}"
   }
 }
-.storybook-style-color-tile__item--color-quinary-dark {
-  background: $t1-color__quinary-dark;
+.storybook-style-color-tile__item--color-quaternary-dark-120 {
+  background: $t1-color__quaternary-dark-120;
   &::before {
-    content: "#{$t1-color__quinary-dark}"
-  }
-}
-
-.storybook-style-color-tile__item--color-senary {
-  background: $t1-color__senary;
-  &::before {
-    content: "#{$t1-color__senary}"
-  }
-}
-.storybook-style-color-tile__item--color-senary-light {
-  background: $t1-color__senary-light;
-  &::before {
-    content: "#{$t1-color__senary-light}"
-  }
-}
-.storybook-style-color-tile__item--color-senary-dark {
-  background: $t1-color__senary-dark;
-  &::before {
-    content: "#{$t1-color__senary-dark}"
+    content: "#{$t1-color__quaternary-dark-120}"
   }
 }
 
