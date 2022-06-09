@@ -12,6 +12,7 @@ $t1-font-map__main: (
   text-transform: none
 );
 
+
 $t1-font-map__second: (
   family: 'Roboto',
   fallback: sans-serif,
@@ -22,6 +23,15 @@ $t1-font-map__second: (
 );
 
 $t1-font-map__third: (
+  family: 'Nimbus Sans',
+  fallback: serif,
+  weight: bold,
+  style: normal,
+  letter-spacing: normal,
+  text-transform: none
+);
+
+$t1-font-map__forth: (
   family: 'DM Serif Text',
   fallback: serif,
   weight: normal,

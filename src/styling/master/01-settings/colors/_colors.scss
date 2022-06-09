@@ -97,8 +97,8 @@ $t2-color__link-disabled: $t1-text-color__gray-40         !default;
 $t2-color__link-hover-bg: rgba($t1-text-color__black, .1)   !default;
 
 // -- Contrast
-$t2-color__background: $t1-ui-color__white             !default;
-$t2-color__foreground: $t1-ui-color__gray-100  !default;
+$t2-color__background: $t1-text-color__white             !default;
+$t2-color__foreground: $t1-text-color__gray-100  !default;
 
 // -- Divider
 $t2-color__divider: rgba($t1-ui-color__gray-40, .5)  !default;

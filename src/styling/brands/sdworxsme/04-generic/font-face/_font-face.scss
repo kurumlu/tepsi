@@ -1,10 +1,33 @@
+
 @font-face {
-  font-family: 'CamingoDosProBold';
-  src: url('#{$asset_base_path}/assets/fonts/camingo-dos-pro-bold/CamingoDosPro-Bold.woff2') format("woff2"),
-  url('#{$asset_base_path}/assets/fonts/camingo-dos-pro-bold/CamingoDosPro-Bold.woff') format("woff"),
-  url('#{$asset_base_path}/assets/fonts/camingo-dos-pro-bold/CamingoDosPro-Bold.ttf') format("truetype");
+  font-family: 'Roboto';
+  src: url('#{$asset_base_path}/assets/fonts/roboto/roboto-v27-latin-regular.woff2') format("woff2"),
+  url('#{$asset_base_path}/assets/fonts/roboto/roboto-v27-latin-regular.woff') format("woff"),
+  url('#{$asset_base_path}/assets/fonts/roboto/roboto-v27-latin-regular.ttf') format("truetype");
+  unicode-range: U+0-FF,U+131,U+152,U+153,U+2BB,U+2BC,U+2C6,U+2DA,U+2DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('#{$asset_base_path}/assets/fonts/roboto/roboto-v27-latin-700.woff2') format("woff2"),
+  url('#{$asset_base_path}/assets/fonts/roboto/roboto-v27-latin-700.woff') format("woff"),
+  url('#{$asset_base_path}/assets/fonts/roboto/roboto-v27-latin-700.ttf') format("truetype");
   unicode-range: U+0-FF,U+131,U+152,U+153,U+2BB,U+2BC,U+2C6,U+2DA,U+2DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: 'Nimbus Sans';
+  src: url('#{$asset_base_path}/assets/fonts/dm-serif-text/DMSerifText-Regular-subset.woff2') format("woff2"),
+  url('#{$asset_base_path}/assets/fonts/dm-serif-text/DMSerifText-Regular-subset.zopfli.woff') format("woff"),
+  url('#{$asset_base_path}/assets/fonts/dm-serif-text/DMSerifText-Regular-subset.ttf') format("truetype");
+  unicode-range: U+0-FF,U+131,U+152,U+153,U+2BB,U+2BC,U+2C6,U+2DA,U+2DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
